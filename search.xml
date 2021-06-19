@@ -4,11 +4,136 @@
   
     
     <entry>
+      <title>数据科学速查手册</title>
+      <link href="/2021/06/19/data-sciecnt-menu/"/>
+      <url>/2021/06/19/data-sciecnt-menu/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Python基础入门"><a href="#Python基础入门" class="headerlink" title="Python基础入门"></a>Python基础入门</h3><p><img src="beginner.jpg" alt="Python基础入门"></p><h3 id="Python进阶知识"><a href="#Python进阶知识" class="headerlink" title="Python进阶知识"></a>Python进阶知识</h3><p><img src="cheet1.jpg" alt="Python进阶知识"><br><img src="cheet2.jpg" alt="Python进阶知识"></p><h3 id="jupyter基础操作"><a href="#jupyter基础操作" class="headerlink" title="jupyter基础操作"></a>jupyter基础操作</h3><p><img src="jupyter.jpg" alt="jupyter基础操作"></p><h3 id="Pandas基础知识"><a href="#Pandas基础知识" class="headerlink" title="Pandas基础知识"></a>Pandas基础知识</h3><p><img src="pandas.jpg" alt="Pandas基础知识"></p><h3 id="Numpy基础知识"><a href="#Numpy基础知识" class="headerlink" title="Numpy基础知识"></a>Numpy基础知识</h3><p><img src="numpy.jpg" alt="Numpy基础知识"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据科学 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SQL笔试经典50题及答案解析</title>
+      <link href="/2021/06/19/sql-basic-question-and-answer/"/>
+      <url>/2021/06/19/sql-basic-question-and-answer/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>Excel处理数据的级别是万条以内，当超过10万条以上时在exce里操作是极其困难的，这时候就需要我们使用SQL来查询，俗称取数。对于SQl的学习建议在了解基本逻辑后立刻进入项目练习，以下是来源于网络的sql练习题目及答案解析</p></blockquote><p>1.SQL执行顺序<br><img src="sql-run-oder.png" alt="SQL执行顺序"></p><p>2、建表语句</p><pre><code>create table Student(sid varchar(10),sname varchar(10),sage datetime,ssex nvarchar(10));insert into Student values(&#39;01&#39; , &#39;赵雷&#39; , &#39;1990-01-01&#39; , &#39;男&#39;);insert into Student values(&#39;02&#39; , &#39;钱电&#39; , &#39;1990-12-21&#39; , &#39;男&#39;);insert into Student values(&#39;03&#39; , &#39;孙风&#39; , &#39;1990-05-20&#39; , &#39;男&#39;);insert into Student values(&#39;04&#39; , &#39;李云&#39; , &#39;1990-08-06&#39; , &#39;男&#39;);insert into Student values(&#39;05&#39; , &#39;周梅&#39; , &#39;1991-12-01&#39; , &#39;女&#39;);insert into Student values(&#39;06&#39; , &#39;吴兰&#39; , &#39;1992-03-01&#39; , &#39;女&#39;);insert into Student values(&#39;07&#39; , &#39;郑竹&#39; , &#39;1989-07-01&#39; , &#39;女&#39;);insert into Student values(&#39;08&#39; , &#39;王菊&#39; , &#39;1990-01-20&#39; , &#39;女&#39;);create table Course(cid varchar(10),cname varchar(10),tid varchar(10));insert into Course values(&#39;01&#39; , &#39;语文&#39; , &#39;02&#39;);insert into Course values(&#39;02&#39; , &#39;数学&#39; , &#39;01&#39;);insert into Course values(&#39;03&#39; , &#39;英语&#39; , &#39;03&#39;);create table Teacher(tid varchar(10),tname varchar(10));insert into Teacher values(&#39;01&#39; , &#39;张三&#39;);insert into Teacher values(&#39;02&#39; , &#39;李四&#39;);insert into Teacher values(&#39;03&#39; , &#39;王五&#39;);create table SC(sid varchar(10),cid varchar(10),score decimal(18,1));insert into SC values(&#39;01&#39; , &#39;01&#39; , 80);insert into SC values(&#39;01&#39; , &#39;02&#39; , 90);insert into SC values(&#39;01&#39; , &#39;03&#39; , 99);insert into SC values(&#39;02&#39; , &#39;01&#39; , 70);insert into SC values(&#39;02&#39; , &#39;02&#39; , 60);insert into SC values(&#39;02&#39; , &#39;03&#39; , 80);insert into SC values(&#39;03&#39; , &#39;01&#39; , 80);insert into SC values(&#39;03&#39; , &#39;02&#39; , 80);insert into SC values(&#39;03&#39; , &#39;03&#39; , 80);insert into SC values(&#39;04&#39; , &#39;01&#39; , 50);insert into SC values(&#39;04&#39; , &#39;02&#39; , 30);insert into SC values(&#39;04&#39; , &#39;03&#39; , 20);insert into SC values(&#39;05&#39; , &#39;01&#39; , 76);insert into SC values(&#39;05&#39; , &#39;02&#39; , 87);insert into SC values(&#39;06&#39; , &#39;01&#39; , 31);insert into SC values(&#39;06&#39; , &#39;03&#39; , 34);insert into SC values(&#39;07&#39; , &#39;02&#39; , 89);insert into SC values(&#39;07&#39; , &#39;03&#39; , 98);</code></pre><p>3、表结构预览</p><pre><code>–学生表Student(SId,Sname,Sage,Ssex)–SId 学生编号,Sname 学生姓名,Sage 出生年月,Ssex 学生性别–课程表Course(CId,Cname,TId)–CId 课程编号,Cname 课程名称,TId 教师编号–教师表Teacher(TId,Tname)–TId 教师编号,Tname 教师姓名–成绩表SC(SId,CId,score)–SId 学生编号,CId 课程编号,score 分数</code></pre><h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>1、查询“01”课程比“02”课程成绩高的所有学生的学号；<br>2、查询平均成绩大于60分的同学的学号和平均成绩；<br>3、查询所有同学的学号、姓名、选课数、总成绩<br>4、查询姓“李”的老师的个数；<br>5、查询没学过“张三”老师课的同学的学号、姓名；<br>6、查询学过编号“01”并且也学过编号“02”课程的同学的学号、姓名；<br>7、查询学过“张三”老师所教的课的同学的学号、姓名；<br>8、查询课程编号“01”的成绩比课程编号“02”课程低的所有同学的学号、姓名；<br>9、查询所有课程成绩小于60分的同学的学号、姓名；<br>10、查询没有学全所有课的同学的学号、姓名；<br>11、查询至少有一门课与学号为“01”的同学所学相同的同学的学号和姓名；<br>12、查询和”01″号的同学学习的课程完全相同的其他同学的学号和姓名<br>13、把“SC”表中“张三”老师教的课的成绩都更改为此课程的平均成绩；<br>14、查询没学过”张三”老师讲授的任一门课程的学生姓名<br>15、查询两门及其以上不及格课程的同学的学号，姓名及其平均成绩<br>16、检索”01″课程分数小于60，按分数降序排列的学生信息<br>17、按平均成绩从高到低显示所有学生的平均成绩<br>18、查询各科成绩最高分、最低分和平均分：以如下形式显示：课程ID，课程name，最高分，最低分，平均分，及格率<br>19、按各科平均成绩从低到高和及格率的百分数从高到低顺序<br>20、查询学生的总成绩并进行排名<br>21、查询不同老师所教不同课程平均分从高到低显示<br>22、查询所有课程的成绩第2名到第3名的学生信息及该课程成绩<br>23、统计各科成绩各分数段人数：课程编号,课程名称,[100-85],[85-70],[70-60],[0-60]及所占百分比<br>24、查询学生平均成绩及其名次<br>25、查询各科成绩前三名的记录<br>26、查询每门课程被选修的学生数<br>27、查询出只选修了一门课程的全部学生的学号和姓名<br>28、查询男生、女生人数<br>29、查询名字中含有”风”字的学生信息<br>30、查询同名同性学生名单，并统计同名人数<br>31、查询1990年出生的学生名单(注：Student表中Sage列的类型是datetime)<br>32、查询每门课程的平均成绩，结果按平均成绩升序排列，平均成绩相同时，按课程号降序排列<br>37、查询不及格的课程，并按课程号从大到小排列<br>38、查询课程编号为”01″且课程成绩在60分以上的学生的学号和姓名；<br>40、查询选修“张三”老师所授课程的学生中，成绩最高的学生姓名及其成绩<br>42、查询每门功课成绩最好的前两名<br>43、统计每门课程的学生选修人数（超过5人的课程才统计）。要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列<br>44、检索至少选修两门课程的学生学号<br>45、查询选修了全部课程的学生信息<br>46、查询各学生的年龄<br>47、查询本周过生日的学生<br>48、查询下周过生日的学生<br>49、查询本月过生日的学生<br>50、查询下月过生日的学生</p><br><br><br><br><br><h2 id="参考答案"><a href="#参考答案" class="headerlink" title="参考答案"></a>参考答案</h2><pre><code>1、查询“01”课程比“02”课程成绩高的所有学生的学号；select distinct t1.sid as sidfrom     (select * from sc where cid=&#39;01&#39;)t1left join     (select * from sc where cid=&#39;02&#39;)t2on t1.sid=t2.sidwhere t1.score&gt;t2.score2、查询平均成绩大于60分的同学的学号和平均成绩；select     sid    ,avg(score)from scgroup by sidhaving avg(score)&gt;603、查询所有同学的学号、姓名、选课数、总成绩select    student.sid as sid    ,sname    ,count(distinct cid) course_cnt    ,sum(score) as total_scorefrom studentleft join sc on student.sid=sc.sidgroup by sid,sname4、查询姓“李”的老师的个数；select    count(distinct tid) as teacher_cntfrom teacherwhere tname like &#39;李%&#39;5、查询没学过“张三”老师课的同学的学号、姓名；select    sid,snamefrom studentwhere sid not in     (        select            sc.sid        from teacher        left join course            on teacher.tid=course.tid        left join sc            on course.cid=sc.cid        where teacher.tname=&#39;张三&#39;    )6、查询学过“01”并且也学过编号“02”课程的同学的学号、姓名；select    t.sid as sid    ,snamefrom     (        select            sid            ,count(if(cid=&#39;01&#39;,score,null)) as count1            ,count(if(cid=&#39;02&#39;,score,null)) as count2        from sc        group by sid        having count(if(cid=&#39;01&#39;,score,null))&gt;0 and count(if(cid=&#39;02&#39;,score,null))&gt;0    )tleft join student    on t.sid=student.sid7、查询学过“张三”老师所教的课的同学的学号、姓名；select    student.sid    ,snamefrom     (        select            distinct cid         from course        left join teacher         on course.tid=teacher.tid        where teacher.tname=&#39;张三&#39;    )courseleft join sc     on course.cid=sc.cidleft join student    on sc.sid=student.sidgroup by student.sid,sname8、查询课程编号“01”的成绩比课程编号“02”课程低的所有同学的学号、姓名；select    t1.sid,snamefrom     (        select distinct t1.sid as sid        from             (select * from sc where cid=&#39;01&#39;)t1        left join             (select * from sc where cid=&#39;02&#39;)t2        on t1.sid=t2.sid        where t1.score&gt;t2.score    )t1left join student    on t1.sid=student.sid9、查询所有课程成绩小于60分的同学的学号、姓名；select    t1.sid,snamefrom     (        select            sid,max(score)        from sc        group by sid        having max(score&lt;60)    )t1left join student    on t1.sid=student.sid10、查询没有学全所有课的同学的学号、姓名；select    t1.sid,snamefrom     (        select            count(cid),sid        from sc        group by sid        having count(cid) &lt; (select count(distinct cid) from course)    )t1left join student    on t1.sid=student.sid11、查询至少有一门课与学号为“01”的同学所学相同的同学的学号和姓名；select    distinct sc.sidfrom     (        select            cid        from sc        where sid=&#39;01&#39;    )t1left join sc    on t1.cid=sc.cid12、查询和”01″号的同学学习的课程完全相同的其他同学的学号和姓名#注意是和&#39;01&#39;号同学课程完全相同但非学习课程数相同的,这里我用左连接解决这个问题select    t1.sid,snamefrom    (        select            sc.sid            ,count(distinct sc.cid)        from             (                select                    cid                from sc                where sid=&#39;01&#39;            )t1 #选出01的同学所学的课程        left join sc            on t1.cid=sc.cid        group by sc.sid        having count(distinct sc.cid)= (select count(distinct cid) from sc where sid = &#39;01&#39;)    )t1left join student    on t1.sid=student.sidwhere t1.sid!=&#39;01&#39;13、把“SC”表中“张三”老师教的课的成绩都更改为此课程的平均成绩；#暂跳过update题目14、查询没学过”张三”老师讲授的任一门课程的学生姓名select     snamefrom studentwhere sid not in    (        select            distinct sid        from sc        left join course            on sc.cid=course.cid        left join teacher            on course.tid=teacher.tid         where tname=&#39;张三&#39;    )15、查询两门及其以上不及格课程的同学的学号，姓名及其平均成绩select    t1.sid,sname,avg_scorefrom     (        select            sid,count(if(score&lt;60,cid,null)),avg(score) as avg_score        from sc        group by sid        having count(if(score&lt;60,cid,null)) &gt;=2    )t1left join student    on t1.sid=student.sid16、检索”01″课程分数小于60，按分数降序排列的学生信息select     sid,if(cid=&#39;01&#39;,score,100)from scwhere if(cid=&#39;01&#39;,score,100)&lt;60order by if(cid=&#39;01&#39;,score,100) desc17、按平均成绩从高到低显示所有学生的平均成绩select sid,avg(score)from scgroup by sidorder by avg(score) desc18、查询各科成绩最高分、最低分和平均分：以如下形式显示：课程ID，课程name，最高分，最低分，平均分，及格率select    sc.cid    ,cname    ,max(score) as max_score    ,min(score) as min_score    ,avg(score) as avg_score    ,count(if(score&gt;=60,sid,null))/count(sid) as pass_ratefrom sc left join course    on sc.cid=course.cidgroup by sc.cid19、按各科平均成绩从低到高和及格率的百分数从高到低顺序#这里先按照平均成绩排序，再按照及格百分数排序，题目有点奇怪select     cid    ,avg(score) as avg_score    ,count(if(score&gt;=60,sid,null))/count(sid) as pass_ratefrom scgroup by cidorder by avg_score,pass_rate desc20、查询学生的总成绩并进行排名select    sid    ,sum(score) as sum_scorefrom scgroup by sidorder by sum_score desc21、查询不同老师所教不同课程平均分从高到低显示select    tid    ,avg(score) as avg_scorefrom courseleft join sc    on course.cid=sc.cidgroup by tidorder by avg_score desc22、查询所有课程的成绩第2名到第3名的学生信息及该课程成绩select    sid,rank_num,score,cidfrom    (        select            rank() over(partition by cid order by score desc) as rank_num            ,sid            ,score            ,cid        from sc    )twhere rank_num in (2,3)23、统计各科成绩各分数段人数：课程编号,课程名称,[100-85],[85-70],[70-60],[0-60]及所占百分比select    sc.cid    ,cname    ,count(if(score between 85 and 100,sid,null))/count(sid)    ,count(if(score between 70 and 85,sid,null))/count(sid)    ,count(if(score between 60 and 70,sid,null))/count(sid)    ,count(if(score between 0 and 60,sid,null))/count(sid)from scleft join course    on sc.cid=course.cidgroup by sc.cid,cname24、查询学生平均成绩及其名次select    sid    ,avg_score    ,rank() over (order by avg_score desc)from     (        select            sid            ,avg(score) as avg_score        from sc        group by sid    )t25、查询各科成绩前三名的记录select    sid,cid,rank1from     (        select            cid            ,sid            ,rank() over(partition by cid order by score desc) as rank1        from sc    )twhere rank1&lt;=326、查询每门课程被选修的学生数select    count(sid)    ,cidfrom scgroup by cid27、查询出只选修了一门课程的全部学生的学号和姓名#只查出来sid即可，后面懒得交student表select    sidfrom scgroup by sidhaving count(cid) =128、查询男生、女生人数select    ssex    ,count(distinct sid)from studentgroup by ssex29、查询名字中含有”风”字的学生信息select    sid,snamefrom studentwhere sname like &#39;%风%&#39;30、查询同名同性学生名单，并统计同名人数#题目有歧义，这套题的质量感觉有点差select    ssex    ,sname    ,count(sid)from studentgroup by ssex,snamehaving count(sid)&gt;=231、查询1990年出生的学生名单(注：Student表中Sage列的类型是datetime)select    sid,sname,sagefrom studentwhere year(sage)=199032、查询每门课程的平均成绩，结果按平均成绩升序排列，平均成绩相同时，按课程号降序排列select    cid,avg(score) as avg_scorefrom scgroup by cidorder by avg_score,cid desc37、查询不及格的课程，并按课程号从大到小排列#有问题的题目select    cid,sid,scorefrom scwhere score&lt;60order by cid desc,sid38、查询课程编号为”01″且课程成绩在60分以上的学生的学号和姓名；select    sid,cid,scorefrom scwhere cid=&#39;01&#39; and score&gt;6040、查询选修“张三”老师所授课程的学生中，成绩最高的学生姓名及其成绩select    sc.sid,sname,cname,scorefrom scleft join course    on sc.cid=course.cidleft join teacher    on course.tid=teacher.tidleft join student    on sc.sid=student.sidwhere tname=&#39;张三&#39;order by score desclimit 1;42、查询每门功课成绩最好的前两名##感觉题目重复了select    cid,sid,rank1from     (        select            cid            ,sid            ,rank() over(partition by cid order by score desc) as rank1        from sc     )twhere rank1 &lt;=243、统计每门课程的学生选修人数（超过5人的课程才统计）。要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列select    cid    ,count(sid) as cntfrom scgroup by cidhaving cnt&gt;=5order by count(sid) desc,cid44、检索至少选修两门课程的学生学号select    sid    ,count(cid)from scgroup by sidhaving count(cid)&gt;=245、查询选修了全部课程的学生信息#不太严谨，但实务中应该没问题，如需严谨见12题思路select    sid    ,count(cid)from scgroup by sidhaving count(cid)=(select count(distinct cid) from sc)46、查询各学生的年龄select    sid,sname,year(curdate())-year(sage) as sagefrom student47、查询本周过生日的学生select    sid,sname,sagefrom studentwhere weekofyear(sage)=weekofyear(curdate())48、查询下周过生日的学生select     sid,sname,sagefrom studentwhere weekofyear(sage) = weekofyear(date_add(curdate(),interval 1 week))49、查询本月过生日的学生select    sid,sname,sagefrom studentwhere month(sage) = month(curdate())50、查询下月过生日的学生select    sid,sname,sagefrom studentwhere month(date_sub(sage,interval 1 month)) = month(curdate())</code></pre><p>题目及答案来源：(<a href="https://zhuanlan.zhihu.com/p/53302593" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/53302593</a>)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>心理学研究方法笔记</title>
+      <link href="/2021/06/19/psychological-method/"/>
+      <url>/2021/06/19/psychological-method/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、科学与常识"><a href="#一、科学与常识" class="headerlink" title="一、科学与常识"></a>一、科学与常识</h3><blockquote><p>常识主要指在经验基础上形成的对客观世界的认识；<br>科学则是在系统观察基础上形成的对客观世界的认识。</p></blockquote><p>1、相似点</p><p>常识被定义为：在人们的实践基础上产生的概念以及对事物的一般性认识，</p><p>科学则是对常识的系统化和对常识的在控制基础上的验证、修正和发展。</p><p>2、不同点</p><p>对概念的理解与使用不同；</p><p>对概念和理论的系统化方法不同；</p><p>控制是科学研究的特点，但常识无需控制；</p><p>如果常识和科学相背离，不要轻易否定任何一方。</p><p>Q：</p><p>你如何看待尚未经过科学检验的常识？</p><p>科学和常识相背离时，你该怎么办？</p><p>科学有能力检验的存在有多少？</p><h3 id="二、知识的主要来源"><a href="#二、知识的主要来源" class="headerlink" title="二、知识的主要来源"></a>二、知识的主要来源</h3><p>1、固执：坚信你所认为的就是真实，固执使你获取的信息成为你知识体系的一部分（也许与经验有关）；</p><p>2、权威：如果某个权威认为是对的，就是对的；如果大家都认为是那样，就是那样；</p><p>3、直觉：只是相信，无需经验证明（虽然也许与经验有关）；</p><p>4、常识：经验告诉你的；</p><p>5、科学：探索客观实在的一种方法。</p><p>Q：</p><p>在你的知识结构中大约有多少是经过科学方法探索得到的？</p><p>经过科学验证和未经过科学验证的区别是什么？</p><p>科学证明的意义？</p><h3 id="三、科学及科学目标"><a href="#三、科学及科学目标" class="headerlink" title="三、科学及科学目标"></a>三、科学及科学目标</h3><p>1、什么是科学</p><p>达尔文：科学就是整理事实，从中发现规律，做出结论。</p><p>《辞海》（1999）：科学：运用范畴、定理、定律等思维形式反映现实世界各种现象的本质和规律的知识体系。</p><p>2、科学研究方法</p><p>科学研究方法是探索世界的一种方法。通过这样的方法得出的结论反映的应是客观事实本身，而不受人们的主观看法影响。不同的研究者使用这样的方法在针对同一问题和相同对象时所得出的结论应当是一致的。</p><p>科学研究方法的基本假设是：世界的真实特性完全独立于人们对它们的主观认识。</p><p>3、科学研究</p><p>科学研究是对假设的有关自然现象中关系的系统的、有所控制的和实证的调查和检验。</p><p> 科学研究是系统和有所控制的；</p><p> 科学调查采用实证方法；</p><p> 主观看法必须经过客观检验。</p><p>4、科学检验基本原则</p><p>科学研究中所采用的检验方法遵循客观性原则，即，尽可能独立于研究者的个人信念、直觉、偏见、态度和情绪等。</p><p>5、目标</p><p>科学的基本目标是探索和解释自然现象，对自然现象的系统性解释即称为理论。这样，探索和解释又成为科学研究的两个阶段目标。在这两个阶段目标之下，有四个具体目的：描述、预测、解释和控制。</p><h3 id="五、科学理论"><a href="#五、科学理论" class="headerlink" title="五、科学理论"></a>五、科学理论</h3><p>1、理论</p><p>一个理论是一组概念之间的相互关系，这些概念代表对于某种现象的系统看法和观点。这些看法和观点通常用一些具体的变量及其相互关系来表达，用以解释和预测现象。</p><p>2、理论含义</p><p>一个理论由一组相关概念组成；</p><p>一个理论表示变量间的相互关系，也代表着由变量所描述的对于现象的系统看法；</p><p>一个理论解释某种现象。理论对于现象的解释通过具体化哪些变量与哪些变量相关，以及如何相关来实现。</p><h2 id="六、科学探索"><a href="#六、科学探索" class="headerlink" title="六、科学探索"></a>六、科学探索</h2><p>1、一般过程</p><p>演绎: 问题和假设源于理论；</p><p>实验观察：对问题进行实验检验；</p><p>证明：搜集数据，以证明理论；</p><p>实验推论：将某一研究结果推论到更大的范围；</p><p>归纳: 从研究结果中产生相关理论。</p><p>2、理论与研究之间的关系</p><p>理论        研究（演绎模型）</p><p>（理论引导研究）</p><p>研究        理论（归纳模型）</p><p>（通过观察提出要研究的问题，产生假设，并提供数</p><p>据使已有的理论更加完善，或者发展出新的理论）</p><h3 id="七、科学思维的特征"><a href="#七、科学思维的特征" class="headerlink" title="七、科学思维的特征"></a>七、科学思维的特征</h3><p>决定论：任何事件都有其原因，所有人类行为背后都有其原因。</p><p>可揭示性：使用科学方法能够揭示事件的原因；人类行为的规律可以用科学方法来揭示。</p><p>客观性：研究结果不受研究者影响。</p><p>数据支持：研究结论需要有数据支持。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 心理学 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 心理学 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>考试、读书、学习是一回事？</title>
+      <link href="/2021/06/19/are-read-book-and-learning-is-same-thing/"/>
+      <url>/2021/06/19/are-read-book-and-learning-is-same-thing/</url>
+      
+        <content type="html"><![CDATA[<p>读书、学习在任何时代都是提高、进步的一条可行的渠道。如果我们不会学习、不知道如何选择，试问我们这辈子是不是有可能混吃等死呢？中国从古代到现代的选拔人才的方式越来越丰富，从开始的推举制度到后来的科举制度，从最开始只是世仕家大族到后来平民也有机会，这就是一个好的发展趋势。放到我们现在来说，高考、考研就是改变人，生轨迹的重要战役。</p><p>但是从大学毕业以后呢，考试、读书、学习就不是一回事了，或者说从一开始这就是三件事。家里人不了解，以为只要继续读，继续上就行。在家里的人眼里，以为读书 = 学习 = 考试，这条等式至少在我大学前，我也是这么认为的。</p><p>对于考试的态度，我是在大学时代发生转变的。当时我立下一个规矩，不再将考试成绩作为自己的评价标准，转而开始学习其他领域的知识，尽量拓展自己的知识领域，投向计算机学习的怀抱，当时的想法是我想去了解这个东西，但是我就是不知道这个东西是个啥，也无从下手，更不知道如何学，不管，多试试就知道了。到了现在，自己对于这三件事情有了一点自己的浅见：</p><p>读书，就是简单的读书呗。读书体系总体来说可以分为几层，经典且有影响力的论文、经典教材、牛人写的文章以及网络上其他文章，按照这个分级来选择读物，你会发现自己喜欢的层次是出在哪里。当然，这里并无好坏之分，你喜欢就好。书籍不重要，重要的是背后的写书的人。人只要找对了，书一般不会差。只看书名就以为能解决问题，还是太天真了。</p><p>学习是一个更大的范畴，贯穿一个人的一生。只不过学习这件事，不需要挂在嘴上，也不需要去炫耀，自己默默搞就是了，知识付费的打卡展示、每天告诉别人自己又学习了、今天我复习了10多个小时，这种事情不必说的。直接关闭朋友圈最直接解决这个问题。学习是基于经验，行为发生持久的变化，从开始学习走路、奔跑，到后来学习识字、写文章，还有社会生存技能等，这些都是学习的结果。可是，我们并没有在学会了向全天下人说吧。尽力的炫耀更你的能力可能成反比。知耻近乎勇，以前不明白这句话，忽然发现，一个人知道自己的局限，并且承认自己不知道是有多难，尤其是有些身份地位的，承认这种局限就更难了。在过往的时间里，我也曾有过这样的心态，遇到点小事就发朋友圈，求别人点赞，或让别人关注自己。大学里最爱做的就是这个事情，那时候也正好是社交软件发展的黄金时期。</p><p>不过反观一想，多没意思呀，自己默默做就是了，能做到什么程度，自己心中有数即可。</p><p>当学习仅仅是为了考试的时候，思维会被局限在只去关注重点知识，这在短期来说可以接受的，考试就是要功利学习。例如考研，从大的范围来说就是就是个考试，毕竟这是一道门槛，没有考试，我们怎么知道你的水平，统一标准还是要有的。曾经有个有趣的段子，说山东考生高分低能，除了会考试什么也不会。这里就有问题了。考生是因为只会考试，还是只能考试，你给我找一个除了考试之外还比较不错的晋升途径吗？多半是没有的，既然没有那就继续考呗。这也许是读书 = 学习 = 考试的来源了。</p><p>学习在任何时代都是进步的渠道，我们想要提高自己的，绝对不能放松。但是注意，学习不等于报班，互联网的发达程度已经到了自己可以学习的地步了。勤思考、多动脑、别偷懒，自己去多查资料，还怕学不会？</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 读书 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计算机基础与组成原理图解（框架）</title>
+      <link href="/2021/06/19/compter-basic-and-principle-of-computer/"/>
+      <url>/2021/06/19/compter-basic-and-principle-of-computer/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>尽管会写一点代码，但是一开始对计算机体系是一无所知的。针对计算机需要了解的内容，每天学习点基础知识，把以前欠下的课都补上。<br>以下是计算机组成原理框架图和需要了解的硬件知识：</p></blockquote><p><img src="prinpleofcompter.png" alt="计算机组成原理"></p><blockquote><p>程序员需要了解的计算机知识：<br>主要包括CPU、内存、磁盘，可下载pdf查看<br><a href="computer-basic.pdf">计算机基础pdf</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计算机 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>心理补偿机制下的人们是怎么生活的？</title>
       <link href="/2021/06/19/psychological-compensation/"/>
       <url>/2021/06/19/psychological-compensation/</url>
       
-        <content type="html"><![CDATA[<p><img src="%22/psychological-compensation/11.jpg%22" alt></p><blockquote><p>在心理学上，当由于主客观条件的限制和阻碍使个人的目标无法实现时，设法以新的目标代替原有目标，以现在的成功体验去弥补原有失败的痛苦，这种心理被称为“补偿心理“。</p></blockquote><p>简单地说，用成功代替失败，让自己情绪及认知合理化，以保持内心不焦虑。</p><p>这种心理补偿在我们生活中很常见，例如，用不断买书来代替自己读不了书的尴尬；多吃才有力气减肥；最近心情不好，所以多买点衣服；今天努力了，所以晚上先休息2小时以犒劳自己等，这些都是有心理补偿的影子，回想下自己是否也有这种的想法或者行为，是不是每天都经历这样的事情呢？从补偿的角度来看，问题也不太大，可是一直沉溺不知反思，不认清现实却是可怕的。</p><p>想一想自己每天活在一个虚假的世界里，然后突然被拉回到现实中，这种两者间的差距会不会有一种撕裂感，不知道你是否喜欢看言情、玄幻文学，我以前也看过，当时看得挺舒服，幻想自己是小说里的大侠，武功盖世、身边美女如云，但是早上起床后照着镜子里的自己，发现自己太天真了，这是学生时代的真实写照。你呢，是不是也这么傻过。言情、玄幻文学作品的兴起，解决了许多人的现实问题，为什么那么多人喜欢看，就是这种现实中的挫败碰上了现实，两者一碰撞，选择逃避到一个安乐窝里，自己在里面爽翻天也没有打扰，岂不快哉，你愿意过这样的生活吗？</p><p>补偿心理在消费上也有所体现。补偿性消费的本质特征是通过消费行为来弥补某些心理缺失或威胁, 强调的是消费行为作为满足需求的一种替代性手段和工具, 而非功能性价值。自由感的缺失常常使人感觉对周围的环境没有控制感, 不能随心所欲做自己喜欢的事情。在 这种情况下, 人们在消费行为上也可能表现出补偿性动机 就像《西虹市首富》里的沈腾，在现实中如果真的有这样的事情发生，且没有限制因素的话，你会怎么做？大手大脚花钱，处处显摆，生怕别人不知道还是谨小慎微不显山露水？也许我们没有那样的机会，但是可能会用别的方式来替代。比如说每次心情不好就会多吃，吃完后特别开心，心情压抑也就减少了，于是减肥就成为一句空话了。</p><p>生而要自强。自强自立不是白说的。补偿心理的作祟在一定程度上是因为我们不够自强，自强的标准自我勉励，建立行为标准，“抑心而自强”，克制无端的欲望，增强自我勉励的能力。补偿心理对于学习者来说，意味着三天打鱼两天晒网。真正的学习者，是没有时间炫耀的。不要用我今天打卡了，来代替你掌握知识，这是两个事情，你可以不外显自己的学习进度，但是一定要搞明白自己在做什么，目的是什么。</p><p>对于自己学到内容来说，可以说凡是我能学到的，我都不屑一顾。然后继续下一个难题的突破。</p>]]></content>
+        <content type="html"><![CDATA[<p><img src="11.jpg" alt></p><blockquote><p>在心理学上，当由于主客观条件的限制和阻碍使个人的目标无法实现时，设法以新的目标代替原有目标，以现在的成功体验去弥补原有失败的痛苦，这种心理被称为“补偿心理“。</p></blockquote><p>简单地说，用成功代替失败，让自己情绪及认知合理化，以保持内心不焦虑。</p><p>这种心理补偿在我们生活中很常见，例如，用不断买书来代替自己读不了书的尴尬；多吃才有力气减肥；最近心情不好，所以多买点衣服；今天努力了，所以晚上先休息2小时以犒劳自己等，这些都是有心理补偿的影子，回想下自己是否也有这种的想法或者行为，是不是每天都经历这样的事情呢？从补偿的角度来看，问题也不太大，可是一直沉溺不知反思，不认清现实却是可怕的。</p><p>想一想自己每天活在一个虚假的世界里，然后突然被拉回到现实中，这种两者间的差距会不会有一种撕裂感，不知道你是否喜欢看言情、玄幻文学，我以前也看过，当时看得挺舒服，幻想自己是小说里的大侠，武功盖世、身边美女如云，但是早上起床后照着镜子里的自己，发现自己太天真了，这是学生时代的真实写照。你呢，是不是也这么傻过。言情、玄幻文学作品的兴起，解决了许多人的现实问题，为什么那么多人喜欢看，就是这种现实中的挫败碰上了现实，两者一碰撞，选择逃避到一个安乐窝里，自己在里面爽翻天也没有打扰，岂不快哉，你愿意过这样的生活吗？</p><p>补偿心理在消费上也有所体现。补偿性消费的本质特征是通过消费行为来弥补某些心理缺失或威胁, 强调的是消费行为作为满足需求的一种替代性手段和工具, 而非功能性价值。自由感的缺失常常使人感觉对周围的环境没有控制感, 不能随心所欲做自己喜欢的事情。在 这种情况下, 人们在消费行为上也可能表现出补偿性动机 就像《西虹市首富》里的沈腾，在现实中如果真的有这样的事情发生，且没有限制因素的话，你会怎么做？大手大脚花钱，处处显摆，生怕别人不知道还是谨小慎微不显山露水？也许我们没有那样的机会，但是可能会用别的方式来替代。比如说每次心情不好就会多吃，吃完后特别开心，心情压抑也就减少了，于是减肥就成为一句空话了。</p><p>生而要自强。自强自立不是白说的。补偿心理的作祟在一定程度上是因为我们不够自强，自强的标准自我勉励，建立行为标准，“抑心而自强”，克制无端的欲望，增强自我勉励的能力。补偿心理对于学习者来说，意味着三天打鱼两天晒网。真正的学习者，是没有时间炫耀的。不要用我今天打卡了，来代替你掌握知识，这是两个事情，你可以不外显自己的学习进度，但是一定要搞明白自己在做什么，目的是什么。</p><p>对于自己学到内容来说，可以说凡是我能学到的，我都不屑一顾。然后继续下一个难题的突破。</p>]]></content>
       
       
       <categories>
