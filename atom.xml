@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2021-06-20T02:10:43.960Z</updated>
+  <updated>2021-06-20T07:36:38.939Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -15,6 +15,83 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to read a scientific paper</title>
+    <link href="https://zhiwiki.com/2021/06/20/how-to-read-scienctific-paper/"/>
+    <id>https://zhiwiki.com/2021/06/20/how-to-read-scienctific-paper/</id>
+    <published>2021-06-20T07:23:47.000Z</published>
+    <updated>2021-06-20T07:36:38.939Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;Mastering this skill can help you excel at research, peer review – and writing your own papers&lt;br&gt;Research papers follow
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Paper" scheme="https://zhiwiki.com/tags/Paper/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用开放数据来进行科学研究</title>
+    <link href="https://zhiwiki.com/2021/06/20/open-dataset/"/>
+    <id>https://zhiwiki.com/2021/06/20/open-dataset/</id>
+    <published>2021-06-20T07:22:20.000Z</published>
+    <updated>2021-06-20T07:36:31.296Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;长期以来，几乎所有的科学研究数据都是封闭的、“一次性”的。一旦某个课题完成，数据也就束之高阁，无人问津。这不仅限制了数据的价值，也导致大量相关研究停留于低水平的重复，造成资金和人力的极大浪费。&lt;br&gt;在大数据时代，使用这些开放的数据平台与数据库就是一种对大数据的利用，它不需
+        
+      
+    
+    </summary>
+    
+    
+      <category term="开放数据" scheme="https://zhiwiki.com/tags/%E5%BC%80%E6%94%BE%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>P值应该这么用，学界有错须改正</title>
+    <link href="https://zhiwiki.com/2021/06/20/p-value-meaning/"/>
+    <id>https://zhiwiki.com/2021/06/20/p-value-meaning/</id>
+    <published>2021-06-20T07:18:39.000Z</published>
+    <updated>2021-06-20T07:26:30.636Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;p-value.png&quot; alt&gt;&lt;br&gt;来源 美国统计学会，retractionwatch.com&lt;/p&gt;
+&lt;p&gt;编译 谭坤&lt;/p&gt;
+&lt;p&gt;2014年2月，美国曼荷莲学院（Mount Holyoke College）数学与统计学教授George
+        
+      
+    
+    </summary>
+    
+      <category term="统计学" scheme="https://zhiwiki.com/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6/"/>
+    
+    
+      <category term="P值" scheme="https://zhiwiki.com/tags/P%E5%80%BC/"/>
+    
+  </entry>
   
   <entry>
     <title>Python常见问题汇总</title>
