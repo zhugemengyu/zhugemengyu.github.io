@@ -1,0 +1,1446 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hive函数语法大全, 诸葛梦宇 清华大学应用心理硕士，多年从事心理学考研辅导；教育行业数据分析师，喜欢计算机技术">
+    <meta name="baidu-site-verification" content="code-zshjIwjkEE">
+    <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
+    <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
+    <meta name="description" content="目录一、关系运算：
+等值比较: =    
+不等值比较: &amp;lt;&amp;gt;    
+小于比较: &amp;lt;    
+小于等于比较: &amp;lt;=    
+大于比较: &amp;gt;    
+大于等于比较: &amp;gt;=    
+空值判断: IS NUL">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Hive函数语法大全 | 诸葛梦宇的博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ce84511d3df71640a9378a69f6293044";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    
+        <script>
+            (function(){
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https') {
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+                }
+                else {
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+        </script>
+    
+
+    <script>
+        (function(){
+        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body>
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">诸葛梦宇的博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>友情链接</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/contact" class="waves-effect waves-light">
+            
+            <i class="fa fa-comments"></i>
+            
+            <span>留言板</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">诸葛梦宇的博客</div>
+        <div class="logo-desc">
+            
+            清华大学 | 心理学考研 | 数据分析 | 计算机科学与技术
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                友情链接
+            </a>
+        </li>
+        
+        <li>
+            <a href="/contact" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-comments"></i>
+                
+                留言板
+            </a>
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://zhugemengyu.github.io/" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://zhugemengyu.github.io/" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        Hive函数语法大全
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                        <a href="/tags/Hive/" target="_blank">
+                            <span class="chip bg-color">Hive</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/计算机/" class="post-category" target="_blank">
+                            计算机
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-06-19
+                </div>
+
+                <div class="post-author info-break-policy">
+                    <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
+                    
+                    诸葛梦宇
+                    
+                </div>
+
+                
+                
+                <div class="info-break-policy">
+                    <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    7.9k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    34 分
+                </div>
+                
+                
+
+                
+                <div id="busuanzi_container_page_pv" class="info-break-policy">
+                    <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                    <span id="busuanzi_value_page_pv"></span>
+                </div>
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><h4 id="一、关系运算："><a href="#一、关系运算：" class="headerlink" title="一、关系运算："></a>一、关系运算：</h4><ol>
+<li>等值比较: =    </li>
+<li>不等值比较: &lt;&gt;    </li>
+<li>小于比较: &lt;    </li>
+<li>小于等于比较: &lt;=    </li>
+<li>大于比较: &gt;    </li>
+<li>大于等于比较: &gt;=    </li>
+<li>空值判断: IS NULL    </li>
+<li>非空判断: IS NOT NULL    </li>
+<li>LIKE比较: LIKE    </li>
+<li>JAVA的LIKE操作: RLIKE    </li>
+<li>REGEXP操作: REGEXP    <h4 id="二、数学运算："><a href="#二、数学运算：" class="headerlink" title="二、数学运算："></a>二、数学运算：</h4></li>
+<li>加法操作: +    </li>
+<li>减法操作: -    </li>
+<li>乘法操作: *    </li>
+<li>除法操作: /    </li>
+<li>取余操作: %    </li>
+<li>位与操作: &amp;    </li>
+<li>位或操作: |    </li>
+<li>位异或操作: ^</li>
+<li>位取反操作: ~    <h4 id="三、逻辑运算："><a href="#三、逻辑运算：" class="headerlink" title="三、逻辑运算："></a>三、逻辑运算：</h4></li>
+<li>逻辑与操作: AND</li>
+<li>逻辑或操作: OR</li>
+<li>逻辑非操作: NOT<h4 id="四、数值计算"><a href="#四、数值计算" class="headerlink" title="四、数值计算"></a>四、数值计算</h4></li>
+<li>取整函数: round    </li>
+<li>指定精度取整函数: round</li>
+<li>向下取整函数: floor    </li>
+<li>向上取整函数: ceil    </li>
+<li>向上取整函数: ceiling    </li>
+<li>取随机数函数: rand    </li>
+<li>自然指数函数: exp    </li>
+<li>以10为底对数函数: log10    </li>
+<li>以2为底对数函数: log2    </li>
+<li>对数函数: log    </li>
+<li>幂运算函数: pow    </li>
+<li>幂运算函数: power    </li>
+<li>开平方函数: sqrt    </li>
+<li>二进制函数: bin    </li>
+<li>十六进制函数: hex    </li>
+<li>反转十六进制函数: unhex    </li>
+<li>进制转换函数: conv    </li>
+<li>绝对值函数: abs    </li>
+<li>正取余函数: pmod    </li>
+<li>正弦函数: sin    </li>
+<li>反正弦函数: asin    </li>
+<li>余弦函数: cos    </li>
+<li>反余弦函数: acos    </li>
+<li>positive函数: positive    </li>
+<li>negative函数: negative    <h4 id="五、日期函数"><a href="#五、日期函数" class="headerlink" title="五、日期函数"></a>五、日期函数</h4></li>
+<li>UNIX时间戳转日期函数: from_unixtime    </li>
+<li>获取当前UNIX时间戳函数: unix_timestamp    </li>
+<li>日期转UNIX时间戳函数: unix_timestamp    </li>
+<li>指定格式日期转UNIX时间戳函数: unix_timestamp    </li>
+<li>日期时间转日期函数: to_date</li>
+<li>日期转年函数: year    </li>
+<li>日期转月函数: month</li>
+<li>日期转天函数: day    </li>
+<li>日期转小时函数: hour</li>
+<li>日期转分钟函数: minute</li>
+<li>日期转秒函数: second    </li>
+<li>日期转周函数: weekofyear    </li>
+<li>日期比较函数: datediff    </li>
+<li>日期增加函数: date_add    </li>
+<li>日期减少函数: date_sub<h4 id="六、条件函数"><a href="#六、条件函数" class="headerlink" title="六、条件函数"></a>六、条件函数</h4></li>
+<li>If函数: if    </li>
+<li>非空查找函数: COALESCE    </li>
+<li>条件判断函数：CASE    </li>
+<li>条件判断函数：CASE    <h4 id="七、字符串函数"><a href="#七、字符串函数" class="headerlink" title="七、字符串函数"></a>七、字符串函数</h4></li>
+<li>字符串长度函数：length    </li>
+<li>字符串反转函数：reverse    </li>
+<li>字符串连接函数：concat    </li>
+<li>带分隔符字符串连接函数：concat_ws</li>
+<li>字符串截取函数：substr,substring    </li>
+<li>字符串截取函数：substr,substring</li>
+<li>字符串转大写函数：upper,ucase    </li>
+<li>字符串转小写函数：lower,lcase    </li>
+<li>去空格函数：trim    </li>
+<li>左边去空格函数：ltrim    </li>
+<li>右边去空格函数：rtrim    </li>
+<li>正则表达式替换函数：regexp_replace</li>
+<li>正则表达式解析函数：regexp_extract</li>
+<li>URL解析函数：parse_url    </li>
+<li>json解析函数：get_json_object</li>
+<li>空格字符串函数：space    </li>
+<li>重复字符串函数：repeat</li>
+<li>首字符ascii函数：ascii    </li>
+<li>左补足函数：lpad    </li>
+<li>右补足函数：rpad    </li>
+<li>分割字符串函数: split    </li>
+<li>集合查找函数: find_in_set    <h4 id="八、集合统计函数"><a href="#八、集合统计函数" class="headerlink" title="八、集合统计函数"></a>八、集合统计函数</h4></li>
+<li>个数统计函数: count    </li>
+<li>总和统计函数: sum    </li>
+<li>平均值统计函数: avg    </li>
+<li>最小值统计函数: min    </li>
+<li>最大值统计函数: max    </li>
+<li>非空集合总体变量函数: var_pop    </li>
+<li>非空集合样本变量函数: var_samp    </li>
+<li>总体标准偏离函数: stddev_pop    </li>
+<li>样本标准偏离函数: stddev_samp    <h4 id="10．中位数函数-percentile"><a href="#10．中位数函数-percentile" class="headerlink" title="10．中位数函数: percentile"></a>10．中位数函数: percentile</h4></li>
+<li>中位数函数: percentile    </li>
+<li>近似中位数函数: percentile_approx    </li>
+<li>近似中位数函数: percentile_approx    </li>
+<li>直方图: histogram_numeric    <h4 id="九、复合类型构建操作"><a href="#九、复合类型构建操作" class="headerlink" title="九、复合类型构建操作"></a>九、复合类型构建操作</h4></li>
+<li>Map类型构建: map    </li>
+<li>Struct类型构建: struct    </li>
+<li>array类型构建: array    <h4 id="十、复杂类型访问操作"><a href="#十、复杂类型访问操作" class="headerlink" title="十、复杂类型访问操作"></a>十、复杂类型访问操作</h4></li>
+<li>array类型访问: A[n]    </li>
+<li>map类型访问: M[key]    </li>
+<li>struct类型访问: S.x    <h4 id="十一、复杂类型长度统计函数"><a href="#十一、复杂类型长度统计函数" class="headerlink" title="十一、复杂类型长度统计函数"></a>十一、复杂类型长度统计函数</h4></li>
+<li>Map类型长度函数: size(Map&lt;K.V&gt;)    </li>
+<li>array类型长度函数: size(Array<t>)    </t></li>
+<li>类型转换函数    </li>
+</ol>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>一、关系运算：</p>
+<ol>
+<li><p>等值比较: =<br> 语法：A=B<br> 操作类型：所有基本类型<br> 描述: 如果表达式A与表达式B相等，则为TRUE；否则为FALSE</p>
+<pre><code> 举例：
+ hive&gt; select 1 from lxw_dual where 1=1;
+ 1</code></pre></li>
+<li><p>不等值比较: &lt;&gt;<br> 语法: A &lt;&gt; B<br>操作类型: 所有基本类型<br>描述: 如果表达式A为NULL，或者表达式B为NULL，返回NULL；如果表达式A与表达式B不相等，则为TRUE；否则为FALSE</p>
+<pre><code>举例：
+hive&gt; select 1 from lxw_dual where 1 &lt;&gt; 2;
+1</code></pre></li>
+<li><p>小于比较: &lt;<br> 语法: A &lt; B<br>操作类型: 所有基本类型<br>描述: 如果表达式A为NULL，或者表达式B为NULL，返回NULL；如果表达式A小于表达式B，则为TRUE；否则为FALSE</p>
+<pre><code>举例：
+hive&gt; select 1 from lxw_dual where 1 &lt; 2;
+1</code></pre></li>
+</ol>
+<ol start="4">
+<li><p>小于等于比较: &lt;=<br>语法: A &lt;= B<br>操作类型: 所有基本类型<br>描述: 如果表达式A为NULL，或者表达式B为NULL，返回NULL；如果表达式A小于或者等于表达式B，则为TRUE；否则为FALSE</p>
+<pre><code>举例：
+hive&gt; select 1 from lxw_dual where 1 &lt;= 1;
+1</code></pre></li>
+<li><p>大于比较: &gt;<br>语法: A &gt; B<br>操作类型: 所有基本类型<br>描述: 如果表达式A为NULL，或者表达式B为NULL，返回NULL；如果表达式A大于表达式B，则为TRUE；否则为FALSE<br>举例：<br>hive&gt; select 1 from lxw_dual where 2 &gt; 1;<br>1</p>
+</li>
+<li><p>大于等于比较: &gt;=<br>语法: A &gt;= B<br>操作类型: 所有基本类型<br>描述: 如果表达式A为NULL，或者表达式B为NULL，返回NULL；如果表达式A大于或者等于表达式B，则为TRUE；否则为FALSE<br>举例：<br>hive&gt; select 1 from lxw_dual where 1 &gt;= 1;<br>1</p>
+</li>
+</ol>
+<p>注意：String的比较要注意(常用的时间比较可以先to_date之后再比较)<br>hive&gt; select * from lxw_dual;<br>OK<br>2011111209 00:00:00     2011111209</p>
+<p>hive&gt; select a,b,a&lt;b,a&gt;b,a=b from lxw_dual;<br>2011111209 00:00:00     2011111209      false   true    false</p>
+<ol start="7">
+<li><p>空值判断: IS NULL<br>语法: A IS NULL<br>操作类型: 所有类型<br>描述: 如果表达式A的值为NULL，则为TRUE；否则为FALSE<br>举例：<br>hive&gt; select 1 from lxw_dual where null is null;<br>1</p>
+</li>
+<li><p>非空判断: IS NOT NULL<br>语法: A IS NOT NULL<br>操作类型: 所有类型<br>描述: 如果表达式A的值为NULL，则为FALSE；否则为TRUE<br>举例：<br>hive&gt; select 1 from lxw_dual where 1 is not null;<br>1</p>
+</li>
+<li><p>LIKE比较: LIKE<br>语法: A LIKE B<br>操作类型: strings<br>描述: 如果字符串A或者字符串B为NULL，则返回NULL；如果字符串A符合表达式B   的正则语法，则为TRUE；否则为FALSE。B中字符”_”表示任意单个字符，而字符”%”表示任意数量的字符。<br>举例：<br>hive&gt; select 1 from lxw_dual where ‘football’ like ‘foot%’;<br>1<br>hive&gt; select 1 from lxw_dual where ‘football’ like ‘foot____’;<br>1<br>注意：否定比较时候用NOT A LIKE B<br>hive&gt; select 1 from lxw_dual where NOT ‘football’ like ‘fff%’;<br>1</p>
+</li>
+<li><p>JAVA的LIKE操作: RLIKE<br>语法: A RLIKE B<br>操作类型: strings<br>描述: 如果字符串A或者字符串B为NULL，则返回NULL；如果字符串A符合JAVA正则表达式B的正则语法，则为TRUE；否则为FALSE。<br>举例：<br>hive&gt; select 1 from lxw_dual where ‘footbar’ rlike ‘^f.*r$’;<br>1<br>注意：判断一个字符串是否全为数字：<br>hive&gt;select 1 from lxw_dual where ‘123456’ rlike ‘^\\d+$’;<br>1<br>hive&gt; select 1 from lxw_dual where ‘123456aa’ rlike ‘^\\d+$’;</p>
+</li>
+<li><p>REGEXP操作: REGEXP<br>语法: A REGEXP B<br>操作类型: strings<br>描述: 功能与RLIKE相同<br>举例：<br>hive&gt; select 1 from lxw_dual where ‘footbar’ REGEXP ‘^f.*r$’;<br>1<br>二、数学运算：</p>
+</li>
+<li><p>加法操作: +<br>语法: A + B<br>操作类型：所有数值类型<br>说明：返回A与B相加的结果。结果的数值类型等于A的类型和B的类型的最小父类型（详见数据类型的继承关系）。比如，int + int 一般结果为int类型，而int + double 一般结果为double类型<br>举例：<br>hive&gt; select 1 + 9 from lxw_dual;<br>10<br>hive&gt; create table lxw_dual as select 1 + 1.2 from lxw_dual;<br>hive&gt; describe lxw_dual;<br>_c0     double</p>
+</li>
+<li><p>减法操作: -<br>语法: A – B<br>操作类型：所有数值类型<br>说明：返回A与B相减的结果。结果的数值类型等于A的类型和B的类型的最小父类型（详见数据类型的继承关系）。比如，int – int 一般结果为int类型，而int – double 一般结果为double类型<br>举例：<br>hive&gt; select 10 – 5 from lxw_dual;<br>5<br>hive&gt; create table lxw_dual as select 5.6 – 4 from lxw_dual;<br>hive&gt; describe lxw_dual;<br>_c0     double</p>
+</li>
+<li><p>乘法操作: <em><br>语法: A </em> B<br>操作类型：所有数值类型<br>说明：返回A与B相乘的结果。结果的数值类型等于A的类型和B的类型的最小父类型（详见数据类型的继承关系）。注意，如果A乘以B的结果超过默认结果类型的数值范围，则需要通过cast将结果转换成范围更大的数值类型<br>举例：<br>hive&gt; select 40 * 5 from lxw_dual;<br>200</p>
+</li>
+<li><p>除法操作: /<br>语法: A / B<br>操作类型：所有数值类型<br>说明：返回A除以B的结果。结果的数值类型为double<br>举例：<br>hive&gt; select 40 / 5 from lxw_dual;</p>
+</li>
+<li><p>0</p>
+</li>
+</ol>
+<p>注意：hive中最高精度的数据类型是double,只精确到小数点后16位，在做除法运算的时候要特别注意<br>hive&gt;select ceil(28.0/6.999999999999999999999) from lxw_dual limit 1;<br>结果为4<br>hive&gt;select ceil(28.0/6.99999999999999) from lxw_dual limit 1;<br>结果为5</p>
+<ol start="5">
+<li><p>取余操作: %<br>语法: A % B<br>操作类型：所有数值类型<br>说明：返回A除以B的余数。结果的数值类型等于A的类型和B的类型的最小父类型（详见数据类型的继承关系）。<br>举例：<br>hive&gt; select 41 % 5 from lxw_dual;<br>1<br>hive&gt; select 8.4 % 4 from lxw_dual;</p>
+</li>
+<li><p>40000000000000036<br>注意：精度在hive中是个很大的问题，类似这样的操作最好通过round指定精度<br>hive&gt; select round(8.4 % 4 , 2) from lxw_dual;</p>
+</li>
+<li><p>4</p>
+</li>
+<li><p>位与操作: &amp;<br>语法: A &amp; B<br>操作类型：所有数值类型<br>说明：返回A和B按位进行与操作的结果。结果的数值类型等于A的类型和B的类型的最小父类型（详见数据类型的继承关系）。<br>举例：<br>hive&gt; select 4 &amp; 8 from lxw_dual;<br>0<br>hive&gt; select 6 &amp; 4 from lxw_dual;<br>4</p>
+</li>
+<li><p>位或操作: |<br>语法: A | B<br>操作类型：所有数值类型<br>说明：返回A和B按位进行或操作的结果。结果的数值类型等于A的类型和B的类型的最小父类型（详见数据类型的继承关系）。<br>举例：<br>hive&gt; select 4 | 8 from lxw_dual;<br>12<br>hive&gt; select 6 | 8 from lxw_dual;<br>14</p>
+</li>
+<li><p>位异或操作: ^<br>语法: A ^ B<br>操作类型：所有数值类型<br>说明：返回A和B按位进行异或操作的结果。结果的数值类型等于A的类型和B的类型的最小父类型（详见数据类型的继承关系）。<br>举例：<br>hive&gt; select 4 ^ 8 from lxw_dual;<br>12<br>hive&gt; select 6 ^ 4 from lxw_dual;<br>2</p>
+</li>
+</ol>
+<p>9．位取反操作: ~<br>语法: ~A<br>操作类型：所有数值类型<br>说明：返回A按位取反操作的结果。结果的数值类型等于A的类型。<br>举例：<br>hive&gt; select ~6 from lxw_dual;<br>-7<br>hive&gt; select ~4 from lxw_dual;<br>-5<br>三、逻辑运算：</p>
+<ol>
+<li><p>逻辑与操作: AND<br>语法: A AND B<br>操作类型：boolean<br>说明：如果A和B均为TRUE，则为TRUE；否则为FALSE。如果A为NULL或B为NULL，则为NULL<br>举例：<br>hive&gt; select 1 from lxw_dual where 1=1 and 2=2;<br>1</p>
+</li>
+<li><p>逻辑或操作: OR<br>语法: A OR B<br>操作类型：boolean<br>说明：如果A为TRUE，或者B为TRUE，或者A和B均为TRUE，则为TRUE；否则为FALSE<br>举例：<br>hive&gt; select 1 from lxw_dual where 1=2 or 2=2;<br>1</p>
+</li>
+<li><p>逻辑非操作: NOT<br>语法: NOT A<br>操作类型：boolean<br>说明：如果A为FALSE，或者A为NULL，则为TRUE；否则为FALSE<br>举例：<br>hive&gt; select 1 from lxw_dual where not 1=2;<br>1</p>
+</li>
+</ol>
+<p>四、数值计算</p>
+<ol>
+<li><p>取整函数: round<br>语法: round(double a)<br>返回值: BIGINT<br>说明: 返回double类型的整数值部分 （遵循四舍五入）<br>举例：<br>hive&gt; select round(3.1415926) from lxw_dual;<br>3<br>hive&gt; select round(3.5) from lxw_dual;<br>4<br>hive&gt; create table lxw_dual as select round(9542.158) from lxw_dual;<br>hive&gt; describe lxw_dual;<br>_c0     bigint</p>
+</li>
+<li><p>指定精度取整函数: round<br>语法: round(double a, int d)<br>返回值: DOUBLE<br>说明: 返回指定精度d的double类型<br>举例：<br>hive&gt; select round(3.1415926,4) from lxw_dual;</p>
+</li>
+<li><p>1416</p>
+</li>
+<li><p>向下取整函数: floor<br>语法: floor(double a)<br>返回值: BIGINT<br>说明: 返回等于或者小于该double变量的最大的整数<br>举例：<br>hive&gt; select floor(3.1415926) from lxw_dual;<br>3<br>hive&gt; select floor(25) from lxw_dual;<br>25</p>
+</li>
+<li><p>向上取整函数: ceil<br>语法: ceil(double a)<br>返回值: BIGINT<br>说明: 返回等于或者大于该double变量的最小的整数<br>举例：<br>hive&gt; select ceil(3.1415926) from lxw_dual;<br>4<br>hive&gt; select ceil(46) from lxw_dual;<br>46</p>
+</li>
+<li><p>向上取整函数: ceiling<br>语法: ceiling(double a)<br>返回值: BIGINT<br>说明: 与ceil功能相同<br>举例：<br>hive&gt; select ceiling(3.1415926) from lxw_dual;<br>4<br>hive&gt; select ceiling(46) from lxw_dual;<br>46</p>
+</li>
+<li><p>取随机数函数: rand<br>语法: rand(),rand(int seed)<br>返回值: double<br>说明: 返回一个0到1范围内的随机数。如果指定种子seed，则会等到一个稳定的随机数序列<br>举例：<br>hive&gt; select rand() from lxw_dual;</p>
+</li>
+<li><p>5577432776034763<br>hive&gt; select rand() from lxw_dual;</p>
+</li>
+<li><p>6638336467363424<br>hive&gt; select rand(100) from lxw_dual;</p>
+</li>
+<li><p>7220096548596434<br>hive&gt; select rand(100) from lxw_dual;</p>
+</li>
+<li><p>7220096548596434</p>
+</li>
+<li><p>自然指数函数: exp<br>语法: exp(double a)<br>返回值: double<br>说明: 返回自然对数e的a次方<br>举例：<br>hive&gt; select exp(2) from lxw_dual;</p>
+</li>
+<li><p>38905609893065<br>自然对数函数: ln<br>语法: ln(double a)<br>返回值: double<br>说明: 返回a的自然对数<br>举例：<br>hive&gt; select ln(7.38905609893065) from lxw_dual;</p>
+</li>
+<li><p>0</p>
+</li>
+<li><p>以10为底对数函数: log10<br>语法: log10(double a)<br>返回值: double<br>说明: 返回以10为底的a的对数<br>举例：<br>hive&gt; select log10(100) from lxw_dual;</p>
+</li>
+<li><p>0</p>
+</li>
+<li><p>以2为底对数函数: log2<br>语法: log2(double a)<br>返回值: double<br>说明: 返回以2为底的a的对数<br>举例：<br>hive&gt; select log2(8) from lxw_dual;</p>
+</li>
+<li><p>0</p>
+</li>
+<li><p>对数函数: log<br>语法: log(double base, double a)<br>返回值: double<br>说明: 返回以base为底的a的对数<br>举例：<br>hive&gt; select log(4,256) from lxw_dual;</p>
+</li>
+<li><p>0</p>
+</li>
+<li><p>幂运算函数: pow<br>语法: pow(double a, double p)<br>返回值: double<br>说明: 返回a的p次幂<br>举例：<br>hive&gt; select pow(2,4) from lxw_dual;</p>
+</li>
+<li><p>0</p>
+</li>
+<li><p>幂运算函数: power<br>语法: power(double a, double p)<br>返回值: double<br>说明: 返回a的p次幂,与pow功能相同<br>举例：<br>hive&gt; select power(2,4) from lxw_dual;</p>
+</li>
+<li><p>0</p>
+</li>
+<li><p>开平方函数: sqrt<br>语法: sqrt(double a)<br>返回值: double<br>说明: 返回a的平方根<br>举例：<br>hive&gt; select sqrt(16) from lxw_dual;</p>
+</li>
+<li><p>0</p>
+</li>
+<li><p>二进制函数: bin<br>语法: bin(BIGINT a)<br>返回值: string<br>说明: 返回a的二进制代码表示<br>举例：<br>hive&gt; select bin(7) from lxw_dual;<br>111</p>
+</li>
+<li><p>十六进制函数: hex<br>语法: hex(BIGINT a)<br>返回值: string<br>说明: 如果变量是int类型，那么返回a的十六进制表示；如果变量是string类型，则返回该字符串的十六进制表示<br>举例：<br>hive&gt; select hex(17) from lxw_dual;<br>11<br>hive&gt; select hex(‘abc’) from lxw_dual;<br>616263</p>
+</li>
+<li><p>反转十六进制函数: unhex<br>语法: unhex(string a)<br>返回值: string<br>说明: 返回该十六进制字符串所代码的字符串<br>举例：<br>hive&gt; select unhex(‘616263’) from lxw_dual;<br>abc<br>hive&gt; select unhex(‘11’) from lxw_dual;</p>
+</li>
+</ol>
+<p>-<br>hive&gt; select unhex(616263) from lxw_dual;<br>abc</p>
+<ol start="17">
+<li><p>进制转换函数: conv<br>语法: conv(BIGINT num, int from_base, int to_base)<br>返回值: string<br>说明: 将数值num从from_base进制转化到to_base进制<br>举例：<br>hive&gt; select conv(17,10,16) from lxw_dual;<br>11<br>hive&gt; select conv(17,10,2) from lxw_dual;<br>10001</p>
+</li>
+<li><p>绝对值函数: abs<br>语法: abs(double a)   abs(int a)<br>返回值: double        int<br>说明: 返回数值a的绝对值<br>举例：<br>hive&gt; select abs(-3.9) from lxw_dual;</p>
+</li>
+<li><p>9<br>hive&gt; select abs(10.9) from lxw_dual;</p>
+</li>
+<li><p>9</p>
+</li>
+<li><p>正取余函数: pmod<br>语法: pmod(int a, int b),pmod(double a, double b)<br>返回值: int double<br>说明: 返回正的a除以b的余数<br>举例：<br>hive&gt; select pmod(9,4) from lxw_dual;<br>1<br>hive&gt; select pmod(-9,4) from lxw_dual;<br>3</p>
+</li>
+<li><p>正弦函数: sin<br>语法: sin(double a)<br>返回值: double<br>说明: 返回a的正弦值<br>举例：<br>hive&gt; select sin(0.8) from lxw_dual;</p>
+</li>
+<li><p>7173560908995228</p>
+</li>
+<li><p>反正弦函数: asin<br>语法: asin(double a)<br>返回值: double<br>说明: 返回a的反正弦值<br>举例：<br>hive&gt; select asin(0.7173560908995228) from lxw_dual;</p>
+</li>
+<li><p>8</p>
+</li>
+<li><p>余弦函数: cos<br>语法: cos(double a)<br>返回值: double<br>说明: 返回a的余弦值<br>举例：<br>hive&gt; select cos(0.9) from lxw_dual;</p>
+</li>
+<li><p>6216099682706644</p>
+</li>
+<li><p>反余弦函数: acos<br>语法: acos(double a)<br>返回值: double<br>说明: 返回a的反余弦值<br>举例：<br>hive&gt; select acos(0.6216099682706644) from lxw_dual;</p>
+</li>
+<li><p>9</p>
+</li>
+<li><p>positive函数: positive<br>语法: positive(int a), positive(double a)<br>返回值: int double<br>说明: 返回a<br>举例：<br>hive&gt; select positive(-10) from lxw_dual;</p>
+</li>
+</ol>
+<p>-10<br>hive&gt; select positive(12) from lxw_dual;<br>12</p>
+<ol start="25">
+<li>negative函数: negative<br>语法: negative(int a), negative(double a)<br>返回值: int double<br>说明: 返回-a<br>举例：<br>hive&gt; select negative(-5) from lxw_dual;<br>5<br>hive&gt; select negative(8) from lxw_dual;</li>
+</ol>
+<p>-8<br>五、日期函数</p>
+<ol>
+<li><p>UNIX时间戳转日期函数: from_unixtime<br>语法: from_unixtime(bigint unixtime[, string format])<br>返回值: string<br>说明: 转化UNIX时间戳（从1970-01-01 00:00:00 UTC到指定时间的秒数）到当前时区的时间格式<br>举例：<br>hive&gt; select from_unixtime(1323308943,’yyyyMMdd’) from lxw_dual;<br>20111208</p>
+</li>
+<li><p>获取当前UNIX时间戳函数: unix_timestamp<br>语法: unix_timestamp()<br>返回值: bigint<br>说明: 获得当前时区的UNIX时间戳<br>举例：<br>hive&gt; select unix_timestamp() from lxw_dual;<br>1323309615</p>
+</li>
+<li><p>日期转UNIX时间戳函数: unix_timestamp<br>语法: unix_timestamp(string date)<br>返回值: bigint<br>说明: 转换格式为”yyyy-MM-dd HH:mm:ss”的日期到UNIX时间戳。如果转化失败，则返回0。<br>举例：<br>hive&gt; select unix_timestamp(‘2011-12-07 13:01:03’) from lxw_dual;<br>1323234063</p>
+</li>
+<li><p>指定格式日期转UNIX时间戳函数: unix_timestamp<br>语法: unix_timestamp(string date, string pattern)<br>返回值: bigint<br>说明: 转换pattern格式的日期到UNIX时间戳。如果转化失败，则返回0。<br>举例：<br>hive&gt; select unix_timestamp(‘20111207 13:01:03’,’yyyyMMdd HH:mm:ss’) from lxw_dual;<br>1323234063</p>
+</li>
+<li><p>日期时间转日期函数: to_date<br>语法: to_date(string timestamp)<br>返回值: string<br>说明: 返回日期时间字段中的日期部分。<br>举例：<br>hive&gt; select to_date(‘2011-12-08 10:03:01’) from lxw_dual;<br>2011-12-08</p>
+</li>
+<li><p>日期转年函数: year<br>语法: year(string date)<br>返回值: int<br>说明: 返回日期中的年。<br>举例：<br>hive&gt; select year(‘2011-12-08 10:03:01’) from lxw_dual;<br>2011<br>hive&gt; select year(‘2012-12-08’) from lxw_dual;<br>2012</p>
+</li>
+<li><p>日期转月函数: month<br>语法: month (string date)<br>返回值: int<br>说明: 返回日期中的月份。<br>举例：<br>hive&gt; select month(‘2011-12-08 10:03:01’) from lxw_dual;<br>12<br>hive&gt; select month(‘2011-08-08’) from lxw_dual;<br>8</p>
+</li>
+<li><p>日期转天函数: day<br>语法: day (string date)<br>返回值: int<br>说明: 返回日期中的天。<br>举例：<br>hive&gt; select day(‘2011-12-08 10:03:01’) from lxw_dual;<br>8<br>hive&gt; select day(‘2011-12-24’) from lxw_dual;<br>24</p>
+</li>
+<li><p>日期转小时函数: hour<br>语法: hour (string date)<br>返回值: int<br>说明: 返回日期中的小时。<br>举例：<br>hive&gt; select hour(‘2011-12-08 10:03:01’) from lxw_dual;<br>10</p>
+</li>
+<li><p>日期转分钟函数: minute<br>语法: minute (string date)<br>返回值: int<br>说明: 返回日期中的分钟。<br>举例：<br>hive&gt; select minute(‘2011-12-08 10:03:01’) from lxw_dual;<br>3</p>
+</li>
+<li><p>日期转秒函数: second<br>语法: second (string date)<br>返回值: int<br>说明: 返回日期中的秒。<br>举例：<br>hive&gt; select second(‘2011-12-08 10:03:01’) from lxw_dual;<br>1</p>
+</li>
+<li><p>日期转周函数: weekofyear<br>语法: weekofyear (string date)<br>返回值: int<br>说明: 返回日期在当前的周数。<br>举例：<br>hive&gt; select weekofyear(‘2011-12-08 10:03:01’) from lxw_dual;<br>49</p>
+</li>
+<li><p>日期比较函数: datediff<br>语法: datediff(string enddate, string startdate)<br>返回值: int<br>说明: 返回结束日期减去开始日期的天数。<br>举例：<br>hive&gt; select datediff(‘2012-12-08’,’2012-05-09’) from lxw_dual;<br>213</p>
+</li>
+<li><p>日期增加函数: date_add<br>语法: date_add(string startdate, int days)<br>返回值: string<br>说明: 返回开始日期startdate增加days天后的日期。<br>举例：<br>hive&gt; select date_add(‘2012-12-08’,10) from lxw_dual;<br>2012-12-18</p>
+</li>
+<li><p>日期减少函数: date_sub<br>语法: date_sub (string startdate, int days)<br>返回值: string<br>说明: 返回开始日期startdate减少days天后的日期。<br>举例：<br>hive&gt; select date_sub(‘2012-12-08’,10) from lxw_dual;<br>2012-11-28</p>
+</li>
+</ol>
+<p>六、条件函数</p>
+<ol>
+<li><p>If函数: if<br>语法: if(boolean testCondition, T valueTrue, T valueFalseOrNull)<br>返回值: T<br>说明:  当条件testCondition为TRUE时，返回valueTrue；否则返回valueFalseOrNull<br>举例：<br>hive&gt; select if(1=2,100,200) from lxw_dual;<br>200<br>hive&gt; select if(1=1,100,200) from lxw_dual;<br>100</p>
+</li>
+<li><p>非空查找函数: COALESCE<br>语法: COALESCE(T v1, T v2, …)<br>返回值: T<br>说明:  返回参数中的第一个非空值；如果所有值都为NULL，那么返回NULL<br>举例：<br>hive&gt; select COALESCE(null,’100’,’50′) from lxw_dual;<br>100</p>
+</li>
+<li><p>条件判断函数：CASE<br>语法: CASE a WHEN b THEN c [WHEN d THEN e]* [ELSE f] END<br>返回值: T<br>说明：如果a等于b，那么返回c；如果a等于d，那么返回e；否则返回f<br>举例：<br>hive&gt; Select case 100 when 50 then ‘tom’ when 100 then ‘mary’ else ‘tim’ end from lxw_dual;<br>mary<br>hive&gt; Select case 200 when 50 then ‘tom’ when 100 then ‘mary’ else ‘tim’ end from lxw_dual;<br>tim</p>
+</li>
+<li><p>条件判断函数：CASE<br>语法: CASE WHEN a THEN b [WHEN c THEN d]* [ELSE e] END<br>返回值: T<br>说明：如果a为TRUE,则返回b；如果c为TRUE，则返回d；否则返回e<br>举例：<br>hive&gt; select case when 1=2 then ‘tom’ when 2=2 then ‘mary’ else ‘tim’ end from lxw_dual;<br>mary<br>hive&gt; select case when 1=1 then ‘tom’ when 2=2 then ‘mary’ else ‘tim’ end from lxw_dual;<br>tom</p>
+</li>
+</ol>
+<p>七、字符串函数</p>
+<ol>
+<li><p>字符串长度函数：length<br>语法: length(string A)<br>返回值: int<br>说明：返回字符串A的长度<br>举例：<br>hive&gt; select length(‘abcedfg’) from lxw_dual;<br>7</p>
+</li>
+<li><p>字符串反转函数：reverse<br>语法: reverse(string A)<br>返回值: string<br>说明：返回字符串A的反转结果<br>举例：<br>hive&gt; select reverse(abcedfg’) from lxw_dual;<br>gfdecba</p>
+</li>
+<li><p>字符串连接函数：concat<br>语法: concat(string A, string B…)<br>返回值: string<br>说明：返回输入字符串连接后的结果，支持任意个输入字符串<br>举例：<br>hive&gt; select concat(‘abc’,’def’,’gh’) from lxw_dual;<br>abcdefgh</p>
+</li>
+<li><p>带分隔符字符串连接函数：concat_ws<br>语法: concat_ws(string SEP, string A, string B…)<br>返回值: string<br>说明：返回输入字符串连接后的结果，SEP表示各个字符串间的分隔符<br>举例：<br>hive&gt; select concat_ws(‘,’,’abc’,’def’,’gh’) from lxw_dual;<br>abc,def,gh</p>
+</li>
+<li><p>字符串截取函数：substr,substring<br>语法: substr(string A, int start),substring(string A, int start)<br>返回值: string<br>说明：返回字符串A从start位置到结尾的字符串<br>举例：<br>hive&gt; select substr(‘abcde’,3) from lxw_dual;<br>cde<br>hive&gt; select substring(‘abcde’,3) from lxw_dual;<br>cde<br>hive&gt;  select substr(‘abcde’,-1) from lxw_dual;  （和ORACLE相同）<br>e</p>
+</li>
+<li><p>字符串截取函数：substr,substring<br>语法: substr(string A, int start, int len),substring(string A, int start, int len)<br>返回值: string<br>说明：返回字符串A从start位置开始，长度为len的字符串<br>举例：<br>hive&gt; select substr(‘abcde’,3,2) from lxw_dual;<br>cd<br>hive&gt; select substring(‘abcde’,3,2) from lxw_dual;<br>cd<br>hive&gt;select substring(‘abcde’,-2,2) from lxw_dual;<br>de</p>
+</li>
+<li><p>字符串转大写函数：upper,ucase<br>语法: upper(string A) ucase(string A)<br>返回值: string<br>说明：返回字符串A的大写格式<br>举例：<br>hive&gt; select upper(‘abSEd’) from lxw_dual;<br>ABSED<br>hive&gt; select ucase(‘abSEd’) from lxw_dual;<br>ABSED</p>
+</li>
+<li><p>字符串转小写函数：lower,lcase<br>语法: lower(string A) lcase(string A)<br>返回值: string<br>说明：返回字符串A的小写格式<br>举例：<br>hive&gt; select lower(‘abSEd’) from lxw_dual;<br>absed<br>hive&gt; select lcase(‘abSEd’) from lxw_dual;<br>absed</p>
+</li>
+<li><p>去空格函数：trim<br>语法: trim(string A)<br>返回值: string<br>说明：去除字符串两边的空格<br>举例：<br>hive&gt; select trim(‘ abc ‘) from lxw_dual;<br>abc</p>
+</li>
+<li><p>左边去空格函数：ltrim<br>语法: ltrim(string A)<br>返回值: string<br>说明：去除字符串左边的空格<br>举例：<br>hive&gt; select ltrim(‘ abc ‘) from lxw_dual;<br>abc</p>
+</li>
+<li><p>右边去空格函数：rtrim<br>语法: rtrim(string A)<br>返回值: string<br>说明：去除字符串右边的空格<br>举例：<br>hive&gt; select rtrim(‘ abc ‘) from lxw_dual;<br>abc</p>
+</li>
+<li><p>正则表达式替换函数：regexp_replace<br>语法: regexp_replace(string A, string B, string C)<br>返回值: string<br>说明：将字符串A中的符合java正则表达式B的部分替换为C。注意，在有些情况下要使用转义字符,类似oracle中的regexp_replace函数。<br>举例：<br>hive&gt; select regexp_replace(‘foobar’, ‘oo|ar’, ‘’) from lxw_dual;<br>fb</p>
+</li>
+<li><p>正则表达式解析函数：regexp_extract<br>语法: regexp_extract(string subject, string pattern, int index)<br>返回值: string<br>说明：将字符串subject按照pattern正则表达式的规则拆分，返回index指定的字符。<br>举例：<br>hive&gt; select regexp_extract(‘foothebar’, ‘foo(.<em>?)(bar)’, 1) from lxw_dual;<br>the<br>hive&gt; select regexp_extract(‘foothebar’, ‘foo(.</em>?)(bar)’, 2) from lxw_dual;<br>bar<br>hive&gt; select regexp_extract(‘foothebar’, ‘foo(.<em>?)(bar)’, 0) from lxw_dual;<br>foothebar<br>注意，在有些情况下要使用转义字符，下面的等号要用双竖线转义，这是java正则表达式的规则。<br>select data_field,<br>regexp_extract(data_field,’.</em>?bgStart\\=([^&amp;]+)’,1) as aaa,<br>regexp_extract(data_field,’.<em>?contentLoaded_headStart\\=([^&amp;]+)’,1) as bbb,<br>regexp_extract(data_field,’.</em>?AppLoad2Req\\=([^&amp;]+)’,1) as ccc<br>from pt_nginx_loginlog_st<br>where pt = ‘2012-03-26’ limit 2;</p>
+</li>
+<li><p>URL解析函数：parse_url<br>语法: parse_url(string urlString, string partToExtract [, string keyToExtract])<br>返回值: string<br>说明：返回URL中指定的部分。partToExtract的有效值为：HOST, PATH, QUERY, REF, PROTOCOL, AUTHORITY, FILE, and USERINFO.<br>举例：<br>hive&gt; select parse_url(‘<a href="http://facebook.com/path1/p.php?k1=v1&amp;k2=v2#Ref1&#39;" target="_blank" rel="noopener">http://facebook.com/path1/p.php?k1=v1&amp;k2=v2#Ref1&#39;</a>, ‘HOST’) from lxw_dual;<br>facebook.com<br>hive&gt; select parse_url(‘<a href="http://facebook.com/path1/p.php?k1=v1&amp;k2=v2#Ref1&#39;" target="_blank" rel="noopener">http://facebook.com/path1/p.php?k1=v1&amp;k2=v2#Ref1&#39;</a>, ‘QUERY’, ‘k1’) from lxw_dual;<br>v1</p>
+</li>
+<li><p>json解析函数：get_json_object<br>语法: get_json_object(string json_string, string path)<br>返回值: string<br>说明：解析json的字符串json_string,返回path指定的内容。如果输入的json字符串无效，那么返回NULL。<br>举例：<br>hive&gt; select  get_json_object(‘{“store”:</p>
+<blockquote>
+<p>  {“fruit”:[{“weight”:8,”type”:”apple”},{“weight”:9,”type”:”pear”}],<br>   “bicycle”:{“price”:19.95,”color”:”red”}<br>  },<br> “email”:”<a href="mailto:amy@only_for_json_udf_test.net" target="_blank" rel="noopener">amy@only_for_json_udf_test.net</a>“,<br> “owner”:”amy”<br>}<br>‘,’$.owner’) from lxw_dual;<br>amy</p>
+</blockquote>
+</li>
+<li><p>空格字符串函数：space<br>语法: space(int n)<br>返回值: string<br>说明：返回长度为n的字符串<br>举例：<br>hive&gt; select space(10) from lxw_dual;<br>hive&gt; select length(space(10)) from lxw_dual;<br>10</p>
+</li>
+<li><p>重复字符串函数：repeat<br>语法: repeat(string str, int n)<br>返回值: string<br>说明：返回重复n次后的str字符串<br>举例：<br>hive&gt; select repeat(‘abc’,5) from lxw_dual;<br>abcabcabcabcabc</p>
+</li>
+<li><p>首字符ascii函数：ascii<br>语法: ascii(string str)<br>返回值: int<br>说明：返回字符串str第一个字符的ascii码<br>举例：<br>hive&gt; select ascii(‘abcde’) from lxw_dual;<br>97</p>
+</li>
+<li><p>左补足函数：lpad<br>语法: lpad(string str, int len, string pad)<br>返回值: string<br>说明：将str进行用pad进行左补足到len位<br>举例：<br>hive&gt; select lpad(‘abc’,10,’td’) from lxw_dual;<br>tdtdtdtabc<br>注意：与GP，ORACLE不同，pad 不能默认</p>
+</li>
+<li><p>右补足函数：rpad<br>语法: rpad(string str, int len, string pad)<br>返回值: string<br>说明：将str进行用pad进行右补足到len位<br>举例：<br>hive&gt; select rpad(‘abc’,10,’td’) from lxw_dual;<br>abctdtdtdt</p>
+</li>
+<li><p>分割字符串函数: split<br>语法:  split(string str, string pat)<br>返回值:  array<br>说明: 按照pat字符串分割str，会返回分割后的字符串数组<br>举例：<br>hive&gt; select split(‘abtcdtef’,’t’) from lxw_dual;<br>[“ab”,”cd”,”ef”]</p>
+</li>
+<li><p>集合查找函数: find_in_set<br>语法: find_in_set(string str, string strList)<br>返回值: int<br>说明: 返回str在strlist第一次出现的位置，strlist是用逗号分割的字符串。如果没有找该str字符，则返回0<br>举例：<br>hive&gt; select find_in_set(‘ab’,’ef,ab,de’) from lxw_dual;<br>2<br>hive&gt; select find_in_set(‘at’,’ef,ab,de’) from lxw_dual;<br>0</p>
+</li>
+</ol>
+<p>八、集合统计函数</p>
+<ol>
+<li><p>个数统计函数: count<br>语法: count(<em>), count(expr), count(DISTINCT expr[, expr_.])<br>返回值: int<br>说明: count(</em>)统计检索出的行的个数，包括NULL值的行；count(expr)返回指定字段的非空值的个数；count(DISTINCT expr[, expr_.])返回指定字段的不同的非空值的个数<br>举例：<br>hive&gt; select count(*) from lxw_dual;<br>20<br>hive&gt; select count(distinct t) from lxw_dual;<br>10</p>
+</li>
+<li><p>总和统计函数: sum<br>语法: sum(col), sum(DISTINCT col)<br>返回值: double<br>说明: sum(col)统计结果集中col的相加的结果；sum(DISTINCT col)统计结果中col不同值相加的结果<br>举例：<br>hive&gt; select sum(t) from lxw_dual;<br>100<br>hive&gt; select sum(distinct t) from lxw_dual;<br>70</p>
+</li>
+<li><p>平均值统计函数: avg<br>语法: avg(col), avg(DISTINCT col)<br>返回值: double<br>说明: avg(col)统计结果集中col的平均值；avg(DISTINCT col)统计结果中col不同值相加的平均值<br>举例：<br>hive&gt; select avg(t) from lxw_dual;<br>50<br>hive&gt; select avg (distinct t) from lxw_dual;<br>30</p>
+</li>
+<li><p>最小值统计函数: min<br>语法: min(col)<br>返回值: double<br>说明: 统计结果集中col字段的最小值<br>举例：<br>hive&gt; select min(t) from lxw_dual;<br>20</p>
+</li>
+<li><p>最大值统计函数: max<br>语法: maxcol)<br>返回值: double<br>说明: 统计结果集中col字段的最大值<br>举例：<br>hive&gt; select max(t) from lxw_dual;<br>120</p>
+</li>
+<li><p>非空集合总体变量函数: var_pop<br>语法: var_pop(col)<br>返回值: double<br>说明: 统计结果集中col非空集合的总体变量（忽略null）<br>举例：</p>
+</li>
+<li><p>非空集合样本变量函数: var_samp<br>语法: var_samp (col)<br>返回值: double<br>说明: 统计结果集中col非空集合的样本变量（忽略null）<br>举例：</p>
+</li>
+<li><p>总体标准偏离函数: stddev_pop<br>语法: stddev_pop(col)<br>返回值: double<br>说明: 该函数计算总体标准偏离，并返回总体变量的平方根，其返回值与VAR_POP函数的平方根相同<br>举例：</p>
+</li>
+<li><p>样本标准偏离函数: stddev_samp<br>语法: stddev_samp (col)<br>返回值: double<br>说明: 该函数计算样本标准偏离<br>举例：</p>
+</li>
+</ol>
+<p>10．中位数函数: percentile<br>语法: percentile(BIGINT col, p)<br>返回值: double<br>说明: 求准确的第pth个百分位数，p必须介于0和1之间，但是col字段目前只支持整数，不支持浮点数类型<br>举例：</p>
+<ol start="11">
+<li><p>中位数函数: percentile<br>语法: percentile(BIGINT col, array(p1 [, p2]…))<br>返回值: array<double><br>说明: 功能和上述类似，之后后面可以输入多个百分位数，返回类型也为array<double>，其中为对应的百分位数。<br>举例：<br>select percentile(score,&lt;0.2,0.4&gt;) from lxw_dual； 取0.2，0.4位置的数据</double></double></p>
+</li>
+<li><p>近似中位数函数: percentile_approx<br>语法: percentile_approx(DOUBLE col, p [, B])<br>返回值: double<br>说明: 求近似的第pth个百分位数，p必须介于0和1之间，返回类型为double，但是col字段支持浮点类型。参数B控制内存消耗的近似精度，B越大，结果的准确度越高。默认为10,000。当col字段中的distinct值的个数小于B时，结果为准确的百分位数<br>举例：</p>
+</li>
+<li><p>近似中位数函数: percentile_approx<br>语法: percentile_approx(DOUBLE col, array(p1 [, p2]…) [, B])<br>返回值: array<double><br>说明: 功能和上述类似，之后后面可以输入多个百分位数，返回类型也为array<double>，其中为对应的百分位数。<br>举例：</double></double></p>
+</li>
+<li><p>直方图: histogram_numeric<br>语法: histogram_numeric(col, b)<br>返回值: array&lt;struct {‘x’,‘y’}&gt;<br>说明: 以b为基准计算col的直方图信息。<br>举例：<br>hive&gt; select histogram_numeric(100,5) from lxw_dual;<br>[{“x”:100.0,”y”:1.0}]</p>
+</li>
+</ol>
+<p>九、复合类型构建操作</p>
+<ol>
+<li><p>Map类型构建: map<br>语法: map (key1, value1, key2, value2, …)<br>说明：根据输入的key和value对构建map类型<br>举例：<br>hive&gt; Create table lxw_test as select map(‘100’,’tom’,’200’,’mary’) as t from lxw_dual;<br>hive&gt; describe lxw_test;<br>t       map&lt;string,string&gt;<br>hive&gt; select t from lxw_test;<br>{“100”:”tom”,”200”:”mary”}</p>
+</li>
+<li><p>Struct类型构建: struct<br>语法: struct(val1, val2, val3, …)<br>说明：根据输入的参数构建结构体struct类型<br>举例：<br>hive&gt; create table lxw_test as select struct(‘tom’,’mary’,’tim’) as t from lxw_dual;<br>hive&gt; describe lxw_test;<br>t       struct<a href="col1:string,col2:string,col3:string" target="_blank" rel="noopener">col1:string,col2:string,col3:string</a><br>hive&gt; select t from lxw_test;<br>{“col1”:”tom”,”col2”:”mary”,”col3”:”tim”}</p>
+</li>
+<li><p>array类型构建: array<br>语法: array(val1, val2, …)<br>说明：根据输入的参数构建数组array类型<br>举例：<br>hive&gt; create table lxw_test as select array(“tom”,”mary”,”tim”) as t from lxw_dual;<br>hive&gt; describe lxw_test;<br>t       array<string><br>hive&gt; select t from lxw_test;<br>[“tom”,”mary”,”tim”]</string></p>
+</li>
+</ol>
+<p>十、复杂类型访问操作</p>
+<ol>
+<li><p>array类型访问: A[n]<br>语法: A[n]<br>操作类型: A为array类型，n为int类型<br>说明：返回数组A中的第n个变量值。数组的起始下标为0。比如，A是个值为[‘foo’, ‘bar’]的数组类型，那么A[0]将返回’foo’,而A[1]将返回’bar’<br>举例：<br>hive&gt; create table lxw_test as select array(“tom”,”mary”,”tim”) as t from lxw_dual;<br>hive&gt; select t[0],t[1],t[2] from lxw_test;<br>tom     mary    tim</p>
+</li>
+<li><p>map类型访问: M[key]<br>语法: M[key]<br>操作类型: M为map类型，key为map中的key值<br>说明：返回map类型M中，key值为指定值的value值。比如，M是值为{‘f’ -&gt; ‘foo’, ‘b’ -&gt; ‘bar’, ‘all’ -&gt; ‘foobar’}的map类型，那么M[‘all’]将会返回’foobar’<br>举例：<br>hive&gt; Create table lxw_test as select map(‘100’,’tom’,’200’,’mary’) as t from lxw_dual;<br>hive&gt; select t[‘200’],t[‘100’] from lxw_test;<br>mary    tom</p>
+</li>
+<li><p>struct类型访问: S.x<br>语法: S.x<br>操作类型: S为struct类型<br>说明：返回结构体S中的x字段。比如，对于结构体struct foobar {int foo, int bar}，foobar.foo返回结构体中的foo字段<br>举例：<br>hive&gt; create table lxw_test as select struct(‘tom’,’mary’,’tim’) as t from lxw_dual;<br>hive&gt; describe lxw_test;<br>t       struct<a href="col1:string,col2:string,col3:string" target="_blank" rel="noopener">col1:string,col2:string,col3:string</a><br>hive&gt; select t.col1,t.col3 from lxw_test;<br>tom     tim</p>
+</li>
+</ol>
+<p>十一、复杂类型长度统计函数</p>
+<ol>
+<li><p>Map类型长度函数: size(Map&lt;K.V&gt;)<br>语法: size(Map&lt;K.V&gt;)<br>返回值: int<br>说明: 返回map类型的长度<br>举例：<br>hive&gt; select size(map(‘100’,’tom’,’101’,’mary’)) from lxw_dual;<br>2</p>
+</li>
+<li><p>array类型长度函数: size(Array<t>)<br>语法: size(Array<t>)<br>返回值: int<br>说明: 返回array类型的长度<br>举例：<br>hive&gt; select size(array(‘100’,’101’,’102’,’103’)) from lxw_dual;<br>4</t></t></p>
+</li>
+<li><p>类型转换函数<br>类型转换函数: cast<br>语法: cast(expr as <type>)<br>返回值: Expected “=” to follow “type”<br>说明: 返回array类型的长度<br>举例：<br>hive&gt; select cast(1 as bigint) from lxw_dual;<br>1</type></p>
+</li>
+</ol>
+
+            </div>
+            <hr />
+
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            
+
+
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/06/20/http-basic/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="网路基础知识之HTTP协议详解">
+                        
+                        <span class="card-title">网路基础知识之HTTP协议详解</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            请求:客户端 到 服务端[request]GET(请求的方式) /books/java.html(请求的目标资源) HTTP/1.1(请求采用的协议和版本号)
+Accept: */*(客户端能接收的资源类型)
+Accept-Language
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2021-06-20
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/计算机/" class="post-category" target="_blank">
+                                    计算机
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/HTTP/" target="_blank">
+                        <span class="chip bg-color">HTTP</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/06/19/data-sciecnt-menu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="数据科学速查手册">
+                        
+                        <span class="card-title">数据科学速查手册</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Python基础入门
+Python进阶知识
+jupyter基础操作
+Pandas基础知识
+Numpy基础知识
+
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-06-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/数据科学/" class="post-category" target="_blank">
+                                    数据科学
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/" target="_blank">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 诸葛梦宇的博客<br />'
+            + '作者: 诸葛梦宇<br />'
+            + '链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () { bodyElement.removeChild(newdiv); }, 200);
+    });
+</script>
+
+// <script src="https://my.openwrite.cn/js/readmore.js" type="text/javascript"></script>
+// <script>
+//     const btw = new BTWPlugin();
+//     btw.init({
+//         id: 'artDetail',
+//         blogId: '20962-1585405055583-879',
+//         name: '算法码上来',
+//         qrcode: 'https://zhiwiki.com/medias/gzh.jpg',
+//         keyword: 'VIP',
+//     });
+// </script>
+// 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
+
+
+    <footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            &copy; 2021 zhugemengyu. 版权所有
+
+            
+            &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+            <span class="white-color">30.8k</span>
+            
+
+            <br>
+            <span id="sitetime"></span>
+
+            
+            
+            <br>
+            
+            <span id="busuanzi_container_site_pv" style='display:none'>
+                <i class="fa fa-heart-o"></i>
+                本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv" style='display:none'>
+                人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+            </span>
+            
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/zhugemengyu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2594274056@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://zhihu.com/people/zhiwiki" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fa fa-inverse">知</i>
+    </a>
+
+
+
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=2594274056&site=qq&menu=yes" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/2967956153" class="tooltipped" target="_blank" data-tooltip="关注我的微博" data-position="top" data-delay="50">
+        <i class="fa fa-weibo"></i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa fa-rss"></i>
+    </a>
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+<!-- 不蒜子计数初始值纠正 -->
+<script>
+    $(document).ready(function () {
+
+        var int = setInterval(fixCount, 50);
+        var pvcountOffset = 0;
+        var uvcountOffset = 0;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                clearInterval(int);
+            }
+        }
+    });
+</script>
+
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2021, 06, 19, 00, 00, 00); //北京时间2018-2-13 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+    }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "Σ(っ °Д °;)っ喔哟，崩溃啦！", clearTimeout(st)) : (document.title = "φ(゜▽゜*)♪咦，又好了！", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) })
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=查教程获取"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '查教程获取');
+</script>
+
+
+
+    
+    <script src="/libs/others/clicklove.js"></script>
+    
+
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    <!-- 雪花特效 -->
+    
+
+</body>
+
+</html>

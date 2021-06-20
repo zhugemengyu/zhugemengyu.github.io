@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiwiki.com/2021/06/20/python-common-problem-summary/</loc>
+    
+    <lastmod>2021-06-20T02:10:43.960Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/2021/06/20/python-interview-questison/</loc>
+    
+    <lastmod>2021-06-20T01:50:46.199Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/2021/06/20/statistics-basic-questions/</loc>
+    
+    <lastmod>2021-06-20T01:40:17.776Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/2021/06/20/how-to-read-code/</loc>
+    
+    <lastmod>2021-06-20T01:21:40.623Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/2021/06/19/hive-systax-summary/</loc>
+    
+    <lastmod>2021-06-20T01:20:56.880Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/2021/06/20/http-basic/</loc>
+    
+    <lastmod>2021-06-20T01:20:55.560Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhiwiki.com/2021/06/19/data-sciecnt-menu/</loc>
     
     <lastmod>2021-06-19T14:02:24.471Z</lastmod>
@@ -93,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://zhiwiki.com/tags/index.html</loc>
+    <loc>https://zhiwiki.com/categories/index.html</loc>
     
     <lastmod>2021-03-31T14:38:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhiwiki.com/categories/index.html</loc>
+    <loc>https://zhiwiki.com/tags/index.html</loc>
     
     <lastmod>2021-03-31T14:38:08.000Z</lastmod>
     
