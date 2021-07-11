@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiwiki.com/2021/07/11/titanic-logistic-regression/</loc>
+    
+    <lastmod>2021-07-11T05:03:50.299Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/2021/06/19/sql-basic-question-and-answer/</loc>
+    
+    <lastmod>2021-07-11T04:18:28.631Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/2021/06/20/python-common-problem-summary/</loc>
+    
+    <lastmod>2021-07-11T04:17:02.196Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/2021/06/28/do-not-make-desicion/</loc>
+    
+    <lastmod>2021-07-11T02:22:21.786Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhiwiki.com/2021/07/11/writing-theme/</loc>
     
     <lastmod>2021-07-11T02:19:03.034Z</lastmod>
@@ -33,13 +61,6 @@
     <loc>https://zhiwiki.com/2021/06/28/tshinghua-psychology-experience/</loc>
     
     <lastmod>2021-06-28T15:04:03.798Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhiwiki.com/2021/06/28/do-not-make-desicion/</loc>
-    
-    <lastmod>2021-06-28T15:03:36.094Z</lastmod>
     
   </url>
   
@@ -79,13 +100,6 @@
   </url>
   
   <url>
-    <loc>https://zhiwiki.com/2021/06/20/python-common-problem-summary/</loc>
-    
-    <lastmod>2021-06-20T02:10:43.960Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zhiwiki.com/2021/06/20/python-interview-questison/</loc>
     
     <lastmod>2021-06-20T01:50:46.199Z</lastmod>
@@ -117,13 +131,6 @@
     <loc>https://zhiwiki.com/2021/06/20/http-basic/</loc>
     
     <lastmod>2021-06-20T01:20:55.560Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhiwiki.com/2021/06/19/sql-basic-question-and-answer/</loc>
-    
-    <lastmod>2021-06-19T13:33:57.791Z</lastmod>
     
   </url>
   
@@ -191,14 +198,14 @@
   </url>
   
   <url>
-    <loc>https://zhiwiki.com/categories/index.html</loc>
+    <loc>https://zhiwiki.com/archives/index.html</loc>
     
     <lastmod>2021-03-31T14:38:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhiwiki.com/archives/index.html</loc>
+    <loc>https://zhiwiki.com/categories/index.html</loc>
     
     <lastmod>2021-03-31T14:38:08.000Z</lastmod>
     

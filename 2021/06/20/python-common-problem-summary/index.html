@@ -4,11 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Python常见问题汇总, 诸葛梦宇 清华大学应用心理硕士，多年从事心理学考研辅导；教育行业数据分析师，喜欢计算机技术">
+    <meta name="keywords" content="python常见问题汇总, 诸葛梦宇 清华大学应用心理硕士，多年从事心理学考研辅导；教育行业数据分析师，喜欢计算机技术">
     <meta name="baidu-site-verification" content="code-zshjIwjkEE">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="1.Python计算科恩d值from numpy import std, mean, sqrt
+    <meta name="description" content="1.python计算科恩d值from numpy import std, mean, sqrt
 
 #correct if the population S.D. is expected to be equal for the two gro">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Python常见问题汇总 | 诸葛梦宇的博客</title>
+    <title>python常见问题汇总 | 诸葛梦宇的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -318,13 +318,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/27.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Python常见问题汇总
+                        python常见问题汇总
                     </div>
                 </div>
             </div>
@@ -435,8 +435,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/Python/" target="_blank">
-                            <span class="chip bg-color">Python</span>
+                        <a href="/tags/python/" target="_blank">
+                            <span class="chip bg-color">python</span>
                         </a>
                         
                     </div>
@@ -447,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/Python/" class="post-category" target="_blank">
-                            Python
+                        <a href="/categories/python/" class="post-category" target="_blank">
+                            python
                         </a>
                         
                     </div>
@@ -496,150 +496,150 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="1-Python计算科恩d值"><a href="#1-Python计算科恩d值" class="headerlink" title="1.Python计算科恩d值"></a>1.Python计算科恩d值</h4><pre class="line-numbers language-Python"><code class="language-Python">from numpy import std, mean, sqrt
+                <h4 id="1-python计算科恩d值"><a href="#1-python计算科恩d值" class="headerlink" title="1.python计算科恩d值"></a>1.python计算科恩d值</h4><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> numpy <span class="token keyword">import</span> std<span class="token punctuation">,</span> mean<span class="token punctuation">,</span> sqrt
 
-#correct if the population S.D. is expected to be equal for the two groups.
-def cohen_d(x,y):
-    nx = len(x)
-    ny = len(y)
-    dof = nx + ny - 2
-    return (mean(x) - mean(y)) / sqrt(((nx-1)*std(x, ddof=1) ** 2 + (ny-1)*std(y, ddof=1) ** 2) / dof)
+<span class="token comment" spellcheck="true">#correct if the population S.D. is expected to be equal for the two groups.</span>
+<span class="token keyword">def</span> <span class="token function">cohen_d</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    nx <span class="token operator">=</span> len<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+    ny <span class="token operator">=</span> len<span class="token punctuation">(</span>y<span class="token punctuation">)</span>
+    dof <span class="token operator">=</span> nx <span class="token operator">+</span> ny <span class="token operator">-</span> <span class="token number">2</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>mean<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">-</span> mean<span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> sqrt<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span>nx<span class="token number">-1</span><span class="token punctuation">)</span><span class="token operator">*</span>std<span class="token punctuation">(</span>x<span class="token punctuation">,</span> ddof<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">**</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token punctuation">(</span>ny<span class="token number">-1</span><span class="token punctuation">)</span><span class="token operator">*</span>std<span class="token punctuation">(</span>y<span class="token punctuation">,</span> ddof<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">/</span> dof<span class="token punctuation">)</span>
 
-#dummy data
-x = [2,4,7,3,7,35,8,9]
-y = [i*2 for i in x]
-# extra element so that two group sizes are not equal.
-x.append(10)
+<span class="token comment" spellcheck="true">#dummy data</span>
+x <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">35</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span>
+y <span class="token operator">=</span> <span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">2</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> x<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># extra element so that two group sizes are not equal.</span>
+x<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
 
-#correct only if nx=ny
-d = (mean(x) - mean(y)) / sqrt((std(x, ddof=1) ** 2 + std(y, ddof=1) ** 2) / 2.0)
-print ("d by the 1st method = " + str(d))
-if (len(x) != len(y)):
-    print("The first method is incorrect because nx is not equal to ny.")
+<span class="token comment" spellcheck="true">#correct only if nx=ny</span>
+d <span class="token operator">=</span> <span class="token punctuation">(</span>mean<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">-</span> mean<span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> sqrt<span class="token punctuation">(</span><span class="token punctuation">(</span>std<span class="token punctuation">(</span>x<span class="token punctuation">,</span> ddof<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">**</span> <span class="token number">2</span> <span class="token operator">+</span> std<span class="token punctuation">(</span>y<span class="token punctuation">,</span> ddof<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2.0</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"d by the 1st method = "</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>len<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">!=</span> len<span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The first method is incorrect because nx is not equal to ny."</span><span class="token punctuation">)</span>
 
-#correct for more general case including nx !=ny
-print ("d by the more general 2nd method = " + str(cohen_d(x,y)))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="2-Python中的self有啥作用？"><a href="#2-Python中的self有啥作用？" class="headerlink" title="2.Python中的self有啥作用？"></a>2.Python中的self有啥作用？</h4><blockquote>
+<span class="token comment" spellcheck="true">#correct for more general case including nx !=ny</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"d by the more general 2nd method = "</span> <span class="token operator">+</span> str<span class="token punctuation">(</span>cohen_d<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2-python中的self有啥作用？"><a href="#2-python中的self有啥作用？" class="headerlink" title="2.python中的self有啥作用？"></a>2.python中的self有啥作用？</h4><blockquote>
 <p>一直感觉对面向对象不是很了解，前几天突然被问到，self有啥作用的时候，我确实一愣。最开始学的时候感觉理解了，但是没有记录也不知道当时理解了现在忘了，还是根本没理解，anyway，查阅了一些资料，自己也动手了下代码，深入理解下self的作用吧。</p>
 </blockquote>
 <p>一、self是必须的吗？<br>self只有在类的初始化（构造函数）时才会用到，一般我们写函数很少用到：</p>
-<pre class="line-numbers language-Python"><code class="language-Python">def eat():
-    print('I want to eat')
-eat()
-#输出结果是I want to eat<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'I want to eat'</span><span class="token punctuation">)</span>
+eat<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#输出结果是I want to eat</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>这里的eat()函数就是一普通的，，看下面的2个类中self的位置：</p>
-<pre class="line-numbers language-Python"><code class="language-Python">class Person():
-    def __init__(self,name,age):
-        self.name = name
-        self.age = age
-ming = Person('明春','100')
-print(ming.name) #明春
-print(ming.age)  #100
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>name<span class="token punctuation">,</span>age<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>name <span class="token operator">=</span> name
+        self<span class="token punctuation">.</span>age <span class="token operator">=</span> age
+ming <span class="token operator">=</span> Person<span class="token punctuation">(</span><span class="token string">'明春'</span><span class="token punctuation">,</span><span class="token string">'100'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ming<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#明春</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ming<span class="token punctuation">.</span>age<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#100</span>
 
 
-class Person():
-    def __init__(xx,name,age):
-       xx.name = name
-       xx.age = age
-ming = Person('明春','100')
-print(ming.name) #明春
-print(ming.age) #100<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>xx<span class="token punctuation">,</span>name<span class="token punctuation">,</span>age<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       xx<span class="token punctuation">.</span>name <span class="token operator">=</span> name
+       xx<span class="token punctuation">.</span>age <span class="token operator">=</span> age
+ming <span class="token operator">=</span> Person<span class="token punctuation">(</span><span class="token string">'明春'</span><span class="token punctuation">,</span><span class="token string">'100'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ming<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#明春</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ming<span class="token punctuation">.</span>age<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#100</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>从这里可以看出来，self换成xx也是可以的，只不过self是大家长久以来默认的一种写法，所以最好还是保持一直吧，不要那么特立独行</p>
 <p>二、self的作用到底是啥呢？</p>
 <p>self就是实例本身，注意不是类，是类的实例，self接收到类的实例所有参数，让然后绑定，通过 点来访问</p>
-<pre class="line-numbers language-Python"><code class="language-Python">class Person():
-    def __init__(self,name,age):
-       self.name = name
-       self.age = age
-ming = Person('明春','100')
-print(ming.name)
-print(ming.age)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>name<span class="token punctuation">,</span>age<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       self<span class="token punctuation">.</span>name <span class="token operator">=</span> name
+       self<span class="token punctuation">.</span>age <span class="token operator">=</span> age
+ming <span class="token operator">=</span> Person<span class="token punctuation">(</span><span class="token string">'明春'</span><span class="token punctuation">,</span><span class="token string">'100'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ming<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ming<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>如在本例中，ming 是一个实例，ming的所有参数都传到类里了，self它不仅仅是为了在类内部传递参数导入的数据，还能在 初始化函数中，通过 self.attribute 的方式，规定 self 实例对象的属性，这个属性也是类实例化对象的属性，即 做为类通过初始化函数初始化后所具有的属性</p>
 <p>那为啥不能是类本身，看下面的例子：</p>
-<pre class="line-numbers language-Python"><code class="language-Python">class Person():
-    def __init__(self,name,age):
-       self.name = name
-       self.age = age
-ming = Person('明春','100')
-chun = Person('春明','001')
-print(ming.name) #明春
-print(chun.name) #春明
-</strong><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>name<span class="token punctuation">,</span>age<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       self<span class="token punctuation">.</span>name <span class="token operator">=</span> name
+       self<span class="token punctuation">.</span>age <span class="token operator">=</span> age
+ming <span class="token operator">=</span> Person<span class="token punctuation">(</span><span class="token string">'明春'</span><span class="token punctuation">,</span><span class="token string">'100'</span><span class="token punctuation">)</span>
+chun <span class="token operator">=</span> Person<span class="token punctuation">(</span><span class="token string">'春明'</span><span class="token punctuation">,</span><span class="token string">'001'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ming<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#明春</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>chun<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#春明</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>strong<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>如果self指向的是Person这个类，那么ming和chun这两个怎么办，self分辨不出来到底传入哪个了。</p>
 <blockquote>
 <p>汇总：self的作用就是指向实例，传入实例所有的数据</p>
 </blockquote>
-<h3 id="3-Python中浮点数计算问题"><a href="#3-Python中浮点数计算问题" class="headerlink" title="3.Python中浮点数计算问题"></a>3.Python中浮点数计算问题</h3><pre class="line-numbers language-Python"><code class="language-Python">a = 1.7
-b = 0.9 + 0.8
-if a == b:
-    print("a 等于 b")
-else:
-    print("哎呀，a 不等于 b")
-# 哎呀，a 不等于 b<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-Python"><code class="language-Python">a = 1.0
-b = 0.5 + 0.5
-if a == b:
-    print("a 等于 b")
-else:
-    print("哎呀，a 不等于 b")
-#a 等于 b<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-Python"><code class="language-Python">from decimal import Decimal
+<h3 id="3-python中浮点数计算问题"><a href="#3-python中浮点数计算问题" class="headerlink" title="3.python中浮点数计算问题"></a>3.python中浮点数计算问题</h3><pre class="line-numbers language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">1.7</span>
+b <span class="token operator">=</span> <span class="token number">0.9</span> <span class="token operator">+</span> <span class="token number">0.8</span>
+<span class="token keyword">if</span> a <span class="token operator">==</span> b<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"a 等于 b"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"哎呀，a 不等于 b"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 哎呀，a 不等于 b</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">1.0</span>
+b <span class="token operator">=</span> <span class="token number">0.5</span> <span class="token operator">+</span> <span class="token number">0.5</span>
+<span class="token keyword">if</span> a <span class="token operator">==</span> b<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"a 等于 b"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"哎呀，a 不等于 b"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#a 等于 b</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> decimal <span class="token keyword">import</span> Decimal
 
-a = Decimal('1.7')
-b = Decimal('0.9') + Decimal('0.8')
-if a == b:
-    print("a 等于 b")
-else:
-    print("哎呀，a 不等于 b")
-#a 等于 b
+a <span class="token operator">=</span> Decimal<span class="token punctuation">(</span><span class="token string">'1.7'</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> Decimal<span class="token punctuation">(</span><span class="token string">'0.9'</span><span class="token punctuation">)</span> <span class="token operator">+</span> Decimal<span class="token punctuation">(</span><span class="token string">'0.8'</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span> a <span class="token operator">==</span> b<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"a 等于 b"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"哎呀，a 不等于 b"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#a 等于 b</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="4-matplotlib-plt-出图会闪退"><a href="#4-matplotlib-plt-出图会闪退" class="headerlink" title="4.matplotlib, plt 出图会闪退"></a>4.matplotlib, plt 出图会闪退</h3><p>解决方式：在最后可以加上 plt.pause(0) 可以防止图闪退</p>
-<h3 id="5-Python中list方法的时间比较：append、列表推导式、extend"><a href="#5-Python中list方法的时间比较：append、列表推导式、extend" class="headerlink" title="5.Python中list方法的时间比较：append、列表推导式、extend"></a>5.Python中list方法的时间比较：append、列表推导式、extend</h3><blockquote>
-<p>在Python的数据结构中，list可以说是常用的数据结构，针对list的一些操作，我们来比较下他们的运行时间，以后我们在写相关的代码时，为了有较好的执行效率，可以选择开销小的方法：</p>
+<h3 id="5-python中list方法的时间比较：append、列表推导式、extend"><a href="#5-python中list方法的时间比较：append、列表推导式、extend" class="headerlink" title="5.python中list方法的时间比较：append、列表推导式、extend"></a>5.python中list方法的时间比较：append、列表推导式、extend</h3><blockquote>
+<p>在python的数据结构中，list可以说是常用的数据结构，针对list的一些操作，我们来比较下他们的运行时间，以后我们在写相关的代码时，为了有较好的执行效率，可以选择开销小的方法：</p>
 </blockquote>
-<p>一、这里，我们使用Python的timeit库，基本使用方法如下：</p>
+<p>一、这里，我们使用python的timeit库，基本使用方法如下：</p>
 <p>class timeit.Timer(stmt=’pass’, setup=’pass’, timer=<timer function>)<br>Timer是测量小段代码执行速度的类。</timer></p>
 <p>stmt参数是要测试的代码语句（statment）；</p>
 <p>setup参数是运行代码时需要的设置；</p>
 <p>timer参数是一个定时器函数，与平台有关。</p>
 <p>timeit.Timer.timeit(number=1000000)<br>Timer类中测试语句执行速度的对象方法。number参数是测试代码时的测试次数，默认为1000000次。方法返回执行代码的平均耗时，一个float类型的秒数。</p>
 <p>二、比较了append、拼接操作、列表推导式、list()、extend五种方式，以下是测试代码：</p>
-<pre class="line-numbers language-Python"><code class="language-Python">from timeit import Timer
-def t1():
-    li = []
-    for i in range(10000):
-        li.append(i)
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> timeit <span class="token keyword">import</span> Timer
+<span class="token keyword">def</span> <span class="token function">t1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    li <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        li<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
 
-def t2():
-    li = []
-    for i in range(10000):
-        li = li + [i]
+<span class="token keyword">def</span> <span class="token function">t2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    li <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        li <span class="token operator">=</span> li <span class="token operator">+</span> <span class="token punctuation">[</span>i<span class="token punctuation">]</span>
 
-def t3():
-    li = [i for i in range(10000)]
+<span class="token keyword">def</span> <span class="token function">t3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    li <span class="token operator">=</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
 
-def t4():
-    li = list(range(10000))
+<span class="token keyword">def</span> <span class="token function">t4</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    li <span class="token operator">=</span> list<span class="token punctuation">(</span>range<span class="token punctuation">(</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-def t5():
-    li = []
-    for i in range(10000):
-        li.extend([i])
+<span class="token keyword">def</span> <span class="token function">t5</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    li <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        li<span class="token punctuation">.</span>extend<span class="token punctuation">(</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
 
-timer1 = Timer("t1()", "from __main__ import t1")
-print("append:", timer1.timeit(100))
+timer1 <span class="token operator">=</span> Timer<span class="token punctuation">(</span><span class="token string">"t1()"</span><span class="token punctuation">,</span> <span class="token string">"from __main__ import t1"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"append:"</span><span class="token punctuation">,</span> timer1<span class="token punctuation">.</span>timeit<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-timer2 = Timer("t2()", "from __main__ import t2")
-print("+:", timer2.timeit(100))
+timer2 <span class="token operator">=</span> Timer<span class="token punctuation">(</span><span class="token string">"t2()"</span><span class="token punctuation">,</span> <span class="token string">"from __main__ import t2"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"+:"</span><span class="token punctuation">,</span> timer2<span class="token punctuation">.</span>timeit<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-timer3 = Timer("t3()", "from __main__ import t3")
-print("[i for i in range]:", timer3.timeit(100))
+timer3 <span class="token operator">=</span> Timer<span class="token punctuation">(</span><span class="token string">"t3()"</span><span class="token punctuation">,</span> <span class="token string">"from __main__ import t3"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"[i for i in range]:"</span><span class="token punctuation">,</span> timer3<span class="token punctuation">.</span>timeit<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-timer4 = Timer("t4()", "from __main__ import t4")
-print("list(range()):", timer4.timeit(100))
+timer4 <span class="token operator">=</span> Timer<span class="token punctuation">(</span><span class="token string">"t4()"</span><span class="token punctuation">,</span> <span class="token string">"from __main__ import t4"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"list(range()):"</span><span class="token punctuation">,</span> timer4<span class="token punctuation">.</span>timeit<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-timer5 = Timer("t5()", "from __main__ import t5")
-print("extend:", timer5.timeit(100))
+timer5 <span class="token operator">=</span> Timer<span class="token punctuation">(</span><span class="token string">"t5()"</span><span class="token punctuation">,</span> <span class="token string">"from __main__ import t5"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"extend:"</span><span class="token punctuation">,</span> timer5<span class="token punctuation">.</span>timeit<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="time-compare.png" alt></p>
@@ -648,11 +648,11 @@ print("extend:", timer5.timeit(100))
 </blockquote>
 <h3 id="6-Mac系统下Matplotlib中文显示问题解决"><a href="#6-Mac系统下Matplotlib中文显示问题解决" class="headerlink" title="6.Mac系统下Matplotlib中文显示问题解决"></a>6.Mac系统下Matplotlib中文显示问题解决</h3><p>用Matplotlib显示中文字体一直是个大问题，通过自我探索终于找到解决之道了。</p>
 <p>一、首先我们需要知道系统已经安装了哪些字体，可以通过以下代码展示：</p>
-<pre class="line-numbers language-Python"><code class="language-Python">import matplotlib
-# 显示mac系统下所有的字体
-font_list = sorted([f.name for f in matplotlib.font_manager.fontManager.ttflist])
-for font in font_list:
-    print(font)
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> matplotlib
+<span class="token comment" spellcheck="true"># 显示mac系统下所有的字体</span>
+font_list <span class="token operator">=</span> sorted<span class="token punctuation">(</span><span class="token punctuation">[</span>f<span class="token punctuation">.</span>name <span class="token keyword">for</span> f <span class="token keyword">in</span> matplotlib<span class="token punctuation">.</span>font_manager<span class="token punctuation">.</span>fontManager<span class="token punctuation">.</span>ttflist<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> font <span class="token keyword">in</span> font_list<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>font<span class="token punctuation">)</span>
 输出结果是：
 
 Microsoft Sans Serif
@@ -664,43 +664,43 @@ Minion Pro
 Minion Pro
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>二、 找到常用的或者想要的字体，然后通过代码调用：</p>
-<pre class="line-numbers language-Python"><code class="language-Python"># 设置中文字体
-plt.rcParams['font.family'] = ['FZXiaoBiaoSong-B05S']<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 设置中文字体</span>
+plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.family'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'FZXiaoBiaoSong-B05S'</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>三、生成随机数据，最后可视化展示：</p>
-<pre class="line-numbers language-Python"><code class="language-Python"># 设置随机数据
-data = np.random.random(100)
-print(data)
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 设置随机数据</span>
+data <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>random<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
 
-plt.title('测试中文显示，我就是个标题')
-plt.plot(data, '*', label='随机数据分布')
-plt.legend()
-plt.show()
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'测试中文显示，我就是个标题'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token string">'*'</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'随机数据分布'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>四、最终代码如下：</p>
-<pre class="line-numbers language-Python"><code class="language-Python">import matplotlib
-import matplotlib.pyplot as plt
-import numpy as np
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> matplotlib
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
 
-# 显示mac系统下所有的字体
-font_list = sorted([f.name for f in matplotlib.font_manager.fontManager.ttflist])
-for font in font_list:
-    print(font)
+<span class="token comment" spellcheck="true"># 显示mac系统下所有的字体</span>
+font_list <span class="token operator">=</span> sorted<span class="token punctuation">(</span><span class="token punctuation">[</span>f<span class="token punctuation">.</span>name <span class="token keyword">for</span> f <span class="token keyword">in</span> matplotlib<span class="token punctuation">.</span>font_manager<span class="token punctuation">.</span>fontManager<span class="token punctuation">.</span>ttflist<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> font <span class="token keyword">in</span> font_list<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>font<span class="token punctuation">)</span>
 
-# 设置随机数据
-data = np.random.random(100)
-print(data)
+<span class="token comment" spellcheck="true"># 设置随机数据</span>
+data <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>random<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
 
-# 设置中文字体
-plt.rcParams['font.family'] = ['FZXiaoBiaoSong-B05S']
+<span class="token comment" spellcheck="true"># 设置中文字体</span>
+plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.family'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'FZXiaoBiaoSong-B05S'</span><span class="token punctuation">]</span>
 
-plt.title('测试中文显示，我就是个标题')
-plt.plot(data, '*', label='随机数据分布')
-plt.legend()
-plt.show()
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'测试中文显示，我就是个标题'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token string">'*'</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'随机数据分布'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>效果图：<br><img src="Maptlotlib-zh-cn.png" alt></p>
-<h3 id="7-Python爬取中国研究生招生信息网专业信息"><a href="#7-Python爬取中国研究生招生信息网专业信息" class="headerlink" title="7.Python爬取中国研究生招生信息网专业信息"></a>7.Python爬取中国研究生招生信息网专业信息</h3><blockquote>
-<p>最近想看看研招网有哪些专业，于是用Python写了几行代码，很简单，以下是代码部分：</p>
+<h3 id="7-python爬取中国研究生招生信息网专业信息"><a href="#7-python爬取中国研究生招生信息网专业信息" class="headerlink" title="7.python爬取中国研究生招生信息网专业信息"></a>7.python爬取中国研究生招生信息网专业信息</h3><blockquote>
+<p>最近想看看研招网有哪些专业，于是用python写了几行代码，很简单，以下是代码部分：</p>
 </blockquote>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> requests
 <span class="token keyword">import</span> json
@@ -1042,7 +1042,7 @@ Python这门语言入门容易，但是学精比较苦难。入门容易就没�
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">52.2k</span>
+            <span class="white-color">54.3k</span>
             
 
             <br>

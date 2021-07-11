@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2021-07-11T02:19:03.034Z</updated>
+  <updated>2021-07-11T05:03:50.299Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>泰坦尼克乘客生预测-逻辑回归</title>
+    <link href="https://zhiwiki.com/2021/07/11/titanic-logistic-regression/"/>
+    <id>https://zhiwiki.com/2021/07/11/titanic-logistic-regression/</id>
+    <published>2021-07-11T03:46:52.000Z</published>
+    <updated>2021-07-11T05:03:50.299Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;项目介绍&quot;&gt;&lt;a href=&quot;#项目介绍&quot; class=&quot;headerlink&quot; title=&quot;项目介绍&quot;&gt;&lt;/a&gt;项目介绍&lt;/h4&gt;&lt;p&gt;The competition is simple: use machine learning to create a
+        
+      
+    
+    </summary>
+    
+      <category term="机器学习" scheme="https://zhiwiki.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="逻辑回归" scheme="https://zhiwiki.com/tags/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/"/>
+    
+  </entry>
   
   <entry>
     <title>写作主题汇总</title>
@@ -129,7 +155,7 @@
     <link href="https://zhiwiki.com/2021/06/28/do-not-make-desicion/"/>
     <id>https://zhiwiki.com/2021/06/28/do-not-make-desicion/</id>
     <published>2021-06-28T13:57:01.000Z</published>
-    <updated>2021-06-28T15:03:36.094Z</updated>
+    <updated>2021-07-11T02:22:21.786Z</updated>
     
     <summary type="html">
     
@@ -145,6 +171,8 @@
     
       <category term="随笔" scheme="https://zhiwiki.com/categories/%E9%9A%8F%E7%AC%94/"/>
     
+    
+      <category term="情绪" scheme="https://zhiwiki.com/tags/%E6%83%85%E7%BB%AA/"/>
     
   </entry>
   
@@ -255,11 +283,11 @@
   </entry>
   
   <entry>
-    <title>Python常见问题汇总</title>
+    <title>python常见问题汇总</title>
     <link href="https://zhiwiki.com/2021/06/20/python-common-problem-summary/"/>
     <id>https://zhiwiki.com/2021/06/20/python-common-problem-summary/</id>
     <published>2021-06-20T01:54:46.000Z</published>
-    <updated>2021-06-20T02:10:43.960Z</updated>
+    <updated>2021-07-11T04:17:02.196Z</updated>
     
     <summary type="html">
     
@@ -267,16 +295,16 @@
       
         
         
-          &lt;h4 id=&quot;1-Python计算科恩d值&quot;&gt;&lt;a href=&quot;#1-Python计算科恩d值&quot; class=&quot;headerlink&quot; title=&quot;1.Python计算科恩d值&quot;&gt;&lt;/a&gt;1.Python计算科恩d值&lt;/h4&gt;&lt;pre class=&quot;line-numbers
+          &lt;h4 id=&quot;1-python计算科恩d值&quot;&gt;&lt;a href=&quot;#1-python计算科恩d值&quot; class=&quot;headerlink&quot; title=&quot;1.python计算科恩d值&quot;&gt;&lt;/a&gt;1.python计算科恩d值&lt;/h4&gt;&lt;pre class=&quot;line-numbers
         
       
     
     </summary>
     
-      <category term="Python" scheme="https://zhiwiki.com/categories/Python/"/>
+      <category term="python" scheme="https://zhiwiki.com/categories/python/"/>
     
     
-      <category term="Python" scheme="https://zhiwiki.com/tags/Python/"/>
+      <category term="python" scheme="https://zhiwiki.com/tags/python/"/>
     
   </entry>
   
@@ -442,11 +470,11 @@
   </entry>
   
   <entry>
-    <title>SQL笔试经典50题及答案解析</title>
+    <title>SQL经典50题及答案解析</title>
     <link href="https://zhiwiki.com/2021/06/19/sql-basic-question-and-answer/"/>
     <id>https://zhiwiki.com/2021/06/19/sql-basic-question-and-answer/</id>
     <published>2021-06-19T13:23:39.000Z</published>
-    <updated>2021-06-19T13:33:57.791Z</updated>
+    <updated>2021-07-11T04:18:28.631Z</updated>
     
     <summary type="html">
     
@@ -518,35 +546,6 @@
     
     
       <category term="读书 学习" scheme="https://zhiwiki.com/tags/%E8%AF%BB%E4%B9%A6-%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机基础与组成原理图解（框架）</title>
-    <link href="https://zhiwiki.com/2021/06/19/compter-basic-and-principle-of-computer/"/>
-    <id>https://zhiwiki.com/2021/06/19/compter-basic-and-principle-of-computer/</id>
-    <published>2021-06-19T12:53:02.000Z</published>
-    <updated>2021-06-19T13:11:17.521Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;尽管会写一点代码，但是一开始对计算机体系是一无所知的。针对计算机需要了解的内容，每天学习点基础知识，把以前欠下的课都补上。&lt;br&gt;以下是计算机组成原理框架图和需要了解的硬件知识：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-      <category term="计算机" scheme="https://zhiwiki.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-    
-      <category term="计算机 学习" scheme="https://zhiwiki.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
