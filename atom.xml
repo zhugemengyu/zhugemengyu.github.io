@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2021-07-11T05:03:50.299Z</updated>
+  <updated>2021-07-12T00:29:41.121Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>加班是阻碍你考研的唯一障碍</title>
+    <link href="https://zhiwiki.com/2021/07/12/working-overtime-is-obstruct/"/>
+    <id>https://zhiwiki.com/2021/07/12/working-overtime-is-obstruct/</id>
+    <published>2021-07-12T00:28:36.000Z</published>
+    <updated>2021-07-12T00:29:41.121Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;近年来的非全日制研究生，是不少在职人士考研的不二选择。研究生也一直扩招，不少人在初次失利后依然有考研的执念，所以毕业后继续备战，从二战、三战乃至四战的都有。前仆后继的众多，落榜失意的也不少，对于这样一波人，真的想问，你们准备好考研了嘛？&lt;/p&gt;
+&lt;p&gt;对于这样一波人来说，加
+        
+      
+    
+    </summary>
+    
+      <category term="考研" scheme="https://zhiwiki.com/categories/%E8%80%83%E7%A0%94/"/>
+    
+    
+      <category term="加班" scheme="https://zhiwiki.com/tags/%E5%8A%A0%E7%8F%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自我约束</title>
+    <link href="https://zhiwiki.com/2021/07/12/self-resttraint/"/>
+    <id>https://zhiwiki.com/2021/07/12/self-resttraint/</id>
+    <published>2021-07-12T00:12:29.000Z</published>
+    <updated>2021-07-12T00:25:57.281Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;所谓自我约束是指在向某些困难发起挑战时，故意给自己戴上一个枷锁，把自己逼到穷途末路，制定只属于自己的规矩，正因为有了那个枷锁，你才会认真面对挑战，&lt;br&gt;而一旦失败，你就能通过实践那个规矩，让自己得到严格的锻炼，使得自己不断进步，这才叫自我约束。&lt;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://zhiwiki.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="自我约束" scheme="https://zhiwiki.com/tags/%E8%87%AA%E6%88%91%E7%BA%A6%E6%9D%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>泰坦尼克乘客生预测-逻辑回归</title>
@@ -47,7 +101,7 @@
     <link href="https://zhiwiki.com/2021/07/11/writing-theme/"/>
     <id>https://zhiwiki.com/2021/07/11/writing-theme/</id>
     <published>2021-07-11T01:58:08.000Z</published>
-    <updated>2021-07-11T02:19:03.034Z</updated>
+    <updated>2021-07-12T00:25:56.008Z</updated>
     
     <summary type="html">
     
@@ -494,58 +548,6 @@
     
     
       <category term="SQL" scheme="https://zhiwiki.com/tags/SQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>心理学研究方法笔记</title>
-    <link href="https://zhiwiki.com/2021/06/19/psychological-method/"/>
-    <id>https://zhiwiki.com/2021/06/19/psychological-method/</id>
-    <published>2021-06-19T13:18:04.000Z</published>
-    <updated>2021-06-19T13:20:48.289Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;一、科学与常识&quot;&gt;&lt;a href=&quot;#一、科学与常识&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="心理学" scheme="https://zhiwiki.com/categories/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-      <category term="心理学 笔记" scheme="https://zhiwiki.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6-%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>考试、读书、学习是一回事？</title>
-    <link href="https://zhiwiki.com/2021/06/19/are-read-book-and-learning-is-same-thing/"/>
-    <id>https://zhiwiki.com/2021/06/19/are-read-book-and-learning-is-same-thing/</id>
-    <published>2021-06-19T13:13:03.000Z</published>
-    <updated>2021-07-11T01:58:32.191Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;读书、学习在任何时代都是提高、进步的一条可行的渠道。如果我们不会学习、不知道如何选择，试问我们这辈子是不是有可能混吃等死呢？中国从古代到现代的选拔人才的方式越来越丰富，从开始的推举制度到后来的科举制度，从最开始只是世仕家大族到后来平民也有机会，这就是一个好的发展趋势。放到我
-        
-      
-    
-    </summary>
-    
-      <category term="学习" scheme="https://zhiwiki.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="读书 学习" scheme="https://zhiwiki.com/tags/%E8%AF%BB%E4%B9%A6-%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
