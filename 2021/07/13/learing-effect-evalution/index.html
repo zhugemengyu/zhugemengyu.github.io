@@ -4,13 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="网路基础知识之HTTP协议详解, 诸葛梦宇 清华大学应用心理硕士，多年从事心理学考研辅导；教育行业数据分析师，喜欢计算机技术">
+    <meta name="keywords" content="如果不能衡量，那就不能有效增长, 诸葛梦宇 清华大学应用心理硕士，多年从事心理学考研辅导；教育行业数据分析师，喜欢计算机技术">
     <meta name="baidu-site-verification" content="code-zshjIwjkEE">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="请求:客户端 到 服务端[request]GET(请求的方式) /books/java.html(请求的目标资源) HTTP/1.1(请求采用的协议和版本号)
-Accept: */*(客户端能接收的资源类型)
-Accept-Language">
+    <meta name="description" content="不管做什么事情，我们都想有一些指标来检测我们是否获得进步。例如国家级别的GDP、公司级别的KPI，还有个人的考试分数等。通过这些外显的方式，我们可以清晰的看到自己是进步了还是退步了，我们关注的焦点往往在今年GDP又增长了几个点，公司今年盈利">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +16,7 @@ Accept-Language">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>网路基础知识之HTTP协议详解 | 诸葛梦宇的博客</title>
+    <title>如果不能衡量，那就不能有效增长 | 诸葛梦宇的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -318,13 +316,13 @@ Accept-Language">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        网路基础知识之HTTP协议详解
+                        如果不能衡量，那就不能有效增长
                     </div>
                 </div>
             </div>
@@ -435,8 +433,8 @@ Accept-Language">
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/HTTP/" target="_blank">
-                            <span class="chip bg-color">HTTP</span>
+                        <a href="/tags/学习/" target="_blank">
+                            <span class="chip bg-color">学习</span>
                         </a>
                         
                     </div>
@@ -447,8 +445,8 @@ Accept-Language">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/计算机/" class="post-category" target="_blank">
-                            计算机
+                        <a href="/categories/学习/" class="post-category" target="_blank">
+                            学习
                         </a>
                         
                     </div>
@@ -459,7 +457,7 @@ Accept-Language">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-20
+                    2021-07-13
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -473,14 +471,14 @@ Accept-Language">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.6k
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    5 分
                 </div>
                 
                 
@@ -496,76 +494,17 @@ Accept-Language">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="请求-客户端-到-服务端-request"><a href="#请求-客户端-到-服务端-request" class="headerlink" title="请求:客户端 到 服务端[request]"></a>请求:客户端 到 服务端[request]</h3><pre><code>GET(请求的方式) /books/java.html(请求的目标资源) HTTP/1.1(请求采用的协议和版本号)
-Accept: */*(客户端能接收的资源类型)
-Accept-Language: en-us(客户端接收的语言类型)
-Connection: Keep-Alive(维护客户端和服务端的连接关系)
-Host: localhost:8080(连接的目标主机和端口号)
-Referer: http://localhost/links.asp(从来于哪里)
-User-Agent: Mozilla/4.0(客户端版本号的名字)
-Accept-Encoding: gzip, deflate(客户端能接收的压缩数据的类型)
-If-Modified-Since: Tue, 11 Jul 2015 18:23:51 GMT(缓存时间)
-Cookie(客户端暂存服务端的信息)
-Date: Tue, 11 Jul 2015 18:23:51 GMT(客户端请求服务端的时间)</code></pre><h3 id="响应-服务端-到-客户端-response"><a href="#响应-服务端-到-客户端-response" class="headerlink" title="响应:服务端 到 客户端[response]"></a>响应:服务端 到 客户端[response]</h3><pre><code>HTTP/1.1(响应采用的协议和版本号) 200(状态码) OK(描述信息)
-302（客户端请求服务端，但服务端没有对应的资源，服务端要客户端再次请求找其它的服务端，即客户端二次请求，重定向）
-307（客户端请求服务端，但服务端没有对应的资源，服务端自行再次请求找其它的服务端，即客户端一次请求，转发）
-304（客户端请求服务端，此时客户端缓存中有，无需再从服务端下载新的内容,服务端叫客户端自行找缓存，优化）
-500(客户端请求的资源，服务端存在，但在执行时出错）
-Location: http://www.baidu.com(服务端需要客户端访问的页面路径)
-Server:apache tomcat(服务端的Web服务端名)
-Content-Encoding: gzip(服务端能够发送压缩编码类型)
-Content-Length: 80(服务端发送的压缩数据的长度)
-Content-Language: zh-cn(服务端发送的语言类型)
-Content-Type: text/html; charset=GB2312(服务端发送的类型及采用的编码方式)
-Last-Modified: Tue, 11 Jul 2015 18:23:51 GMT(服务端对该资源最后修改的时间)
-Refresh: 1;url=http://www.it315.org(服务端要求客户端1秒钟后，刷新，然后访问指定的页面路径)
-Content-Disposition: attachment; filename=aaa.zip(服务端要求客户端以下载文件的方式打开该文件)
-Transfer-Encoding: chunked(分块传递数据到客户端）
-Set-Cookie:SS=Q0=5Lb_nQ; path=/search(服务端发送到客户端的暂存数据)
-Expires: -1//3种(服务端禁止客户端缓存页面数据)
-Cache-Control: no-cache(服务端禁止客户端缓存页面数据)
-Pragma: no-cache(服务端禁止客户端缓存页面数据)
-Connection: close(1.0)/(1.1)Keep-Alive(维护客户端和服务端的连接关系)
-Date: Tue, 11 Jul 2015 18:23:51 GMT(服务端响应客户端的时间)
+                <p>不管做什么事情，我们都想有一些指标来检测我们是否获得进步。例如国家级别的GDP、公司级别的KPI，还有个人的考试分数等。通过这些外显的方式，我们可以清晰的看到自己是进步了还是退步了，我们关注的焦点往往在今年GDP又增长了几个点，公司今年盈利又增长了几何，考试分数有没有提高等。如果不能增长，那等待我们的将是什么，你懂的。</p>
+<p>当我们自我学习的时候，你知道如何衡量自己的学习效果吗？</p>
+<p>在学校里，我们能看到我们的分数，这些分数一定程度反映出我们的学习成果，但当我们踏入社会之后，我们该如何学习？该如何衡量自己的学习情况呢？该如何通过一些指标来调整自己的学习策略呢？</p>
+<p>学习的主要是为了增长：脑力增长、工资增长、解决问题能力增长等等。既然增长是我们的主要目标，那如何做才能获得增长呢？有以下三步作为参考：</p>
+<p>1、分解目标，确立计划，用最小正周期来验证可行性。<br>最小正周期法：确定计划，在一周（适合自己的周期）内执行。通过一周的时间记录来回顾自己的学习情况。<br>“预则立，不预则废”，没有一个计划是不行的，注意这里的前提条件，如果你是纯小白，估计你会绕很多路，不要紧，这都是该经历的，建议参考有经验的人士，不管对不对都去测试下，时间成本也不高，你说是不？据两个例子：<br>第一，减肥计划。<br>首先明确一点，在短时间减肥是不可能的，体重的下降多半是水分，不过养成一个良好生活习惯至关重要。<br>减肥要从饮食、睡眠、运动三项入手，饮食上，注意少吃碳水化物，多补充蛋白质和维生素，每周可以有一天的时间可以吃碳水，其余时间只吃蔬菜和肉、鸡蛋和豆腐，在学校可以去找找这种食堂。例如，早饭我一般吃鸡蛋加豆腐脑或豆浆，中午和晚上一般去紫荆和清芬，去紫荆吃2个素材外加两个小肉菜，或者去清芬吃大鸡腿和2个素菜，全天摄入碳水很少。睡眠上，注意早睡早起，或者睡满7个小时，这个看个人情况，以保持精力为目标，如果有点累，建议多睡会。还有运动，每周上班走路、骑车也能消耗不少热量，平时有游泳、跑圈的爱好也非常不错。用一周的时间去执行，看看自己的体重是否有明显下降，如果有可以继续，一直持续3周21天。此法不可长久，但是通过几周的训练可以让自己的饮食结构变得利于瘦身减肥。</p>
+<p>第二，考研计划。<br>考研这件事短期看是个应试行为，如果仅从拿到一个高分来说，我们可以采取功利学习法，只学习该学的，拿高分为主要目标。从长久看，就得好好学习这门课，搭建框架，形成自己的知识体系，最后能做研究，写文章等工作。<br>制定考研计划也可以分解。考研分三科，专业课、英语、政治，每门课分数占比是多少，心中要有数。根据分数进行时间分配，每门考试又分为很多项目，然后再细分。比如说英语要考75分（目标分数），每个项目有把握的分数是，完形7分，阅读拿30分，新题型6分，翻译6分，写作 20分，这样一算还差6分，不要紧。看看这些项目，哪些容易提分优先重点打击，政治和专业课也是如此。剩下的就是时间分配的问题，<br>时间分配是影响学习效果的一个重要因素，如果时间上分配不足，很难想象你是怎么学好的。但是不要以为绝对时间长就学习有效，人毕竟不是机器，总有累的时候，当学习时间长但效率低的时候，学习效果难以保证。很多考研的孩子看到别人一天学10多个小时就慌了。其实没必要。建议参考别人的经验来，自己制定一个计划，用一周到两周时间去执行，看看效果。<br>补充一句，其实考研方法是很简单的，基本原则是重执行，轻名头。不要在意谁说的，某某名师、某某高人，其实无所谓的，先自己去尝试、验证下即可，小马过河，深浅自知。</p>
+<p>2、每日、每周记录时间花费（也可用于记账）<br>时间记录法：每天记录自己的学习、工作时间，最好是记整点，只记录对自我有成长意义的事情。这种方法的好处是，知道自己每天都在干嘛。互联网的发展让人浮躁，对时间的感知也低了很多，一条到晚刷刷刷。<br>时间记录能从时间上看出自己在哪些方面投入过多，哪些投入过少。有了对时间的把控，再去调整自己的学习就有对策了。</p>
+<p>3、学习度量指标<br>有以下指标可以参考：<br>绝对指标：学习时间（连续），解决问题项目数和时间（连续），是否完成任务（二分）<br>相对指标：学习时间投入变化率</p>
+<p>此指标还在迭代更新中，下一次再详细说明如何分析及如何决策吧。其实以上几步就已经涉及到，操作化定义、数据收集、数据处理及分析，如果能基于此设计实验那就更棒了，哈哈。</p>
+<p>总结：<br>1、如果不能衡量，那就不能有效增长。<br>2、最小正周期法：确定计划，在一周内执行。通过一周的时间记录来回顾自己的学习情况。<br>3、时间记录法：每天记录自己的学习、工作时间，最好是记整点，只记录对自我有成长意义的事情<br>4、学习度量指标：学习时间（连续），解决问题项目数和时间（连续）），是否完成任务（二分）等</p>
 
-Accept：浏览器可接受的MIME类型。
-Accept-Charset：浏览器可接受的字符集。
-Accept-Encoding：浏览器能够进行解码的数据编码方式，比如gzip。Servlet能够向支持gzip的浏览器返回经gzip编码的HTML页面。许多情形下这可以减少5到10倍的下载时间。
-Accept-Language：浏览器所希望的语言种类，当服务器能够提供一种以上的语言版本时要用到。
-Authorization：授权信息，通常出现在对服务器发送的WWW-Authenticate头的应答中。
-Connection：表示是否需要持久连接。如果Servlet看到这里的值为“Keep-Alive”，或者看到请求使用的是HTTP 1.1（HTTP 1.1默认进行持久连接），它就可以利用持久连接的优点，当页面包含多个元素时（例如Applet，图片），显著地减少下载所需要的时间。要实现这一点，Servlet需要在应答中发送一个Content-Length头，最简单的实现方法是：先把内容写入ByteArrayOutputStream，然后在正式写出内容之前计算它的大小。
-Content-Length：表示请求消息正文的长度。
-Cookie：这是最重要的请求头信息之一
-From：请求发送者的email地址，由一些特殊的Web客户程序使用，浏览器不会用到它。
-Host：初始URL中的主机和端口。
-If-Modified-Since：只有当所请求的内容在指定的日期之后又经过修改才返回它，否则返回304“Not Modified”应答。
-Pragma：指定“no-cache”值表示服务器必须返回一个刷新后的文档，即使它是代理服务器而且已经有了页面的本地拷贝。
-Referer：包含一个URL，用户从该URL代表的页面出发访问当前请求的页面。
-User-Agent：浏览器类型，如果Servlet返回的内容与浏览器类型有关则该值非常有用。
-UA-Pixels，UA-Color，UA-OS，UA-CPU：由某些版本的IE浏览器所发送的非标准的请求头，表示屏幕大小、颜色深度、操作系统和CPU类型。
-
-HTTP响应头概述（HttpServletResponse）
-Web服务器的HTTP应答一般由以下几项构成：一个状态行，一个或多个应答头，一个空行，内容文档。设置HTTP应答头往往和设置状态行中的状态代码结合起来。例如，有好几个表示“文档位置已经改变”的状态代码都伴随着一个Location头，而401（Unauthorized）状态代码则必须伴随一个WWW-Authenticate头。
-然而，即使在没有设置特殊含义的状态代码时，指定应答头也是很有用的。应答头可以用来完成：设置Cookie，指定修改日期，指示浏览器按照指定的间隔刷新页面，声明文档的长度以便利用持久HTTP连接，……等等许多其他任务。
-设置应答头最常用的方法是HttpServletResponse的setHeader，该方法有两个参数，分别表示应答头的名字和值。和设置状态代码相似，设置应答头应该在发送任何文档内容之前进行。
-setDateHeader方法和setIntHeadr方法专门用来设置包含日期和整数值的应答头，前者避免了把Java时间转换为GMT时间字符串的麻烦，后者则避免了把整数转换为字符串的麻烦。
-HttpServletResponse还提供了许多设置
-setContentType：设置Content-Type头。大多数Servlet都要用到这个方法。
-setContentLength：设置Content-Length头。对于支持持久HTTP连接的浏览器来说，这个函数是很有用的。
-addCookie：设置一个Cookie（Servlet API中没有setCookie方法，因为应答往往包含多个Set-Cookie头）。
-另外，如上节介绍，sendRedirect方法设置状态代码302时也会设置Location头。</code></pre><h3 id="HTTP响应头说明："><a href="#HTTP响应头说明：" class="headerlink" title="HTTP响应头说明："></a>HTTP响应头说明：</h3><pre><code>Allow：服务器支持哪些请求方法（如GET、POST等）。
-Content-Encoding：文档的编码（Encode）方法。只有在解码之后才可以得到Content-Type头指定的内容类型。利用gzip压缩文档能够显著地减少HTML文档的下载时间。Java的GZIPOutputStream可以很方便地进行gzip压缩，但只有Unix上的Netscape和Windows上的IE 4、IE 5才支持它。因此，Servlet应该通过查看Accept-Encoding头（即request.getHeader(“Accept-Encoding”)）检查浏览器是否支持gzip，为支持gzip的浏览器返回经gzip压缩的HTML页面，为其他浏览器返回普通页面。
-Content-Length：表示内容长度。只有当浏览器使用持久HTTP连接时才需要这个数据。如果你想要利用持久连接的优势，可以把输出文档写入ByteArrayOutputStram，完成后查看其大小，然后把该值放入Content-Length头，最后通过byteArrayStream.writeTo(response.getOutputStream()发送内容。
-Content-Type：表示后面的文档属于什么MIME类型。Servlet默认为text/plain，但通常需要显式地指定为text/html。由于经常要设置Content-Type，因此HttpServletResponse提供了一个专用的方法setContentTyep。
-Date：当前的GMT时间。你可以用setDateHeader来设置这个头以避免转换时间格式的麻烦。
-Expires：应该在什么时候认为文档已经过期，从而不再缓存它？
-Last-Modified：文档的最后改动时间。客户可以通过If-Modified-Since请求头提供一个日期，该请求将被视为一个条件GET，只有改动时间迟于指定时间的文档才会返回，否则返回一个304（Not Modified）状态。Last-Modified也可用setDateHeader方法来设置。
-Location：表示客户应当到哪里去提取文档。Location通常不是直接设置的，而是通过HttpServletResponse的sendRedirect方法，该方法同时设置状态代码为302。
-Refresh：表示浏览器应该在多少时间之后刷新文档，以秒计。除了刷新当前文档之外，你还可以通过setHeader(“Refresh”, “5; URL=http://host/path”)让浏览器读取指定的页面。注意这种功能通常是通过设置HTML页面HEAD区的&lt;META HTTP-EQUIV=”Refresh” CONTENT=”5;URL=http://host/path”&gt;实现，这是因为，自动刷新或重定向对于那些不能使用CGI或Servlet的HTML编写者十分重要。但是，对于Servlet来说，直接设置Refresh头更加方便。注意Refresh的意义是“N秒之后刷新本页面或访问指定页面”，而不是“每隔N秒刷新本页面或访问指定页面”。因此，连续刷新要求每次都发送一个Refresh头，而发送204状态代码则可以阻止浏览器继续刷新，不管是使用Refresh头还是&lt;META HTTP-EQUIV=”Refresh” …&gt;。注意Refresh头不属于HTTP 1.1正式规范的一部分，而是一个扩展，但Netscape和IE都支持它。
-Server：服务器名字。Servlet一般不设置这个值，而是由Web服务器自己设置。
-Set-Cookie：设置和页面关联的Cookie。Servlet不应使用response.setHeader(“Set-Cookie”, …)，而是应使用HttpServletResponse提供的专用方法addCookie。参见下文有关Cookie设置的讨论。
-WWW-Authenticate ：客户应该在Authorization头中提供什么类型的授权信息？在包含401（Unauthorized）状态行的应答中这个头是必需的。例如，response.setHeader(“WWW-Authenticate”, “BASIC realm=\”executives\””)。注意Servlet一般不进行这方面的处理，而是让Web服务器的专门机制来控制受密码保护页面的访问（例如.htaccess）。
-</code></pre>
             </div>
             <hr />
 
@@ -606,48 +545,29 @@ WWW-Authenticate ：客户应该在Authorization头中提供什么类型的授�
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/06/20/how-to-read-code/">
+                <a href="/2021/07/13/psychologist-wundt/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="转载-如何阅读源码">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="【现代科学心理学创始人】——冯特">
                         
-                        <span class="card-title">转载-如何阅读源码</span>
+                        <span class="card-title">【现代科学心理学创始人】——冯特</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-文来自于技术大佬——左耳耗子，以下是他对于如何阅读源码的建议，我认为对于我的学习很有帮助。
-
-
-
+                            一般说到创始人，我们都会觉得此人非同一般，冯特作为现代科学心理学创始人确实名副其实。冯特从小学习刻苦，勤奋工作；一生著作颇丰，冯特著作如果按照每天60页的阅读，大约需要2年半才能读完（华生），写作量可谓惊人；冯特特别注重的实验法，而非内省，
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2021-06-20
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2021-07-13
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/计算机/" class="post-category" target="_blank">
-                                    计算机
-                                </a>
-                            
-                            
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/源码/" target="_blank">
-                        <span class="chip bg-color">源码</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -659,38 +579,32 @@ WWW-Authenticate ：客户应该在Authorization头中提供什么类型的授�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/06/19/hive-systax-summary/">
+                <a href="/2021/07/12/working-overtime-is-obstruct/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Hive函数语法大全">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="加班是阻碍你考研的唯一障碍">
                         
-                        <span class="card-title">Hive函数语法大全</span>
+                        <span class="card-title">加班是阻碍你考研的唯一障碍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            目录一、关系运算：
-等值比较: =    
-不等值比较: &lt;&gt;    
-小于比较: &lt;    
-小于等于比较: &lt;=    
-大于比较: &gt;    
-大于等于比较: &gt;=    
-空值判断: IS NUL
+                            近年来的非全日制研究生，是不少在职人士考研的不二选择。研究生也一直扩招，不少人在初次失利后依然有考研的执念，所以毕业后继续备战，从二战、三战乃至四战的都有。前仆后继的众多，落榜失意的也不少，对于这样一波人，真的想问，你们准备好考研了嘛？
+对
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-06-19
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-07-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/计算机/" class="post-category" target="_blank">
-                                    计算机
+                            <a href="/categories/考研/" class="post-category" target="_blank">
+                                    考研
                                 </a>
                             
                             
@@ -700,8 +614,8 @@ WWW-Authenticate ：客户应该在Authorization头中提供什么类型的授�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hive/" target="_blank">
-                        <span class="chip bg-color">Hive</span>
+                    <a href="/tags/加班/" target="_blank">
+                        <span class="chip bg-color">加班</span>
                     </a>
                     
                 </div>

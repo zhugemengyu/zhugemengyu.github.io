@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2021-07-12T00:29:41.121Z</updated>
+  <updated>2021-07-13T00:44:43.358Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【现代科学心理学创始人】——冯特</title>
+    <link href="https://zhiwiki.com/2021/07/13/psychologist-wundt/"/>
+    <id>https://zhiwiki.com/2021/07/13/psychologist-wundt/</id>
+    <published>2021-07-13T00:42:29.000Z</published>
+    <updated>2021-07-13T00:44:43.358Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;一般说到创始人，我们都会觉得此人非同一般，冯特作为现代科学心理学创始人确实名副其实。冯特从小学习刻苦，勤奋工作；一生著作颇丰，冯特著作如果按照每天60页的阅读，大约需要2年半才能读完（华生），写作量可谓惊人；冯特特别注重的实验法，而非内省，经典内省涉及的就更少了；距华生统计
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如果不能衡量，那就不能有效增长</title>
+    <link href="https://zhiwiki.com/2021/07/13/learing-effect-evalution/"/>
+    <id>https://zhiwiki.com/2021/07/13/learing-effect-evalution/</id>
+    <published>2021-07-13T00:40:16.000Z</published>
+    <updated>2021-07-13T00:41:20.829Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;不管做什么事情，我们都想有一些指标来检测我们是否获得进步。例如国家级别的GDP、公司级别的KPI，还有个人的考试分数等。通过这些外显的方式，我们可以清晰的看到自己是进步了还是退步了，我们关注的焦点往往在今年GDP又增长了几个点，公司今年盈利又增长了几何，考试分数有没有提高等
+        
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://zhiwiki.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="学习" scheme="https://zhiwiki.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>加班是阻碍你考研的唯一障碍</title>
@@ -494,60 +542,6 @@
     
     
       <category term="Hive" scheme="https://zhiwiki.com/tags/Hive/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据科学速查手册</title>
-    <link href="https://zhiwiki.com/2021/06/19/data-sciecnt-menu/"/>
-    <id>https://zhiwiki.com/2021/06/19/data-sciecnt-menu/</id>
-    <published>2021-06-19T13:55:07.000Z</published>
-    <updated>2021-07-11T02:16:00.783Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;Python基础入门&quot;&gt;&lt;a href=&quot;#Python基础入门&quot; class=&quot;headerlink&quot; title=&quot;Python基础入门&quot;&gt;&lt;/a&gt;Python基础入门&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;beginner.jpg&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="数据科学" scheme="https://zhiwiki.com/categories/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/"/>
-    
-    
-      <category term="Python" scheme="https://zhiwiki.com/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SQL经典50题及答案解析</title>
-    <link href="https://zhiwiki.com/2021/06/19/sql-basic-question-and-answer/"/>
-    <id>https://zhiwiki.com/2021/06/19/sql-basic-question-and-answer/</id>
-    <published>2021-06-19T13:23:39.000Z</published>
-    <updated>2021-07-11T04:18:28.631Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;Excel处理数据的级别是万条以内，当超过10万条以上时在exce里操作是极其困难的，这时候就需要我们使用SQL来查询，俗称取数。对于SQl的学习建议在了解基本逻辑后立刻进入项目练习，以下是来源于网络的sql练习题目及答案解析&lt;/p&gt;
-&lt;/bloc
-        
-      
-    
-    </summary>
-    
-      <category term="计算机" scheme="https://zhiwiki.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-    
-      <category term="SQL" scheme="https://zhiwiki.com/tags/SQL/"/>
     
   </entry>
   
