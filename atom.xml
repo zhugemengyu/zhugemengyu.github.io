@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2021-07-13T00:44:43.358Z</updated>
+  <updated>2021-07-13T00:47:26.776Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhiwiki.com/2021/07/13/psychologist-wundt/"/>
     <id>https://zhiwiki.com/2021/07/13/psychologist-wundt/</id>
     <published>2021-07-13T00:42:29.000Z</published>
-    <updated>2021-07-13T00:44:43.358Z</updated>
+    <updated>2021-07-13T00:47:26.776Z</updated>
     
     <summary type="html">
     
@@ -35,6 +35,10 @@
     
     </summary>
     
+      <category term="心理学" scheme="https://zhiwiki.com/categories/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+    
+      <category term="心理学" scheme="https://zhiwiki.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
   </entry>
   
