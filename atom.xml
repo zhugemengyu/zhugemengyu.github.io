@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2021-08-28T13:58:35.908Z</updated>
+  <updated>2021-08-28T14:19:19.810Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>考研常见问题答疑</title>
+    <link href="https://zhiwiki.com/kaoyan-wuqu/"/>
+    <id>https://zhiwiki.com/kaoyan-wuqu/</id>
+    <published>2021-08-28T14:18:13.000Z</published>
+    <updated>2021-08-28T14:19:19.810Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;最近消失了一段时间，今天重新来梳理下近期考研学子遇到的一些问题，希望对备考的你有所帮助。如果你还有其他问题，也可以留言。&lt;/p&gt;
+&lt;h4 id=&quot;1-问题一：考研复习越早越好？&quot;&gt;&lt;a href=&quot;#1-问题一：考研复习越早越好？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="考研" scheme="https://zhiwiki.com/categories/%E8%80%83%E7%A0%94/"/>
+    
+    
+      <category term="考研" scheme="https://zhiwiki.com/tags/%E8%80%83%E7%A0%94/"/>
+    
+  </entry>
   
   <entry>
     <title>美国上市公司财务报表中的 6-K，20-F，SC 13G 等名称指的是什么？</title>
@@ -521,32 +548,6 @@
     
     
       <category term="Python" scheme="https://zhiwiki.com/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>统计学基础问题及答案</title>
-    <link href="https://zhiwiki.com/statistics-basic-questions/"/>
-    <id>https://zhiwiki.com/statistics-basic-questions/</id>
-    <published>2021-06-20T01:29:37.000Z</published>
-    <updated>2021-06-20T01:40:17.776Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;统计学是数据科学和任何数据分析的基础。良好的统计学知识可以帮助数据分析师做出正确的商业决策。一方面，描述性统计帮助我们通过数据的集中趋势和方差了解数据及其属性。另一方面，推断性统计帮助我们从给定的数据样本中推断总体的属性。了解描述性和推断性统计学知识对于立志成为数据科学家或
-        
-      
-    
-    </summary>
-    
-      <category term="统计学" scheme="https://zhiwiki.com/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6/"/>
-    
-    
-      <category term="统计学" scheme="https://zhiwiki.com/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/"/>
     
   </entry>
   
