@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2021-07-13T00:47:26.776Z</updated>
+  <updated>2021-08-28T13:58:35.908Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -17,9 +17,91 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>美国上市公司财务报表中的 6-K，20-F，SC 13G 等名称指的是什么？</title>
+    <link href="https://zhiwiki.com/us-finanical-statments-type/"/>
+    <id>https://zhiwiki.com/us-finanical-statments-type/</id>
+    <published>2021-08-28T13:52:49.000Z</published>
+    <updated>2021-08-28T13:58:35.908Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;题目和答案来源知乎，&lt;a href=&quot;https://www.sec.gov/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sec网站&lt;/a&gt; 提供报告下载，美股上市公司一般在官网也有财务报表披露。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Securities
+        
+      
+    
+    </summary>
+    
+      <category term="财务" scheme="https://zhiwiki.com/categories/%E8%B4%A2%E5%8A%A1/"/>
+    
+    
+      <category term="财务" scheme="https://zhiwiki.com/tags/%E8%B4%A2%E5%8A%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>进取型人格誓言</title>
+    <link href="https://zhiwiki.com/aggressive-personality/"/>
+    <id>https://zhiwiki.com/aggressive-personality/</id>
+    <published>2021-08-28T13:33:25.000Z</published>
+    <updated>2021-08-28T13:50:52.225Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;不知道在哪来看到的一些话，现在记录下来。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作为一个持续学习者，应该有一套自己学习的理念，我认为以下就是这些年来自己在不断学习的过程中体现出来的，只不过有些执行的好，有些执行的差。重新回顾自己学习的内容和职业路径，学习确实带给自己极大的
+        
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://zhiwiki.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="学习" scheme="https://zhiwiki.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AB实验基础知识</title>
+    <link href="https://zhiwiki.com/ab-test-basic-knowledge/"/>
+    <id>https://zhiwiki.com/ab-test-basic-knowledge/</id>
+    <published>2021-08-08T07:37:46.000Z</published>
+    <updated>2021-08-22T11:27:41.781Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;来源：&lt;br&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/375902281&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="心理学" scheme="https://zhiwiki.com/categories/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+    
+      <category term="统计" scheme="https://zhiwiki.com/tags/%E7%BB%9F%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【现代科学心理学创始人】——冯特</title>
-    <link href="https://zhiwiki.com/2021/07/13/psychologist-wundt/"/>
-    <id>https://zhiwiki.com/2021/07/13/psychologist-wundt/</id>
+    <link href="https://zhiwiki.com/psychologist-wundt/"/>
+    <id>https://zhiwiki.com/psychologist-wundt/</id>
     <published>2021-07-13T00:42:29.000Z</published>
     <updated>2021-07-13T00:47:26.776Z</updated>
     
@@ -44,8 +126,8 @@
   
   <entry>
     <title>如果不能衡量，那就不能有效增长</title>
-    <link href="https://zhiwiki.com/2021/07/13/learing-effect-evalution/"/>
-    <id>https://zhiwiki.com/2021/07/13/learing-effect-evalution/</id>
+    <link href="https://zhiwiki.com/learing-effect-evalution/"/>
+    <id>https://zhiwiki.com/learing-effect-evalution/</id>
     <published>2021-07-13T00:40:16.000Z</published>
     <updated>2021-07-13T00:41:20.829Z</updated>
     
@@ -70,8 +152,8 @@
   
   <entry>
     <title>加班是阻碍你考研的唯一障碍</title>
-    <link href="https://zhiwiki.com/2021/07/12/working-overtime-is-obstruct/"/>
-    <id>https://zhiwiki.com/2021/07/12/working-overtime-is-obstruct/</id>
+    <link href="https://zhiwiki.com/working-overtime-is-obstruct/"/>
+    <id>https://zhiwiki.com/working-overtime-is-obstruct/</id>
     <published>2021-07-12T00:28:36.000Z</published>
     <updated>2021-07-12T00:29:41.121Z</updated>
     
@@ -97,8 +179,8 @@
   
   <entry>
     <title>自我约束</title>
-    <link href="https://zhiwiki.com/2021/07/12/self-resttraint/"/>
-    <id>https://zhiwiki.com/2021/07/12/self-resttraint/</id>
+    <link href="https://zhiwiki.com/self-resttraint/"/>
+    <id>https://zhiwiki.com/self-resttraint/</id>
     <published>2021-07-12T00:12:29.000Z</published>
     <updated>2021-07-12T00:25:57.281Z</updated>
     
@@ -124,8 +206,8 @@
   
   <entry>
     <title>泰坦尼克乘客生预测-逻辑回归</title>
-    <link href="https://zhiwiki.com/2021/07/11/titanic-logistic-regression/"/>
-    <id>https://zhiwiki.com/2021/07/11/titanic-logistic-regression/</id>
+    <link href="https://zhiwiki.com/titanic-logistic-regression/"/>
+    <id>https://zhiwiki.com/titanic-logistic-regression/</id>
     <published>2021-07-11T03:46:52.000Z</published>
     <updated>2021-07-11T05:03:50.299Z</updated>
     
@@ -150,8 +232,8 @@
   
   <entry>
     <title>写作主题汇总</title>
-    <link href="https://zhiwiki.com/2021/07/11/writing-theme/"/>
-    <id>https://zhiwiki.com/2021/07/11/writing-theme/</id>
+    <link href="https://zhiwiki.com/writing-theme/"/>
+    <id>https://zhiwiki.com/writing-theme/</id>
     <published>2021-07-11T01:58:08.000Z</published>
     <updated>2021-07-12T00:25:56.008Z</updated>
     
@@ -176,8 +258,8 @@
   
   <entry>
     <title>作为研究生，你有什么想告诉想读研的人？</title>
-    <link href="https://zhiwiki.com/2021/07/11/do-you-have-anything-to-tell-anyone-as-a-graduate/"/>
-    <id>https://zhiwiki.com/2021/07/11/do-you-have-anything-to-tell-anyone-as-a-graduate/</id>
+    <link href="https://zhiwiki.com/do-you-have-anything-to-tell-anyone-as-a-graduate/"/>
+    <id>https://zhiwiki.com/do-you-have-anything-to-tell-anyone-as-a-graduate/</id>
     <published>2021-07-11T01:55:21.000Z</published>
     <updated>2021-07-11T02:13:15.720Z</updated>
     
@@ -202,8 +284,8 @@
   
   <entry>
     <title>清华学长告诉你如何备考2022年心理学考研</title>
-    <link href="https://zhiwiki.com/2021/06/28/tshinghua-psychology-experience/"/>
-    <id>https://zhiwiki.com/2021/06/28/tshinghua-psychology-experience/</id>
+    <link href="https://zhiwiki.com/tshinghua-psychology-experience/"/>
+    <id>https://zhiwiki.com/tshinghua-psychology-experience/</id>
     <published>2021-06-28T14:29:27.000Z</published>
     <updated>2021-06-28T15:04:03.798Z</updated>
     
@@ -229,8 +311,8 @@
   
   <entry>
     <title>如何复盘</title>
-    <link href="https://zhiwiki.com/2021/06/28/how-to-replay/"/>
-    <id>https://zhiwiki.com/2021/06/28/how-to-replay/</id>
+    <link href="https://zhiwiki.com/how-to-replay/"/>
+    <id>https://zhiwiki.com/how-to-replay/</id>
     <published>2021-06-28T14:01:49.000Z</published>
     <updated>2021-06-28T14:04:23.122Z</updated>
     
@@ -258,8 +340,8 @@
   
   <entry>
     <title>不要在情绪高涨的时候做决定</title>
-    <link href="https://zhiwiki.com/2021/06/28/do-not-make-desicion/"/>
-    <id>https://zhiwiki.com/2021/06/28/do-not-make-desicion/</id>
+    <link href="https://zhiwiki.com/do-not-make-desicion/"/>
+    <id>https://zhiwiki.com/do-not-make-desicion/</id>
     <published>2021-06-28T13:57:01.000Z</published>
     <updated>2021-07-11T02:22:21.786Z</updated>
     
@@ -284,8 +366,8 @@
   
   <entry>
     <title>当热爱成为一种习惯</title>
-    <link href="https://zhiwiki.com/2021/06/28/when-love-to-be-habit/"/>
-    <id>https://zhiwiki.com/2021/06/28/when-love-to-be-habit/</id>
+    <link href="https://zhiwiki.com/when-love-to-be-habit/"/>
+    <id>https://zhiwiki.com/when-love-to-be-habit/</id>
     <published>2021-06-28T13:52:38.000Z</published>
     <updated>2021-06-28T13:54:52.019Z</updated>
     
@@ -313,8 +395,8 @@
   
   <entry>
     <title>How to read a scientific paper</title>
-    <link href="https://zhiwiki.com/2021/06/20/how-to-read-scienctific-paper/"/>
-    <id>https://zhiwiki.com/2021/06/20/how-to-read-scienctific-paper/</id>
+    <link href="https://zhiwiki.com/how-to-read-scienctific-paper/"/>
+    <id>https://zhiwiki.com/how-to-read-scienctific-paper/</id>
     <published>2021-06-20T07:23:47.000Z</published>
     <updated>2021-06-20T07:36:38.939Z</updated>
     
@@ -338,8 +420,8 @@
   
   <entry>
     <title>利用开放数据来进行科学研究</title>
-    <link href="https://zhiwiki.com/2021/06/20/open-dataset/"/>
-    <id>https://zhiwiki.com/2021/06/20/open-dataset/</id>
+    <link href="https://zhiwiki.com/open-dataset/"/>
+    <id>https://zhiwiki.com/open-dataset/</id>
     <published>2021-06-20T07:22:20.000Z</published>
     <updated>2021-06-20T07:36:31.296Z</updated>
     
@@ -362,8 +444,8 @@
   
   <entry>
     <title>P值应该这么用，学界有错须改正</title>
-    <link href="https://zhiwiki.com/2021/06/20/p-value-meaning/"/>
-    <id>https://zhiwiki.com/2021/06/20/p-value-meaning/</id>
+    <link href="https://zhiwiki.com/p-value-meaning/"/>
+    <id>https://zhiwiki.com/p-value-meaning/</id>
     <published>2021-06-20T07:18:39.000Z</published>
     <updated>2021-06-20T07:26:30.636Z</updated>
     
@@ -390,8 +472,8 @@
   
   <entry>
     <title>python常见问题汇总</title>
-    <link href="https://zhiwiki.com/2021/06/20/python-common-problem-summary/"/>
-    <id>https://zhiwiki.com/2021/06/20/python-common-problem-summary/</id>
+    <link href="https://zhiwiki.com/python-common-problem-summary/"/>
+    <id>https://zhiwiki.com/python-common-problem-summary/</id>
     <published>2021-06-20T01:54:46.000Z</published>
     <updated>2021-07-11T04:17:02.196Z</updated>
     
@@ -416,8 +498,8 @@
   
   <entry>
     <title>Python面试180题</title>
-    <link href="https://zhiwiki.com/2021/06/20/python-interview-questison/"/>
-    <id>https://zhiwiki.com/2021/06/20/python-interview-questison/</id>
+    <link href="https://zhiwiki.com/python-interview-questison/"/>
+    <id>https://zhiwiki.com/python-interview-questison/</id>
     <published>2021-06-20T01:43:43.000Z</published>
     <updated>2021-06-20T01:50:46.199Z</updated>
     
@@ -444,8 +526,8 @@
   
   <entry>
     <title>统计学基础问题及答案</title>
-    <link href="https://zhiwiki.com/2021/06/20/statistics-basic-questions/"/>
-    <id>https://zhiwiki.com/2021/06/20/statistics-basic-questions/</id>
+    <link href="https://zhiwiki.com/statistics-basic-questions/"/>
+    <id>https://zhiwiki.com/statistics-basic-questions/</id>
     <published>2021-06-20T01:29:37.000Z</published>
     <updated>2021-06-20T01:40:17.776Z</updated>
     
@@ -465,87 +547,6 @@
     
     
       <category term="统计学" scheme="https://zhiwiki.com/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>转载-如何阅读源码</title>
-    <link href="https://zhiwiki.com/2021/06/20/how-to-read-code/"/>
-    <id>https://zhiwiki.com/2021/06/20/how-to-read-code/</id>
-    <published>2021-06-20T01:18:45.000Z</published>
-    <updated>2021-06-20T01:21:40.623Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;文来自于技术大佬——左耳耗子，以下是他对于如何阅读源码的建议，我认为对于我的学习很有帮助。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;read-code.jpg&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="计算机" scheme="https://zhiwiki.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-    
-      <category term="源码" scheme="https://zhiwiki.com/tags/%E6%BA%90%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网路基础知识之HTTP协议详解</title>
-    <link href="https://zhiwiki.com/2021/06/20/http-basic/"/>
-    <id>https://zhiwiki.com/2021/06/20/http-basic/</id>
-    <published>2021-06-20T01:12:41.000Z</published>
-    <updated>2021-06-20T01:20:55.560Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;请求-客户端-到-服务端-request&quot;&gt;&lt;a href=&quot;#请求-客户端-到-服务端-request&quot; class=&quot;headerlink&quot; title=&quot;请求:客户端 到 服务端[request]&quot;&gt;&lt;/a&gt;请求:客户端 到
-        
-      
-    
-    </summary>
-    
-      <category term="计算机" scheme="https://zhiwiki.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-    
-      <category term="HTTP" scheme="https://zhiwiki.com/tags/HTTP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hive函数语法大全</title>
-    <link href="https://zhiwiki.com/2021/06/19/hive-systax-summary/"/>
-    <id>https://zhiwiki.com/2021/06/19/hive-systax-summary/</id>
-    <published>2021-06-19T14:18:00.000Z</published>
-    <updated>2021-06-20T01:20:56.880Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h3&gt;&lt;h4 id=&quot;一、关系运算：&quot;&gt;&lt;a href=&quot;#一、关系运算：&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="计算机" scheme="https://zhiwiki.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-    
-      <category term="Hive" scheme="https://zhiwiki.com/tags/Hive/"/>
     
   </entry>
   
