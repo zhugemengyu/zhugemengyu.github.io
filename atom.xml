@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2021-08-28T14:19:19.810Z</updated>
+  <updated>2021-08-30T00:36:11.677Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>寻找属于自己的力量【就业】</title>
+    <link href="https://zhiwiki.com/find-power/"/>
+    <id>https://zhiwiki.com/find-power/</id>
+    <published>2021-08-30T00:34:22.000Z</published>
+    <updated>2021-08-30T00:36:11.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;这是一篇有关就业相关的文章，对于参加心理学考研的你来说，可以参考下。&lt;/p&gt;
+&lt;p&gt;昨天参加了一个数据分析的见面会，在会上，创始人分享了自己这么多年来的经验教训以及对后来的人建议，这些建议不管是做数据分析还是做其他行业，都是很有借鉴意义。如果正在做数据分析或者想了解，可以关
+        
+      
+    
+    </summary>
+    
+      <category term="就业" scheme="https://zhiwiki.com/categories/%E5%B0%B1%E4%B8%9A/"/>
+    
+    
+      <category term="就业" scheme="https://zhiwiki.com/tags/%E5%B0%B1%E4%B8%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>考研常见问题答疑</title>
@@ -520,34 +547,6 @@
     
     
       <category term="python" scheme="https://zhiwiki.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python面试180题</title>
-    <link href="https://zhiwiki.com/python-interview-questison/"/>
-    <id>https://zhiwiki.com/python-interview-questison/</id>
-    <published>2021-06-20T01:43:43.000Z</published>
-    <updated>2021-06-20T01:50:46.199Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;Python这门语言入门容易，但是学精比较苦难。入门容易就没有门槛，什么人学能学会，怎么能体现出竞争优势来呢？首先是掌握基础的概念和知识点，然后开始从深度和广度拓展，深度优先，广度次之。以下是来源为CSDN的面试题目，建议逐一解决。&lt;/p&gt;
-&lt;/b
-        
-      
-    
-    </summary>
-    
-      <category term="Python" scheme="https://zhiwiki.com/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="https://zhiwiki.com/tags/Python/"/>
     
   </entry>
   
