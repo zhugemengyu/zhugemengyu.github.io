@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2021-08-30T00:36:11.677Z</updated>
+  <updated>2021-11-14T02:13:28.122Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>考研冲刺，坚持坚持再坚持</title>
+    <link href="https://zhiwiki.com/kaoyan-jianchi/"/>
+    <id>https://zhiwiki.com/kaoyan-jianchi/</id>
+    <published>2021-11-14T02:10:12.000Z</published>
+    <updated>2021-11-14T02:13:28.122Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;开始讲考研前，先说一件我跑步的事。以下是跑步关键词：&lt;br&gt;跑步，累，怀疑自己，想放弃、游移不定，坚持一会，跑完1轮，继续跑，完成10公里&lt;/p&gt;
+&lt;p&gt;昨天，我成功完成了第二个10公里的户外跑，用时1小时7分钟。这是时隔6个月后的第二次跑到这个里程。&lt;br&gt; &lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="考研" scheme="https://zhiwiki.com/categories/%E8%80%83%E7%A0%94/"/>
+    
+    
+      <category term="考研" scheme="https://zhiwiki.com/tags/%E8%80%83%E7%A0%94/"/>
+    
+  </entry>
   
   <entry>
     <title>寻找属于自己的力量【就业】</title>
@@ -521,32 +548,6 @@
     
     
       <category term="P值" scheme="https://zhiwiki.com/tags/P%E5%80%BC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python常见问题汇总</title>
-    <link href="https://zhiwiki.com/python-common-problem-summary/"/>
-    <id>https://zhiwiki.com/python-common-problem-summary/</id>
-    <published>2021-06-20T01:54:46.000Z</published>
-    <updated>2021-07-11T04:17:02.196Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;1-python计算科恩d值&quot;&gt;&lt;a href=&quot;#1-python计算科恩d值&quot; class=&quot;headerlink&quot; title=&quot;1.python计算科恩d值&quot;&gt;&lt;/a&gt;1.python计算科恩d值&lt;/h4&gt;&lt;pre class=&quot;line-numbers
-        
-      
-    
-    </summary>
-    
-      <category term="python" scheme="https://zhiwiki.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://zhiwiki.com/tags/python/"/>
     
   </entry>
   
