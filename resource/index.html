@@ -97,47 +97,20 @@
     </li>
     
     <li class="hide-on-med-and-down">
-        <a href="/tags" class="waves-effect waves-light">
+        <a href="/psychology" class="waves-effect waves-light">
             
-            <i class="fa fa-tags"></i>
+            <i class="fa fa-heart"></i>
             
-            <span>标签</span>
+            <span>心理学</span>
         </a>
     </li>
     
     <li class="hide-on-med-and-down">
-        <a href="/categories" class="waves-effect waves-light">
+        <a href="/data-analysis" class="waves-effect waves-light">
             
-            <i class="fa fa-bookmark"></i>
+            <i class="fa fa-thin fa-table"></i>
             
-            <span>分类</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/archives" class="waves-effect waves-light">
-            
-            <i class="fa fa-archive"></i>
-            
-            <span>归档</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/about" class="waves-effect waves-light">
-            
-            <i class="fa fa-user-circle-o"></i>
-            
-            <span>关于</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/contact" class="waves-effect waves-light">
-            
-            <i class="fa fa-comments"></i>
-            
-            <span>留言板</span>
+            <span>数据分析</span>
         </a>
     </li>
     
@@ -147,6 +120,15 @@
             <i class="fa fa-book"></i>
             
             <span>网络资源</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于</span>
         </a>
     </li>
     
@@ -185,47 +167,20 @@
         </li>
         
         <li>
-            <a href="/tags" class="waves-effect waves-light">
+            <a href="/psychology" class="waves-effect waves-light">
                 
-                <i class="fa fa-fw fa-tags"></i>
+                <i class="fa fa-fw fa-heart"></i>
                 
-                标签
+                心理学
             </a>
         </li>
         
         <li>
-            <a href="/categories" class="waves-effect waves-light">
+            <a href="/data-analysis" class="waves-effect waves-light">
                 
-                <i class="fa fa-fw fa-bookmark"></i>
+                <i class="fa fa-fw fa-thin fa-table"></i>
                 
-                分类
-            </a>
-        </li>
-        
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-archive"></i>
-                
-                归档
-            </a>
-        </li>
-        
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-user-circle-o"></i>
-                
-                关于
-            </a>
-        </li>
-        
-        <li>
-            <a href="/contact" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-comments"></i>
-                
-                留言板
+                数据分析
             </a>
         </li>
         
@@ -235,6 +190,15 @@
                 <i class="fa fa-fw fa-book"></i>
                 
                 网络资源
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
             </a>
         </li>
         
@@ -341,173 +305,23 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 </script>
     </div>
 </div>
-<style>
-    .friends-container {
-        margin-top: -100px;
-        margin-bottom: 30px;
-    }
-    .frind-ship img {
-        border-radius: 50%;
-    }
-    /* 以下是按钮样式 */
-    .frind-ship {
-        padding: 10px 20px;
-    }
-    .frind-ship .title {
-        display: flex;
-        align-items: center;
-    }
-    .frind-ship .title div {
-        color: #fff;
-        padding-left: 10px;
-    }
-    .frind-ship .title img {
-        width: 100px;
-        height: 100px;
-        flex-shrink: 0;
-    }
-    .frind-ship .title h1 {
-        /* line-height: auto; */
-        line-height: 0.8rem;
-        padding-bottom: 16px;
-        border-bottom: 2px solid #fff;
-    }
-    .friend-button {
-        display: flex;
-        justify-content: center;
-        margin-bottom: -27px;
-    }
-    .friend-button a {
-        border-radius: 40px;
-    }
-    .friend-all .tag-post {
-        margin-bottom: 30px;
-    }
-    .button-caution {
-        background-color: #FF4351;
-        border-color: #FF4351;
-        color: #FFF;
-    }
-    .button {
-        font-weight: 300;
-        font-size: 16px;
-        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        text-decoration: none;
-        text-align: center;
-        line-height: 40px;
-        height: 40px;
-        padding: 0 40px;
-        margin: 0;
-        display: inline-block;
-        appearance: none;
-        cursor: pointer;
-        border: none;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-transition-property: all;
-        transition-property: all;
-        -webkit-transition-duration: .3s;
-        transition-duration: .3s;
-    }
-    .title {
-        margin-bottom: 0rem !important;
-    }
-    .card {
-        margin: 3rem 0 1rem 0 !important;
-    }
-    .button-glow.button-caution {
-        -webkit-animation-name: glowing-caution;
-        animation-name: glowing-caution;
-    }
-    @-webkit-keyframes glowing-caution {
-        from {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-        50% {
-            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-        }
-        to {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-    }
-    @keyframes glowing-caution {
-        from {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-        50% {
-            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-        }
-        to {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-    }
-    .button-caution:hover {
-        background-color: #ff7680;
-        border-color: #ff7680;
-        color: #FFF;
-        text-decoration: none;
-    }
-    .frind-card1 {
-        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    }
-    .frind-card2 {
-        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-    .frind-card3 {
-        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
-    }
-    .frind-card4 {
-        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-    }
-    .frind-card5 {
-        background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
-    }
-    .frind-card6 {
-        background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
-    }
-    .frind-card7 {
-        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-    }
-    .frind-card8 {
-        background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
-    }
-    .frind-card9 {
-        background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
-    }
-    .frind-card10 {
-        background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    }
-
-    .friend-introduction {
-        min-height: 3rem;
-    }
-
-    article .card {
-    overflow: visible !important;
-}
-</style>
 
 <main class="content">
-    <div class="container friends-container">
+    <div id="aboutme" class="container contact-container">
         <div class="card">
             <div class="card-content">
                 <div class="card-content article-card-content">
                     <div id="articleContent" data-aos="fade-up">
-                        <h2 id="1-学科知识"><a href="#1-学科知识" class="headerlink" title="1.学科知识"></a>1.学科知识</h2><h3 id="心理学"><a href="#心理学" class="headerlink" title="心理学"></a>心理学</h3><p>crash course <a href="https://www.youtube.com/watch?v=vo4pMVb0R6M&amp;list=PLGMVCsud2sqX1F5BkUp7yiIFcGtFjb1hZ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=vo4pMVb0R6M&amp;list=PLGMVCsud2sqX1F5BkUp7yiIFcGtFjb1hZ</a><br>Psychology <a href="https://www.psychologytoday.com/" target="_blank" rel="noopener">https://www.psychologytoday.com/</a></p>
-<h3 id="计算机科学"><a href="#计算机科学" class="headerlink" title="计算机科学"></a>计算机科学</h3><p>CS自学指南 <a href="https://csdiy.wiki/" target="_blank" rel="noopener">https://csdiy.wiki/</a></p>
-<p> 2022年人工智能领域最新突破的重磅论文 <a href="https://github.com/louisfb01/best_AI_papers_2022" target="_blank" rel="noopener">https://github.com/louisfb01/best_AI_papers_2022</a></p>
-<h3 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h3><p>B站宋浩老师 <a href="https://www.bilibili.com/video/BV1Eb411u7Fw?from=search&amp;seid=16781128461549710285" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Eb411u7Fw?from=search&amp;seid=16781128461549710285</a><br>关系代数 <a href="https://keelii.com/2017/02/19/basic-operations-of-relation-algebra/" target="_blank" rel="noopener">https://keelii.com/2017/02/19/basic-operations-of-relation-algebra/</a></p>
-<h3 id="统计学"><a href="#统计学" class="headerlink" title="统计学"></a>统计学</h3><p>crash course <a href="https://www.youtube.com/watch?v=zouPoc49xbk&amp;list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr" target="_blank" rel="noopener">https://www.youtube.com/watch?v=zouPoc49xbk&amp;list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr</a></p>
+                        <p>网站隐藏目录（栏目放不下了–）<br>    标签：<a href="https://zhiwiki.com/tags/">https://zhiwiki.com/tags/</a><br>    归类：<a href="https://zhiwiki.com/categories/">https://zhiwiki.com/categories/</a><br>    归档：<a href="https://zhiwiki.com/archives/">https://zhiwiki.com/archives/</a></p>
+<h2 id="一、学科知识"><a href="#一、学科知识" class="headerlink" title="一、学科知识"></a>一、学科知识</h2><h3 id="1-心理学"><a href="#1-心理学" class="headerlink" title="1.心理学"></a>1.心理学</h3><p>crash course <a href="https://www.youtube.com/watch?v=vo4pMVb0R6M&amp;list=PLGMVCsud2sqX1F5BkUp7yiIFcGtFjb1hZ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=vo4pMVb0R6M&amp;list=PLGMVCsud2sqX1F5BkUp7yiIFcGtFjb1hZ</a><br>Psychology <a href="https://www.psychologytoday.com/" target="_blank" rel="noopener">https://www.psychologytoday.com/</a></p>
+<h3 id="2-计算机科学"><a href="#2-计算机科学" class="headerlink" title="2.计算机科学"></a>2.计算机科学</h3><p>CS自学指南 <a href="https://csdiy.wiki/" target="_blank" rel="noopener">https://csdiy.wiki/</a><br>自学手册 <a href="https://functionalcs.github.io/curriculum/#sec-1" target="_blank" rel="noopener">https://functionalcs.github.io/curriculum/#sec-1</a><br>2022年人工智能领域最新突破的重磅论文 <a href="https://github.com/louisfb01/best_AI_papers_2022" target="_blank" rel="noopener">https://github.com/louisfb01/best_AI_papers_2022</a></p>
+<p>操作系统 <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" rel="noopener">https://pages.cs.wisc.edu/~remzi/OSTEP/</a><br>清华操作系统<a href="https://www.xuetangx.com/course/THU08091000267/124244" target="_blank" rel="noopener">https://www.xuetangx.com/course/THU08091000267/124244</a><br>计算机网络-谢希仁<br>计算机组成原理<br>编译原理 <a href="https://www.bilibili.com/video/av27845355" target="_blank" rel="noopener">https://www.bilibili.com/video/av27845355</a><br>数据结构与算法<br>数字电路</p>
+<h3 id="3-数学"><a href="#3-数学" class="headerlink" title="3.数学"></a>3.数学</h3><p>B站宋浩老师 <a href="https://www.bilibili.com/video/BV1Eb411u7Fw?from=search&amp;seid=16781128461549710285" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Eb411u7Fw?from=search&amp;seid=16781128461549710285</a><br>关系代数 <a href="https://keelii.com/2017/02/19/basic-operations-of-relation-algebra/" target="_blank" rel="noopener">https://keelii.com/2017/02/19/basic-operations-of-relation-algebra/</a></p>
+<h3 id="4-统计学"><a href="#4-统计学" class="headerlink" title="4.统计学"></a>4.统计学</h3><p>crash course <a href="https://www.youtube.com/watch?v=zouPoc49xbk&amp;list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr" target="_blank" rel="noopener">https://www.youtube.com/watch?v=zouPoc49xbk&amp;list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr</a></p>
+<h3 id="5-投资金融"><a href="#5-投资金融" class="headerlink" title="5. 投资金融"></a>5. 投资金融</h3><p>Fed <a href="https://www.federalreserve.gov/releases/h3/current/" target="_blank" rel="noopener">https://www.federalreserve.gov/releases/h3/current/</a><br>SEC <a href="https://www.sec.gov/" target="_blank" rel="noopener">https://www.sec.gov/</a></p>
+<h2 id="二、数据分析"><a href="#二、数据分析" class="headerlink" title="二、数据分析"></a>二、数据分析</h2><p>ABtest tool <a href="https://www.evanmiller.org/ab-testing/sample-size.html" target="_blank" rel="noopener">https://www.evanmiller.org/ab-testing/sample-size.html</a><br>SQL底层原理 <a href="https://www.cnblogs.com/mq0036/p/6932470.html" target="_blank" rel="noopener">https://www.cnblogs.com/mq0036/p/6932470.html</a><br>数据分析社区 <a href="https://www.tableau.com/zh-cn/community" target="_blank" rel="noopener">https://www.tableau.com/zh-cn/community</a><br>小数点数据社区 <a href="https://m.cichang.net/community/5bc068057226f44b1989b136" target="_blank" rel="noopener">https://m.cichang.net/community/5bc068057226f44b1989b136</a></p>
 <h2 id="2-思维工具"><a href="#2-思维工具" class="headerlink" title="2.思维工具"></a>2.思维工具</h2><p>How-To-Ask-Questions-The-Smart-Way</p>
 <p><a href="https://github.com/FredWe/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md" target="_blank" rel="noopener">https://github.com/FredWe/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md</a></p>
-<h2 id="3-数据分析"><a href="#3-数据分析" class="headerlink" title="3.数据分析"></a>3.数据分析</h2><p>ABtest tool <a href="https://www.evanmiller.org/ab-testing/sample-size.html" target="_blank" rel="noopener">https://www.evanmiller.org/ab-testing/sample-size.html</a><br>SQL底层原理 <a href="https://www.cnblogs.com/mq0036/p/6932470.html" target="_blank" rel="noopener">https://www.cnblogs.com/mq0036/p/6932470.html</a><br>数据分析社区 <a href="https://www.tableau.com/zh-cn/community" target="_blank" rel="noopener">https://www.tableau.com/zh-cn/community</a><br>小数点数据社区 <a href="https://m.cichang.net/community/5bc068057226f44b1989b136" target="_blank" rel="noopener">https://m.cichang.net/community/5bc068057226f44b1989b136</a></p>
 <h2 id="4-Python"><a href="#4-Python" class="headerlink" title="4.Python"></a>4.Python</h2><p>The Python Tutorial <a href="https://docs.python.org/3.6/tutorial/index.html" target="_blank" rel="noopener">https://docs.python.org/3.6/tutorial/index.html</a></p>
 <p>Hands-on Python 3 Tutorial <a href="https://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/index.html" target="_blank" rel="noopener">https://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/index.html</a></p>
 <p>Python编程进阶 <a href="https://book.pythontips.com/en/latest/index.html" target="_blank" rel="noopener">https://book.pythontips.com/en/latest/index.html</a></p>
@@ -520,10 +334,10 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <h2 id="7-著名人物"><a href="#7-著名人物" class="headerlink" title="7.著名人物"></a>7.著名人物</h2><p>李笑来 <a href="http://lixiaolai.com/#/" target="_blank" rel="noopener">http://lixiaolai.com/#/</a></p>
 <p>刘未鹏 <a href="http://mindhacks.cn/author/pongba" target="_blank" rel="noopener">http://mindhacks.cn/author/pongba</a></p>
 <p>巴菲特<br><a href="https://www.berkshirehathaway.com/letters/letters.html" target="_blank" rel="noopener">https://www.berkshirehathaway.com/letters/letters.html</a><br><a href="https://www.berkshirehathaway.com/" target="_blank" rel="noopener">https://www.berkshirehathaway.com/</a></p>
-<h2 id="8-图片"><a href="#8-图片" class="headerlink" title="8.图片"></a>8.图片</h2><p>可画 <a href="https://www.canva.cn/" target="_blank" rel="noopener">https://www.canva.cn/</a><br>Pixabay <a href="https://pixabay.com/" target="_blank" rel="noopener">https://pixabay.com/</a><br>PNG  <a href="http://pngimg.com/" target="_blank" rel="noopener">http://pngimg.com/</a><br>Color Hut <a href="https://colorhunt.co/" target="_blank" rel="noopener">https://colorhunt.co/</a></p>
+<h2 id="8-图片"><a href="#8-图片" class="headerlink" title="8.图片"></a>8.图片</h2><p>可画 <a href="https://www.canva.cn/" target="_blank" rel="noopener">https://www.canva.cn/</a><br>icon <a href="https://www.iconfont.cn/" target="_blank" rel="noopener">https://www.iconfont.cn/</a><br>Pixabay <a href="https://pixabay.com/" target="_blank" rel="noopener">https://pixabay.com/</a><br>PNG  <a href="http://pngimg.com/" target="_blank" rel="noopener">http://pngimg.com/</a><br>Color Hut <a href="https://colorhunt.co/" target="_blank" rel="noopener">https://colorhunt.co/</a></p>
 <h2 id="9-电子书"><a href="#9-电子书" class="headerlink" title="9.电子书"></a>9.电子书</h2><p>鸠摩搜索 <a href="https://www.jiumodiary.com/" target="_blank" rel="noopener">https://www.jiumodiary.com/</a><br>PDF Download <a href="https://vdoc.pub/" target="_blank" rel="noopener">https://vdoc.pub/</a><br>电子书（代替zilibrary）：<a href="https://annas-archive.org/" target="_blank" rel="noopener">https://annas-archive.org/</a></p>
 <h2 id="10-文献现在"><a href="#10-文献现在" class="headerlink" title="10.文献现在"></a>10.文献现在</h2><p>SCI-HUB <a href="https://sci-hub.se/" target="_blank" rel="noopener">https://sci-hub.se/</a><br>谷歌学术 <a href="https://scholar.google.com/" target="_blank" rel="noopener">https://scholar.google.com/</a><br>科研通 <a href="https://www.ablesci.com/" target="_blank" rel="noopener">https://www.ablesci.com/</a></p>
-<p>SEC <a href="https://www.sec.gov/" target="_blank" rel="noopener">https://www.sec.gov/</a><br>剑桥英语词典 <a href="https://dictionary.cambridge.org/" target="_blank" rel="noopener">https://dictionary.cambridge.org/</a></p>
+<p>剑桥英语词典 <a href="https://dictionary.cambridge.org/" target="_blank" rel="noopener">https://dictionary.cambridge.org/</a></p>
 <p>科学上网：<a href="https://shadowsockshelp.github.io/" target="_blank" rel="noopener">https://shadowsockshelp.github.io/</a></p>
 <p>Edge <a href="https://www.edge.org/" target="_blank" rel="noopener">https://www.edge.org/</a></p>
 <p>Wired<a href="https://www.wired.com/" target="_blank" rel="noopener">https://www.wired.com/</a></p>
@@ -533,27 +347,29 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 </div>
             </div>
         </div>
-        <article id="friends-link">
+        <div class="card">
+
             
-        </article>
+
+            
+
+            
+
+            
+
+            
+
+        </div>
     </div>
 </main>
-
-<script>
-    $(function () {
-        $('#friends-link').masonry({
-            itemSelector: '.friend-div'
-        });
-    });
-</script>
     <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            &copy; 2021 zhugemengyu. 版权所有
+            &copy; 2021-2023 诸葛梦宇·版权所有·<a href='https://godweiyang.com/2018/04/13/hexo-blog/'>源码来源</a>
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">103.1k</span>
+            <span class="white-color">103.2k</span>
             
 
             <br>

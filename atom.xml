@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2022-12-31T05:11:04.228Z</updated>
+  <updated>2023-03-10T17:34:06.466Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhiwiki.com/pointer-book-list/"/>
     <id>https://zhiwiki.com/pointer-book-list/</id>
     <published>2022-12-25T01:33:22.000Z</published>
-    <updated>2022-12-31T05:11:04.228Z</updated>
+    <updated>2023-03-10T17:34:06.466Z</updated>
     
     <summary type="html">
     
@@ -29,11 +29,14 @@
       
         
         
-          &lt;p&gt;&lt;strong&gt;标题:
+          &lt;p&gt;本文内容来自于2022年读书小组每日推荐，2022年是艰难的一年，也许读书能让自己静下来。&lt;br&gt;好好阅读，如同好好吃饭，让书籍抚慰心灵，让精神得到满足，也许这就是不错的应对方式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;标题:
         
       
     
     </summary>
+    
+      <category term="读书" scheme="https://zhiwiki.com/categories/%E8%AF%BB%E4%B9%A6/"/>
     
     
       <category term="读书" scheme="https://zhiwiki.com/tags/%E8%AF%BB%E4%B9%A6/"/>
