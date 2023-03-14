@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiwiki.com/psychology/index.html</loc>
+    
+    <lastmod>2023-03-14T13:20:29.894Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/resource/index.html</loc>
+    
+    <lastmod>2023-03-14T13:07:06.624Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhiwiki.com/pointer-book-list/</loc>
     
     <lastmod>2023-03-10T17:34:06.466Z</lastmod>
@@ -9,23 +23,9 @@
   </url>
   
   <url>
-    <loc>https://zhiwiki.com/psychology/index.html</loc>
-    
-    <lastmod>2023-03-10T17:22:45.475Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zhiwiki.com/data-analysis/index.html</loc>
     
     <lastmod>2023-03-10T17:22:33.269Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhiwiki.com/resource/index.html</loc>
-    
-    <lastmod>2023-03-10T16:44:20.603Z</lastmod>
     
   </url>
   
