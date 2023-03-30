@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiwiki.com/overcoming-fear/</loc>
+    
+    <lastmod>2023-03-30T13:29:23.665Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/resource/index.html</loc>
+    
+    <lastmod>2023-03-30T12:02:29.343Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhiwiki.com/psychology-job/</loc>
     
-    <lastmod>2023-03-24T19:30:33.784Z</lastmod>
+    <lastmod>2023-03-24T19:31:26.665Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>https://zhiwiki.com/psychology/index.html</loc>
     
     <lastmod>2023-03-14T13:20:29.894Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhiwiki.com/resource/index.html</loc>
-    
-    <lastmod>2023-03-14T13:07:06.624Z</lastmod>
     
   </url>
   
@@ -345,14 +352,14 @@
   </url>
   
   <url>
-    <loc>https://zhiwiki.com/archives/index.html</loc>
+    <loc>https://zhiwiki.com/categories/index.html</loc>
     
     <lastmod>2021-03-31T14:38:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhiwiki.com/categories/index.html</loc>
+    <loc>https://zhiwiki.com/archives/index.html</loc>
     
     <lastmod>2021-03-31T14:38:08.000Z</lastmod>
     

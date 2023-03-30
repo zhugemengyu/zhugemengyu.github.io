@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2023-03-24T19:30:33.784Z</updated>
+  <updated>2023-03-30T13:29:23.665Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>恐惧是阻止你考研的唯一障碍</title>
+    <link href="https://zhiwiki.com/overcoming-fear/"/>
+    <id>https://zhiwiki.com/overcoming-fear/</id>
+    <published>2023-03-30T13:20:59.000Z</published>
+    <updated>2023-03-30T13:29:23.665Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;&lt;em&gt; 用心理学学习心理学—诸葛梦宇 
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>心理学就业“大揭秘”</title>
     <link href="https://zhiwiki.com/psychology-job/"/>
     <id>https://zhiwiki.com/psychology-job/</id>
     <published>2023-03-24T19:23:22.000Z</published>
-    <updated>2023-03-24T19:30:33.784Z</updated>
+    <updated>2023-03-24T19:31:26.665Z</updated>
     
     <summary type="html">
     
@@ -526,32 +548,6 @@
     
     
       <category term="逻辑回归" scheme="https://zhiwiki.com/tags/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>写作主题汇总</title>
-    <link href="https://zhiwiki.com/writing-theme/"/>
-    <id>https://zhiwiki.com/writing-theme/</id>
-    <published>2021-07-11T01:58:08.000Z</published>
-    <updated>2021-07-12T00:25:56.008Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;随笔-amp-想法类&quot;&gt;&lt;a href=&quot;#随笔-amp-想法类&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="写作" scheme="https://zhiwiki.com/categories/%E5%86%99%E4%BD%9C/"/>
-    
-    
-      <category term="写作" scheme="https://zhiwiki.com/tags/%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
