@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwiki.com/"/>
-  <updated>2023-03-30T13:29:23.665Z</updated>
+  <updated>2023-04-02T05:27:28.930Z</updated>
   <id>https://zhiwiki.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【2023年清华应用心理(认知智能)考研初试真题解析】可穿戴设备与心理健康</title>
+    <link href="https://zhiwiki.com/exam2023-answer/"/>
+    <id>https://zhiwiki.com/exam2023-answer/</id>
+    <published>2023-04-02T05:23:30.000Z</published>
+    <updated>2023-04-02T05:27:28.930Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本问题来自2023年清华应用心理(认知智能)初试真题，题目涉及实验设计，本题目为论述题，因此作答的内容需要丰满，完整，以下是相关参考，你可以在此基础上继续完善，最后我提出了几个小问题，你可以再去搜索学习。&lt;/p&gt;
+&lt;p&gt;问题：使用可穿戴设备设计一个实验，研究老年人的心理健康
+        
+      
+    
+    </summary>
+    
+      <category term="心理学" scheme="https://zhiwiki.com/categories/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+    
+      <category term="清华大学" scheme="https://zhiwiki.com/tags/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>恐惧是阻止你考研的唯一障碍</title>
@@ -522,32 +549,6 @@
     
     
       <category term="自我约束" scheme="https://zhiwiki.com/tags/%E8%87%AA%E6%88%91%E7%BA%A6%E6%9D%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>泰坦尼克乘客生预测-逻辑回归</title>
-    <link href="https://zhiwiki.com/titanic-logistic-regression/"/>
-    <id>https://zhiwiki.com/titanic-logistic-regression/</id>
-    <published>2021-07-11T03:46:52.000Z</published>
-    <updated>2021-07-11T05:03:50.299Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;项目介绍&quot;&gt;&lt;a href=&quot;#项目介绍&quot; class=&quot;headerlink&quot; title=&quot;项目介绍&quot;&gt;&lt;/a&gt;项目介绍&lt;/h4&gt;&lt;p&gt;The competition is simple: use machine learning to create a
-        
-      
-    
-    </summary>
-    
-      <category term="机器学习" scheme="https://zhiwiki.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="逻辑回归" scheme="https://zhiwiki.com/tags/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/"/>
     
   </entry>
   
