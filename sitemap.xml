@@ -2,16 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zhiwiki.com/exam2023-answer/</loc>
+    <loc>https://zhiwiki.com/book-list-2023/</loc>
     
-    <lastmod>2023-04-02T05:27:28.930Z</lastmod>
+    <lastmod>2023-08-25T15:33:48.165Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/python-common-problem-summary/</loc>
+    
+    <lastmod>2023-08-25T15:31:24.083Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/writing-theme/</loc>
+    
+    <lastmod>2023-08-25T15:31:04.484Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/psychology/index.html</loc>
+    
+    <lastmod>2023-04-05T15:40:36.326Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zhiwiki.com/resource/index.html</loc>
     
-    <lastmod>2023-04-01T13:49:09.980Z</lastmod>
+    <lastmod>2023-04-05T15:40:34.261Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/exam2023-answer/</loc>
+    
+    <lastmod>2023-04-02T05:27:28.930Z</lastmod>
     
   </url>
   
@@ -26,13 +54,6 @@
     <loc>https://zhiwiki.com/psychology-job/</loc>
     
     <lastmod>2023-03-24T19:31:26.665Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhiwiki.com/psychology/index.html</loc>
-    
-    <lastmod>2023-03-14T13:20:29.894Z</lastmod>
     
   </url>
   
@@ -177,13 +198,6 @@
   </url>
   
   <url>
-    <loc>https://zhiwiki.com/writing-theme/</loc>
-    
-    <lastmod>2021-07-12T00:25:56.008Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zhiwiki.com/titanic-logistic-regression/</loc>
     
     <lastmod>2021-07-11T05:03:50.299Z</lastmod>
@@ -194,13 +208,6 @@
     <loc>https://zhiwiki.com/sql-basic-question-and-answer/</loc>
     
     <lastmod>2021-07-11T04:18:28.631Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhiwiki.com/python-common-problem-summary/</loc>
-    
-    <lastmod>2021-07-11T04:17:02.196Z</lastmod>
     
   </url>
   
@@ -359,6 +366,13 @@
   </url>
   
   <url>
+    <loc>https://zhiwiki.com/categories/index.html</loc>
+    
+    <lastmod>2021-03-31T14:38:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhiwiki.com/archives/index.html</loc>
     
     <lastmod>2021-03-31T14:38:08.000Z</lastmod>
@@ -367,13 +381,6 @@
   
   <url>
     <loc>https://zhiwiki.com/tags/index.html</loc>
-    
-    <lastmod>2021-03-31T14:38:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhiwiki.com/categories/index.html</loc>
     
     <lastmod>2021-03-31T14:38:08.000Z</lastmod>
     

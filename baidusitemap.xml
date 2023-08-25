@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zhiwiki.com/book-list-2023/</loc>
+    <lastmod>2023-08-25</lastmod>
+  </url>  <url>
+    <loc>https://zhiwiki.com/python-common-problem-summary/</loc>
+    <lastmod>2023-08-25</lastmod>
+  </url>  <url>
+    <loc>https://zhiwiki.com/writing-theme/</loc>
+    <lastmod>2023-08-25</lastmod>
+  </url>  <url>
     <loc>https://zhiwiki.com/exam2023-answer/</loc>
     <lastmod>2023-04-02</lastmod>
   </url>  <url>
@@ -61,16 +70,10 @@
     <loc>https://zhiwiki.com/self-resttraint/</loc>
     <lastmod>2021-07-12</lastmod>
   </url>  <url>
-    <loc>https://zhiwiki.com/writing-theme/</loc>
-    <lastmod>2021-07-12</lastmod>
-  </url>  <url>
     <loc>https://zhiwiki.com/titanic-logistic-regression/</loc>
     <lastmod>2021-07-11</lastmod>
   </url>  <url>
     <loc>https://zhiwiki.com/sql-basic-question-and-answer/</loc>
-    <lastmod>2021-07-11</lastmod>
-  </url>  <url>
-    <loc>https://zhiwiki.com/python-common-problem-summary/</loc>
     <lastmod>2021-07-11</lastmod>
   </url>  <url>
     <loc>https://zhiwiki.com/do-not-make-desicion/</loc>
