@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiwiki.com/resource/index.html</loc>
+    
+    <lastmod>2023-11-27T13:07:42.041Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/yanjiusheng-2024/</loc>
+    
+    <lastmod>2023-09-22T08:43:16.047Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhiwiki.com/book-list-2023/</loc>
     
-    <lastmod>2023-08-25T15:33:48.165Z</lastmod>
+    <lastmod>2023-08-25T15:37:13.360Z</lastmod>
     
   </url>
   
@@ -26,13 +40,6 @@
     <loc>https://zhiwiki.com/psychology/index.html</loc>
     
     <lastmod>2023-04-05T15:40:36.326Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhiwiki.com/resource/index.html</loc>
-    
-    <lastmod>2023-04-05T15:40:34.261Z</lastmod>
     
   </url>
   
@@ -366,13 +373,6 @@
   </url>
   
   <url>
-    <loc>https://zhiwiki.com/categories/index.html</loc>
-    
-    <lastmod>2021-03-31T14:38:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zhiwiki.com/archives/index.html</loc>
     
     <lastmod>2021-03-31T14:38:08.000Z</lastmod>
@@ -381,6 +381,13 @@
   
   <url>
     <loc>https://zhiwiki.com/tags/index.html</loc>
+    
+    <lastmod>2021-03-31T14:38:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhiwiki.com/categories/index.html</loc>
     
     <lastmod>2021-03-31T14:38:08.000Z</lastmod>
     
